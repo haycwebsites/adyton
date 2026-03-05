@@ -61,6 +61,16 @@ module.exports = {
           200: '#a7a7a7',
           100: '#d3d3d3',
         },
+        // Royella colors
+        Black: "#161616",
+        mediumBlack: "#212121",
+        normalBlack: "#272727",
+        lightBlack: "#1e1e1e",
+        slateGray: "",
+        gray: "#616161",
+        lightGray: "#acacac",
+        khaki: "#c19d68",
+        whiteSmoke: "#f8f6f3",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -76,6 +86,13 @@ module.exports = {
         serif: ['Cormorant Garamond', 'serif'],
         sans: ['Poppins', 'sans-serif'],
         script: ['Qwitcher Grypen', 'cursive'],
+        Garamond: ["Cormorant Garamond", "serif"],
+        Lora: ["Lora", "serif"],
+      },
+      screens: {
+        esm: "480px",
+        "3xl": "1600px",
+        "4xl": "1700px",
       },
       fontSize: {
         'display': ['5.5rem', { lineHeight: '1.1' }],
@@ -95,6 +112,7 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        custom: "0px 5px 15px rgba(204, 204, 204, 0.25)",
       },
       keyframes: {
         "accordion-down": {
@@ -152,5 +170,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],
 }

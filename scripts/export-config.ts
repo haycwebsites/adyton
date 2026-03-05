@@ -1,7 +1,24 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { siteConfig } from '../src/config.js';
+import {
+  siteConfig,
+  preloaderConfig,
+  scrollToTopConfig,
+  mainConfig,
+  navConfig,
+  footerConfig,
+  heroConfig,
+  roomsConfig,
+  facilitiesConfig,
+  hotelAndResortConfig,
+  hotelAndFacilitiesConfig,
+  actionConfig,
+  offersConfig,
+  testimonialConfig,
+  latestBlogConfig,
+  brandConfig,
+} from '../src/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -10,6 +27,21 @@ const config = {
   version: 1,
   exportedAt: new Date().toISOString(),
   siteConfig,
+  preloaderConfig,
+  scrollToTopConfig,
+  mainConfig,
+  navConfig,
+  footerConfig,
+  heroConfig,
+  roomsConfig,
+  facilitiesConfig,
+  hotelAndResortConfig,
+  hotelAndFacilitiesConfig,
+  actionConfig,
+  offersConfig,
+  testimonialConfig,
+  latestBlogConfig,
+  brandConfig,
 };
 
 const projectRoot = path.resolve(__dirname, '../../');
