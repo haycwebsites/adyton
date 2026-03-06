@@ -16,7 +16,7 @@ const Agency = () => {
             </h1>
             <p className=" text-sm sm:text-base font-Lora leading-[26px] text-gray dark:text-lightGray font-normal">
               A wonderful serenity has taken possession of my entire soul, like
-              these royella dolor amet, consectetur adipiscing elit dos eiusmod
+              these ADYTON dolor amet, consectetur adipiscing elit dos eiusmod
               tempor incididunt resort sweet spring which I enjoy with my whole
               heart.
             </p>
@@ -41,7 +41,7 @@ const Agency = () => {
           >
             <p className=" text-sm sm:text-base font-Lora leading-[26px] text-gray dark:text-lightGray font-normal">
               A wonderful serenity has taken possession of my entire soul, like
-              these royella dolor amet, consectetur adipiscing elit dos eiusmod
+              these ADYTON dolor amet, consectetur adipiscing elit dos eiusmod
               tempor incididunt resort sweet spring which I enjoy with my whole
               heart.
             </p>

@@ -35,7 +35,7 @@ const Testimonials = () => {
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base ">
             A wonderful serenity has taken possession of my entire soul, like
-            these royella dolor consectetur adipiscing elit dos eiusmod tempor
+            these ADYTON dolor consectetur adipiscing elit dos eiusmod tempor
             incididunt resort sweet spring
           </p>
         </div>
@@ -97,9 +97,9 @@ const Testimonials = () => {
                   </div>
                   <p className="py-6 px-5 sm:py-[34px] sm:px-10 text-justify text-sm sm:text-base lg:text-[17px] text-gray dark:text-lightGray font-Lora font-normal leading-[26px]">
                     A wonderful serenity has taken possession my entire soul
-                    these in royella consectetur royella dos eiusmod tempor
+                    these in ADYTON consectetur ADYTON dos eiusmod tempor
                     incisdunt resorts sweet wonderful serenity has taken
-                    possession my entire soul royella consectetur royella dos
+                    possession my entire soul ADYTON consectetur ADYTON dos
                     eiusmod.
                   </p>
                 </div>
@@ -152,9 +152,9 @@ const Testimonials = () => {
                   </div>
                   <p className="py-6 px-5 sm:py-[34px] sm:px-10 text-justify text-sm sm:text-base lg:text-[17px] text-gray dark:text-lightGray font-Lora font-normal leading-[26px]">
                     A wonderful serenity has taken possession my entire soul
-                    these in royella consectetur royella dos eiusmod tempor
+                    these in ADYTON consectetur ADYTON dos eiusmod tempor
                     incisdunt resorts sweet wonderful serenity has taken
-                    possession my entire soul royella consectetur royella dos
+                    possession my entire soul ADYTON consectetur ADYTON dos
                     eiusmod.
                   </p>
                 </div>
@@ -207,9 +207,9 @@ const Testimonials = () => {
                   </div>
                   <p className="py-6 px-5 sm:py-[34px] sm:px-10 text-justify text-sm sm:text-base lg:text-[17px] text-gray dark:text-lightGray font-Lora font-normal leading-[26px]">
                     A wonderful serenity has taken possession my entire soul
-                    these in royella consectetur royella dos eiusmod tempor
+                    these in ADYTON consectetur ADYTON dos eiusmod tempor
                     incisdunt resorts sweet wonderful serenity has taken
-                    possession my entire soul royella consectetur royella dos
+                    possession my entire soul ADYTON consectetur ADYTON dos
                     eiusmod.
                   </p>
                 </div>
@@ -262,9 +262,9 @@ const Testimonials = () => {
                   </div>
                   <p className="py-6 px-5 sm:py-[34px] sm:px-10 text-justify text-sm sm:text-base lg:text-[17px] text-gray dark:text-lightGray font-Lora font-normal leading-[26px]">
                     A wonderful serenity has taken possession my entire soul
-                    these in royella consectetur royella dos eiusmod tempor
+                    these in ADYTON consectetur ADYTON dos eiusmod tempor
                     incisdunt resorts sweet wonderful serenity has taken
-                    possession my entire soul royella consectetur royella dos
+                    possession my entire soul ADYTON consectetur ADYTON dos
                     eiusmod.
                   </p>
                 </div>

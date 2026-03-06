@@ -50,7 +50,7 @@ const Rooms = () => {
     <div className="bg-whiteSmoke dark:bg-lightBlack">
       <div className="relative z-[1] ">
         <div
-          className="Container-Hero bg-lightBlack dark:bg-normalBlack  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki mt-[-75px]  left-0 right-0 z-[1]"
+          className="Container-Hero bg-lightBlack dark:bg-normalBlack  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki mt-[-75px] left-0 right-0 z-[1] rounded-t-3xl"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
@@ -249,9 +249,7 @@ const Rooms = () => {
                       </div>
                     </div>
                     <div className="font-Garamond">
-                      <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] font-Lora font-normal leading-[26px]">
-                        <span className="">$560</span>
-                        <span className="mx-2">|</span>
+                      <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] font-Lora font-normal leading-[26px] rounded-2xl">
                         <span>{t(r.nightLabel)}</span>
                       </div>
 

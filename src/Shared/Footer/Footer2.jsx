@@ -101,7 +101,7 @@ const Footer2 = () => {
             className="text-sm xl:text-base text-gray dark:text-lightGray
            font-Lora font-normal"
           >
-            {` © ${new Date().getFullYear()} Royella. All Rights Reserved.`}
+            {` © ${new Date().getFullYear()} ADYTON Mykonos. All Rights Reserved.`}
           </p>
           <p
             className="text-sm xl:text-base text-gray dark:text-lightGray

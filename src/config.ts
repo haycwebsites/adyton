@@ -36,13 +36,13 @@ export interface ScrollToTopConfig {
   ariaLabel: LocaleString;
 }
 
-// Royella - Main / Layout
+// ADYTON - Main / Layout
 export interface MainConfig {
   pageTitle: LocaleString;
   siteName: LocaleString;
 }
 
-// Royella - Navbar
+// ADYTON - Navbar
 export interface NavConfig {
   logo: string;
   mobileLogo: string;
@@ -73,7 +73,7 @@ export interface NavConfig {
   darkModeTitle: LocaleString;
 }
 
-// Royella - Footer
+// ADYTON - Footer
 export interface FooterConfig {
   logo: string;
   galleryImages: string[];
@@ -93,9 +93,10 @@ export interface FooterConfig {
   emailPlaceholder: LocaleString;
   subscribeBtn: LocaleString;
   copyrightPrefix: LocaleString;
+  instagramUrl?: string;
 }
 
-// Royella - Hero (Home1)
+// ADYTON - Hero (Home1)
 export interface HeroConfig {
   bgImage1: string;
   bgImage2: string;
@@ -109,7 +110,7 @@ export interface HeroConfig {
   phone: string;
 }
 
-// Royella - Rooms (Home1)
+// ADYTON - Rooms (Home1)
 export interface RoomsConfig {
   sectionLogo: string;
   bgShape: string;
@@ -135,7 +136,7 @@ export interface RoomsConfig {
   bedConfig: LocaleString;
 }
 
-// Royella - Facilities (Home1)
+// ADYTON - Facilities (Home1)
 export interface FacilitiesConfig {
   image1: string;
   image2: string;
@@ -153,7 +154,7 @@ export interface FacilitiesConfig {
   description: LocaleString;
 }
 
-// Royella - HotelAndResort (Home1)
+// ADYTON - HotelAndResort (Home1)
 export interface HotelAndResortConfig {
   sliderImage1: string;
   sliderImage2: string;
@@ -165,7 +166,7 @@ export interface HotelAndResortConfig {
   ctaBtn: LocaleString;
 }
 
-// Royella - HotelAndFacilities (Home1)
+// ADYTON - HotelAndFacilities (Home1)
 export interface HotelAndFacilitiesConfig {
   sectionLogo: string;
   bgShape: string;
@@ -185,7 +186,7 @@ export interface HotelAndFacilitiesConfig {
   service6: LocaleString;
 }
 
-// Royella - CallDoAction (Home1)
+// ADYTON - CallDoAction (Home1)
 export interface ActionConfig {
   avatarImage: string;
   mainImage: string;
@@ -196,7 +197,7 @@ export interface ActionConfig {
   authorRole: LocaleString;
 }
 
-// Royella - Offers (Home1)
+// ADYTON - Offers (Home1)
 export interface OffersConfig {
   offer1: string;
   offer2: string;
@@ -214,7 +215,7 @@ export interface OffersConfig {
   room4: LocaleString;
 }
 
-// Royella - Testimonial (Home1)
+// ADYTON - Testimonial (Home1)
 export interface TestimonialConfig {
   bgImage: string;
   sectionLogo: string;
@@ -231,7 +232,7 @@ export interface TestimonialConfig {
   authorRole: LocaleString;
 }
 
-// Royella - LatestBlog (Home1)
+// ADYTON - LatestBlog (Home1)
 export interface LatestBlogConfig {
   sectionLogo: string;
   bgShape: string;
@@ -246,7 +247,7 @@ export interface LatestBlogConfig {
   readMoreBtn: LocaleString;
 }
 
-// Royella - Brand (shared)
+// ADYTON - Brand (shared)
 export interface BrandConfig {
   brand1: string;
   brand2: string;
@@ -258,18 +259,18 @@ export interface BrandConfig {
 // =============================================================================
 
 export const siteConfig: SiteConfig = {
-  title: { el: 'Royella', en: 'Royella' },
-  description: { el: 'Ξενοδοχείο και Resort', en: 'Hotel and Resort' },
+  title: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  description: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
   language: 'en',
-  keywords: { el: 'ξενοδοχείο, resort', en: 'hotel, resort' },
-  ogImage: '/images/home-1/hero-bg.jpg',
-  canonical: '',
+  keywords: { el: 'Mykonos, luxury lease, private compound, corporate housing, diplomatic residence', en: 'Mykonos, luxury lease, private compound, corporate housing, diplomatic residence' },
+  ogImage: '/images/generated/mykonos-hero.jpg',
+  canonical: 'https://adytonmykonos.com',
 };
 
 export const preloaderConfig: PreloaderConfig = {
-  brandName: { el: 'Royella', en: 'Royella' },
-  brandSubname: { el: 'Hotel & Resort', en: 'Hotel & Resort' },
-  yearText: { el: '2024', en: '2024' },
+  brandName: { el: 'ADYTON', en: 'ADYTON' },
+  brandSubname: { el: 'Private Luxury Compound', en: 'Private Luxury Compound' },
+  yearText: { el: 'Mykonos', en: 'Mykonos' },
 };
 
 export const scrollToTopConfig: ScrollToTopConfig = {
@@ -277,132 +278,136 @@ export const scrollToTopConfig: ScrollToTopConfig = {
 };
 
 export const mainConfig: MainConfig = {
-  pageTitle: { el: 'Κρατήσεις Ξενοδοχείου', en: 'Hotel Booking' },
-  siteName: { el: 'Royella', en: 'Royella' },
+  pageTitle: { el: 'Private Luxury Compound', en: 'Private Luxury Compound' },
+  siteName: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
 };
 
+const ADYTON_LOGO = 'https://res.cloudinary.com/dem12vqtl/image/upload/v1772659122/Website%20Media/dtzamouranis%40uniwa.gr/hayc-57mj449v/zateqljrsmoevla3vqbp.jpg';
+const LUXURY_SUITES = '/images/luxury Suites';
+
 export const navConfig: NavConfig = {
-  logo: '/images/home-3/logo.png',
-  mobileLogo: '/images/home-1/brand-1.png',
-  altLogo: { el: 'Λογότυπο ιστοσελίδας', en: 'Website logo' },
-  altMobileLogo: { el: 'Λογότυπο Royella', en: 'Royella website logo' },
-  home: { el: 'Αρχική', en: 'Home' },
-  homeHotel: { el: 'Κρατήσεις Ξενοδοχείου', en: 'Hotel Booking' },
-  homeResort: { el: 'Resort', en: 'Resort' },
-  homeHostel: { el: 'Hostel', en: 'Hostel' },
-  homeCityHotel: { el: 'City Hotel', en: 'City Hotel' },
-  homeApartment: { el: 'Διαμέρισμα', en: 'Apartment' },
-  about: { el: 'Σχετικά', en: 'About' },
-  rooms: { el: 'Δωμάτια', en: 'Rooms' },
-  room: { el: 'Δωμάτιο', en: 'Room' },
-  findRoom: { el: 'Εύρεση Δωματίου', en: 'Find Room' },
-  roomDetails: { el: 'Λεπτομέρειες Δωματίου', en: 'Room Details' },
-  page: { el: 'Σελίδα', en: 'Page' },
-  aboutUs: { el: 'ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ', en: 'ABOUT US' },
-  service: { el: 'ΥΠΗΡΕΣΙΕΣ', en: 'SERVICE' },
-  serviceDetails: { el: 'ΛΕΠΤΟΜΕΡΕΙΕΣ ΥΠΗΡΕΣΙΩΝ', en: 'SERVICE DETAILS' },
-  ourTeam: { el: 'Η ΟΜΑΔΑ ΜΑΣ', en: 'OUR TEAM' },
-  pricing: { el: 'ΤΙΜΕΣ', en: 'PRICING' },
-  blog: { el: 'BLOG', en: 'BLOG' },
-  blogDetails: { el: 'ΛΕΠΤΟΜΕΡΕΙΕΣ BLOG', en: 'BLOG DETAILS' },
-  contact: { el: 'Επικοινωνία', en: 'Contact' },
-  bookingBtn: { el: 'Κράτηση Online', en: 'Booking Online' },
-  lightModeTitle: { el: 'Εφαρμογή Φωτεινής Λειτουργίας', en: 'Apply Light Mode' },
-  darkModeTitle: { el: 'Εφαρμογή Σκοτεινής Λειτουργίας', en: 'Apply Dark Mode' },
+  logo: ADYTON_LOGO,
+  mobileLogo: ADYTON_LOGO,
+  altLogo: { el: 'ADYTON Mykonos Logo', en: 'ADYTON Mykonos Logo' },
+  altMobileLogo: { el: 'ADYTON Mykonos Logo', en: 'ADYTON Mykonos Logo' },
+  home: { el: 'Home', en: 'Home' },
+  homeHotel: { el: 'Overview', en: 'Overview' },
+  homeResort: { el: 'Suites', en: 'Suites' },
+  homeHostel: { el: 'Services', en: 'Services' },
+  homeCityHotel: { el: 'Lease Terms', en: 'Lease Terms' },
+  homeApartment: { el: 'Contact', en: 'Contact' },
+  about: { el: 'About', en: 'About' },
+  rooms: { el: 'Property', en: 'Property' },
+  room: { el: 'Suites', en: 'Suites' },
+  findRoom: { el: 'Lease Inquiry', en: 'Lease Inquiry' },
+  roomDetails: { el: 'Property Details', en: 'Property Details' },
+  page: { el: 'Page', en: 'Page' },
+  aboutUs: { el: 'About Us', en: 'About Us' },
+  service: { el: 'Services', en: 'Services' },
+  serviceDetails: { el: 'Service Details', en: 'Service Details' },
+  ourTeam: { el: 'Our Team', en: 'Our Team' },
+  pricing: { el: 'Pricing', en: 'Pricing' },
+  blog: { el: 'Blog', en: 'Blog' },
+  blogDetails: { el: 'Blog Details', en: 'Blog Details' },
+  contact: { el: 'Contact', en: 'Contact' },
+  bookingBtn: { el: 'Inquire', en: 'Inquire' },
+  lightModeTitle: { el: 'Apply Light Mode', en: 'Apply Light Mode' },
+  darkModeTitle: { el: 'Apply Dark Mode', en: 'Apply Dark Mode' },
 };
 
 export const footerConfig: FooterConfig = {
-  logo: '/images/home-1/logo-1.png',
+  logo: ADYTON_LOGO,
   galleryImages: [
-    '/images/home-1/gallery-1.jpg',
-    '/images/home-1/gallery-2.jpg',
-    '/images/home-1/gallery-3.jpg',
-    '/images/home-1/gallery-4.jpg',
-    '/images/home-1/gallery-5.jpg',
-    '/images/home-1/gallery-6.jpg',
+    `${LUXURY_SUITES}/589394469.jpg`,
+    `/images/generated/mykonos-beach.jpg`,
+    `${LUXURY_SUITES}/590764778.jpg`,
+    `${LUXURY_SUITES}/697090534.jpg`,
+    `/images/generated/mykonos-suite.jpg`,
+    `${LUXURY_SUITES}/590793718.jpg`,
   ],
-  contactTitle: { el: 'ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ', en: 'CONTACT INFO' },
-  phone: '+980 (1234) 567 220',
-  email: 'example@yahoo.com',
-  address: { el: '102/B New Elephant Rd Dhaka - 1212', en: '102/B New Elephant Rd Dhaka - 1212' },
-  linksTitle: { el: 'Χρήσιμοι Σύνδεσμοι', en: 'UseFul Links' },
-  linkAbout: { el: 'Σχετικά με το Ξενοδοχείο', en: 'About Hotel' },
-  linkRooms: { el: 'Δωμάτια & Suites', en: 'Rooms & Suites' },
-  linkReservations: { el: 'Κρατήσεις', en: 'Reservations' },
-  linkNews: { el: 'Νέα & Blog', en: 'News & Blogs' },
-  linkContact: { el: 'Επικοινωνία', en: 'Contact Us' },
-  galleryTitle: { el: 'ΣΥΛΛΟΓΗ', en: 'GALLERY' },
-  newsletterTitle: { el: 'NEWSLETTER', en: 'NEWSLETTER' },
-  newsletterDesc: { el: 'Εγγραφείτε στο Newsletter μας', en: 'Subscribe our Newsletter' },
-  emailPlaceholder: { el: 'Εισάγετε Email', en: 'Enter Email' },
-  subscribeBtn: { el: 'Εγγραφή Τώρα', en: 'Subscribe Now' },
-  copyrightPrefix: { el: 'Royella. Με επιφύλαξη παντός δικαιώματος.', en: 'Royella. All Rights Reserved.' },
+  contactTitle: { el: 'CONTACT', en: 'CONTACT' },
+  phone: '',
+  email: '',
+  address: { el: 'Mykonos, Greece', en: 'Mykonos, Greece' },
+  linksTitle: { el: 'Quick Links', en: 'Quick Links' },
+  linkAbout: { el: 'About ADYTON', en: 'About ADYTON' },
+  linkRooms: { el: 'Suites & Villas', en: 'Suites & Villas' },
+  linkReservations: { el: 'Lease Inquiry', en: 'Lease Inquiry' },
+  linkNews: { el: 'Instagram', en: 'Instagram' },
+  linkContact: { el: 'Contact', en: 'Contact' },
+  galleryTitle: { el: 'GALLERY', en: 'GALLERY' },
+  newsletterTitle: { el: 'INQUIRIES', en: 'INQUIRIES' },
+  newsletterDesc: { el: 'Confidential negotiations upon request.', en: 'Confidential negotiations upon request.' },
+  emailPlaceholder: { el: 'Enter your email', en: 'Enter your email' },
+  subscribeBtn: { el: 'Request Information', en: 'Request Information' },
+  copyrightPrefix: { el: 'ADYTON Mykonos. All Rights Reserved.', en: 'ADYTON Mykonos. All Rights Reserved.' },
+  instagramUrl: 'https://www.instagram.com/adyton_mykonos?igsh=MTI1eGR4bGE3ZnVyaQ==',
 };
 
 export const heroConfig: HeroConfig = {
-  bgImage1: '/images/home-1/hero-bg.jpg',
-  bgImage2: '/images/home-1/hero-bg2.jpg',
-  subtitle: { el: 'ΞΕΝΟΔΟΧΕΙΟ LUXURY ΚΑΙ RESORT', en: 'LUXURY HOTEL AND RESORT' },
-  mainTitle: { el: 'ΤΟ ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY', en: 'THE BEST LUXURY HOTEL' },
-  location1: { el: 'ΣΤΗΝ CALIFORNIA', en: 'IN CALIFORNIA' },
-  location2: { el: 'ΣΤΟ KASHMIR', en: 'IN KASHMIR' },
-  location3: { el: 'ΣΤΟ COLOSSEUM', en: 'IN COLOSSEUM' },
-  location4: { el: 'ΣΤΗΝ SRILANKA', en: 'IN SRILANKA' },
-  ctaButton: { el: 'Ανακαλύψτε Περισσότερα', en: 'Discover More' },
-  phone: '+980 123 4567 890',
+  bgImage1: `${LUXURY_SUITES}/590792439.jpg`,
+  bgImage2: `/images/generated/mykonos-hero.jpg`,
+  subtitle: { el: 'PRIVATE LUXURY COMPOUND', en: 'PRIVATE LUXURY COMPOUND' },
+  mainTitle: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
+  location1: { el: 'IN MYKONOS', en: 'IN MYKONOS' },
+  location2: { el: 'ANNUAL LEASE', en: 'ANNUAL LEASE' },
+  location3: { el: 'SEASONAL LEASE', en: 'SEASONAL LEASE' },
+  location4: { el: 'LUXURY SUITES', en: 'LUXURY SUITES' },
+  ctaButton: { el: 'Discover More', en: 'Discover More' },
+  phone: '',
 };
 
 export const roomsConfig: RoomsConfig = {
   sectionLogo: '/images/home-1/section-shape1.png',
   bgShape: '/images/home-1/section-shape2.png',
-  roomImage1: '/images/home-1/room-1.jpg',
-  roomImage2: '/images/home-1/room-2.jpg',
-  roomImage3: '/images/home-1/room-3.jpg',
+  roomImage1: `${LUXURY_SUITES}/589394453.jpg`,
+  roomImage2: `${LUXURY_SUITES}/590781352.jpg`,
+  roomImage3: `${LUXURY_SUITES}/725627267.jpg`,
   roomIcon: '/images/home-1/room-bottom-icon.png',
-  checkInLabel: { el: 'Άφιξη', en: 'Check In' },
-  checkOutLabel: { el: 'Αναχώρηση', en: 'Check Out' },
-  roomsLabel: { el: 'Δωμάτια', en: 'Rooms' },
-  guestsLabel: { el: 'Επισκέπτες', en: 'Guests' },
-  childLabel: { el: 'Παιδί', en: 'Child' },
-  checkoutBtn: { el: 'Κράτηση Τώρα', en: 'Checkout Now' },
-  sectionTitle: { el: 'Δωμάτια & Suites της Royella', en: "Royella's Rooms & Suites" },
-  sectionDesc: { el: 'Proactively morph optimal infomediaries...', en: 'Proactively morph optimal infomediaries...' },
-  viewDetailsBtn: { el: 'Λεπτομέρειες', en: 'View Details' },
-  nightLabel: { el: 'Νύχτα', en: 'Night' },
-  roomType: { el: 'Δωμάτιο Luxury', en: 'Luxury Room' },
-  room1: { el: 'Δίκλινα Suite', en: 'Double Suite Rooms' },
-  room2: { el: 'Οικογενειακά Δωμάτια Deluxe', en: 'Delux Family Rooms' },
-  room3: { el: 'Δωμάτια με Κορυφαίο Κρεβάτι', en: 'Suprior Bed Rooms' },
-  sqft: { el: '1500 Τ.ΠΟΔ./Δωμάτια', en: '1500 SQ.FT/Rooms' },
-  bedConfig: { el: '2 King Bed', en: '2 King Bed' },
+  checkInLabel: { el: 'Lease Type', en: 'Lease Type' },
+  checkOutLabel: { el: 'Duration', en: 'Duration' },
+  roomsLabel: { el: 'Property', en: 'Property' },
+  guestsLabel: { el: 'Inquiry', en: 'Inquiry' },
+  childLabel: { el: 'Contact', en: 'Contact' },
+  checkoutBtn: { el: 'Request Info', en: 'Request Info' },
+  sectionTitle: { el: 'Luxury Suites & Private Villas', en: 'Luxury Suites & Private Villas' },
+  sectionDesc: { el: 'An exclusive complex of luxury suites and private villas with individual pools, located in a prime area of Mykonos.', en: 'An exclusive complex of luxury suites and private villas with individual pools, located in a prime area of Mykonos.' },
+  viewDetailsBtn: { el: 'View Details', en: 'View Details' },
+  nightLabel: { el: 'taxes incl.', en: 'taxes incl.' },
+  roomType: { el: 'Luxury Suite', en: 'Luxury Suite' },
+  room1: { el: 'Private Maisonette – 2BR, 2BA, Pool', en: 'Private Maisonette – 2BR, 2BA, Pool' },
+  room2: { el: 'Double Luxury Suite with Pool', en: 'Double Luxury Suite with Pool' },
+  room3: { el: 'Double Suite with Living Room', en: 'Double Suite with Living Room' },
+  sqft: { el: 'Fully furnished & equipped', en: 'Fully furnished & equipped' },
+  bedConfig: { el: 'Private swimming pools', en: 'Private swimming pools' },
 };
 
 export const facilitiesConfig: FacilitiesConfig = {
-  image1: '/images/home-1/facilities-1.png',
-  image2: '/images/home-1/facilities-thumb-2.jpg',
-  image3: '/images/home-1/facilities-thumb-3.jpg',
-  image4: '/images/home-1/facilities-thumb-4.jpg',
-  sectionLabel: { el: 'ΕΓΚΑΤΑΣΤΑΣΕΙΣ', en: 'FACILITIES' },
-  title: { el: 'ΑΠΟΛΑΎΣΤΕ ΠΛΗΡΕΣ & ΚΑΛΗ ΠΟΙΟΤΗΤΑ ΕΓΚΑΤΑΣΤΑΣΕΩΝ', en: 'ENJOY COMPLETE & BEST QUALITY FACILITIES' },
-  viewMoreBtn: { el: 'περισσότερα', en: 'view more item' },
-  fitnessLabel: { el: 'Γυμναστήριο', en: 'Fitness' },
-  service1: { el: 'Γυμναστήριο και Περιοχή Προπόνησης', en: 'Gym Training Grounds' },
-  service2: { el: 'Κλειστή Πισίνα', en: 'Indoor Swimming Pool' },
-  foodsLabel: { el: 'ΤΡΟΦΕΣ', en: 'FOODS' },
-  service3: { el: 'Το Κέντρο Εστιατορίου', en: 'The Restaurant Center' },
-  experienceLabel: { el: 'ΕΜΠΕΙΡΙΑ', en: 'EXPERIENCE' },
-  description: { el: 'Rapidiously myocardinate cross-platform intellectual capital...', en: 'Rapidiously myocardinate cross-platform intellectual capital...' },
+  image1: `${LUXURY_SUITES}/590793377.jpg`,
+  image2: `${LUXURY_SUITES}/697090361.jpg`,
+  image3: `${LUXURY_SUITES}/725629742.jpg`,
+  image4: `${LUXURY_SUITES}/590764322.jpg`,
+  sectionLabel: { el: 'PROPERTY', en: 'PROPERTY' },
+  title: { el: 'Private Luxury Compound – Annual or Seasonal Lease', en: 'Private Luxury Compound – Annual or Seasonal Lease' },
+  viewMoreBtn: { el: 'Learn More', en: 'Learn More' },
+  fitnessLabel: { el: 'POOLS', en: 'POOLS' },
+  service1: { el: 'Private Swimming Pools', en: 'Private Swimming Pools' },
+  service2: { el: 'Main Communal Pool', en: 'Main Communal Pool' },
+  foodsLabel: { el: 'AMENITIES', en: 'AMENITIES' },
+  service3: { el: 'Fully Furnished & Equipped', en: 'Fully Furnished & Equipped' },
+  experienceLabel: { el: 'SERVICES', en: 'SERVICES' },
+  description: { el: 'All utility costs included. Garden & pool maintenance. Full technical support. High-speed internet. Secure & discreet environment.', en: 'All utility costs included. Garden & pool maintenance. Full technical support. High-speed internet. Secure & discreet environment.' },
 };
 
 export const hotelAndResortConfig: HotelAndResortConfig = {
-  sliderImage1: '/images/home-1/Hotel1.jpg',
-  sliderImage2: '/images/home-1/Hotel.png',
-  subtitle: { el: 'ΞΕΝΟΔΟΧΕΙΟ LUXURY ΚΑΙ RESORT', en: 'LUXURY HOTEL AND RESORT' },
-  title: { el: 'ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY ΣΤΗΝ ΠΟΛΗ CALIFORNIA, USA', en: 'LUXURY BEST HOTEL IN CITY CALIFORNIA, USA' },
-  description: { el: 'Rapidiously myocardinate cross-platform...', en: 'Rapidiously myocardinate cross-platform...' },
-  roomsCountLabel: { el: 'Δωμάτια Luxury', en: 'Luxury Rooms' },
-  ratingsLabel: { el: 'Βαθμολογίες Πελατών', en: 'Customer Ratings' },
-  ctaBtn: { el: 'Περισσότερα', en: 'More About' },
+  sliderImage1: `${LUXURY_SUITES}/590780018.jpg`,
+  sliderImage2: `${LUXURY_SUITES}/590781352.jpg`,
+  subtitle: { el: 'PRIVATE LUXURY COMPOUND', en: 'PRIVATE LUXURY COMPOUND' },
+  title: { el: 'Designed for High-Level International Clientele', en: 'Designed for High-Level International Clientele' },
+  description: { el: 'An exclusive private residential compound in Mykonos, designed for those seeking privacy, security and refined Mediterranean living.', en: 'An exclusive private residential compound in Mykonos, designed for those seeking privacy, security and refined Mediterranean living.' },
+  roomsCountLabel: { el: 'Luxury Suites', en: 'Luxury Suites' },
+  ratingsLabel: { el: 'Ideal for', en: 'Ideal for' },
+  ctaBtn: { el: 'Learn More', en: 'Learn More' },
 };
 
 export const hotelAndFacilitiesConfig: HotelAndFacilitiesConfig = {
@@ -413,76 +418,76 @@ export const hotelAndFacilitiesConfig: HotelAndFacilitiesConfig = {
   feature3: '/images/home-1/feature-3.png',
   feature4: '/images/home-1/feature-4.png',
   feature5: '/images/home-1/feature-5.png',
-  hoverImage: '/images/home-1/feature-imgs-1.jpg',
-  title: { el: "ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΞΕΝΟΔΟΧΕΙΟΥ", en: "HOTEL'S FACILITIES" },
-  description: { el: 'Proactively morph optimal infomediaries...', en: 'Proactively morph optimal infomediaries...' },
-  service1: { el: 'Υπηρεσίες Δωματίου', en: 'Room Services' },
-  service2: { el: 'Wi-Fi Internet', en: 'Wi-Fi Internet' },
-  service3: { el: 'Έξυπνο Κλειδί', en: 'Smart Key' },
-  service4: { el: 'Πρωινό', en: 'Breakfast' },
-  service5: { el: 'Πισίνα', en: 'Swimming Pool' },
-  service6: { el: 'Υπηρεσία Δωματίου', en: 'Room Service' },
+  hoverImage: `${LUXURY_SUITES}/589394592.jpg`,
+  title: { el: "PROPERTY COMPOSITION", en: "PROPERTY COMPOSITION" },
+  description: { el: '1 Maisonette, 4 Double Suites with Pools, 1 Double Suite with Living Room, Main Communal Pool, Auxiliary Space.', en: '1 Maisonette, 4 Double Suites with Pools, 1 Double Suite with Living Room, Main Communal Pool, Auxiliary Space.' },
+  service1: { el: 'Private Pools', en: 'Private Pools' },
+  service2: { el: 'High-Speed Internet', en: 'High-Speed Internet' },
+  service3: { el: 'Secure & Discreet', en: 'Secure & Discreet' },
+  service4: { el: 'Beach Access', en: 'Beach Access' },
+  service5: { el: 'Utilities Included', en: 'Utilities Included' },
+  service6: { el: 'Pool Maintenance', en: 'Pool Maintenance' },
 };
 
 export const actionConfig: ActionConfig = {
   avatarImage: '/images/home-1/call-do-action-img.png',
-  mainImage: '/images/home-1/action-img.png',
-  label: { el: 'ΔΙΕΥΘΥΝΤΗΣ', en: 'MANAGER' },
-  title: { el: 'ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY ΣΤΗΝ ΠΟΛΗ CALIFORNIA, USA', en: 'LUXURY BEST HOTEL IN CITY CALIFORNIA, USA' },
-  description: { el: 'Rapidiously myocardinate cross-platform...', en: 'Rapidiously myocardinate cross-platform...' },
-  authorName: { el: 'John D. Alexon', en: 'John D. Alexon' },
-  authorRole: { el: 'Διευθυντής', en: 'Manger' },
+  mainImage: `${LUXURY_SUITES}/697089488.jpg`,
+  label: { el: 'LEASE TERMS', en: 'LEASE TERMS' },
+  title: { el: 'Annual €145,000 | 6-Month €125,000 – Taxes Included', en: 'Annual €145,000 | 6-Month €125,000 – Taxes Included' },
+  description: { el: 'Corporate housing • Diplomatic residence • High-net-worth families • Long-stay executive retreat. Discreet negotiations & confidential inquiries only.', en: 'Corporate housing • Diplomatic residence • High-net-worth families • Long-stay executive retreat. Discreet negotiations & confidential inquiries only.' },
+  authorName: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  authorRole: { el: 'Private Luxury Compound', en: 'Private Luxury Compound' },
 };
 
 export const offersConfig: OffersConfig = {
-  offer1: '/images/home-1/offers-1.jpg',
-  offer2: '/images/home-1/offers-2.jpg',
-  offer3: '/images/home-1/offers-3.jpg',
-  offer4: '/images/home-1/offers-4.jpg',
-  sectionLabel: { el: 'ΠΡΟΣΦΟΡΕΣ', en: 'OFFERS' },
-  title: { el: "ΚΑΛΥΤΕΡΕΣ ΠΡΟΣΦΟΡΕΣ ΠΕΠΕΡΑΣΜΕΝΗΣ ΠΕΡΙΟΔΟΥ ΤΗΣ ROYELLA", en: "ROYELLA'S LIMITED PERIOD BEST OFFERS" },
-  discount1: { el: '25% έκπτωση', en: '25% off' },
-  discount2: { el: '24% έκπτωση', en: '24% off' },
-  discount3: { el: '26% έκπτωση', en: '26% off' },
-  discount4: { el: '22% έκπτωση', en: '22% off' },
-  room1: { el: 'Οικογενειακά Δωμάτια Deluxe', en: 'Delux Family Rooms' },
-  room2: { el: 'Δίκλινα Suite', en: 'Double Suite Rooms' },
-  room3: { el: 'Δωμάτιο με Κορυφαίο Κρεβάτι', en: 'Suprior Bed Room' },
-  room4: { el: 'Junior Suite', en: 'Junior Suite Room' },
+  offer1: `${LUXURY_SUITES}/590793102.jpg`,
+  offer2: `${LUXURY_SUITES}/725630499.jpg`,
+  offer3: `${LUXURY_SUITES}/590794859.jpg`,
+  offer4: `${LUXURY_SUITES}/697091297.jpg`,
+  sectionLabel: { el: 'ADDITIONAL SERVICES', en: 'ADDITIONAL SERVICES' },
+  title: { el: "Available Upon Request", en: "Available Upon Request" },
+  discount1: { el: 'Upon Request', en: 'Upon Request' },
+  discount2: { el: 'Upon Request', en: 'Upon Request' },
+  discount3: { el: 'Upon Request', en: 'Upon Request' },
+  discount4: { el: 'Upon Request', en: 'Upon Request' },
+  room1: { el: 'Private Security', en: 'Private Security' },
+  room2: { el: 'Chauffeur / Driver', en: 'Chauffeur / Driver' },
+  room3: { el: 'Private Chef', en: 'Private Chef' },
+  room4: { el: 'VIP Concierge', en: 'VIP Concierge' },
 };
 
 export const testimonialConfig: TestimonialConfig = {
-  bgImage: '/images/home-1/testi-bg.jpg',
+  bgImage: `${LUXURY_SUITES}/590793440.jpg`,
   sectionLogo: '/images/home-1/section-shape1.png',
   quoteIcon: '/images/home-1/testi-quote.png',
   author1: '/images/home-1/testi-author.png',
   author2: '/images/home-1/testi-author-2.png',
   author3: '/images/home-1/call-do-action-img.png',
-  title: { el: "Μαρτυρία Πελάτη", en: "Ustomer's TestimonialL" },
-  quote: { el: 'Professionally repurpose flexible testing procedures...', en: 'Professionally repurpose flexible testing procedures...' },
-  authorName1: { el: 'Maicle clork', en: 'Maicle clork' },
-  authorName2: { el: 'Marina Trange', en: 'Marina Trange' },
-  authorName3: { el: 'John D. Alexon', en: 'John D. Alexon' },
-  authorName4: { el: 'Brandon Mack', en: 'Brandon Mack' },
-  authorRole: { el: 'Διευθυντής', en: 'Manger' },
+  title: { el: "Client Testimonials", en: "Client Testimonials" },
+  quote: { el: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy and refined Mediterranean living.', en: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy and refined Mediterranean living.' },
+  authorName1: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  authorName2: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  authorName3: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  authorName4: { el: 'ADYTON Mykonos', en: 'ADYTON Mykonos' },
+  authorRole: { el: 'Private Luxury Compound', en: 'Private Luxury Compound' },
 };
 
 export const latestBlogConfig: LatestBlogConfig = {
   sectionLogo: '/images/home-1/section-shape1.png',
   bgShape: '/images/home-1/section-shape2.png',
-  blogImage1: '/images/home-1/blog-1.jpg',
-  blogImage2: '/images/home-1/blog-2.jpg',
-  blogImage3: '/images/home-1/blog-3.jpg',
-  title: { el: 'ΤΕΛΕΥΤΑΙΑ ΑΡΘΡΑ ΑΠΟ TO BLOG', en: 'LATEST POST FROM BLOG' },
-  description: { el: 'Proactively morph optimal infomediaries...', en: 'Proactively morph optimal infomediaries...' },
-  date: { el: '10 Αυγούστου 2023', en: 'August 10, 2023' },
-  category: { el: 'Εσωτερική Διακόσμηση', en: 'Interior' },
-  postTitle: { el: 'Ξενοδοχείο Luxury για Ταξίδια USA, California', en: 'Luxury Hotel for Traveling Spot USA, California' },
-  readMoreBtn: { el: 'Διαβάστε Περισσότερα', en: 'Read More' },
+  blogImage1: `${LUXURY_SUITES}/590776028.jpg`,
+  blogImage2: `${LUXURY_SUITES}/714733856.jpg`,
+  blogImage3: `${LUXURY_SUITES}/758041493.jpg`,
+  title: { el: 'GALLERY', en: 'GALLERY' },
+  description: { el: 'Explore our luxury suites and private villas in Mykonos.', en: 'Explore our luxury suites and private villas in Mykonos.' },
+  date: { el: 'Mykonos', en: 'Mykonos' },
+  category: { el: 'Luxury Lease', en: 'Luxury Lease' },
+  postTitle: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
+  readMoreBtn: { el: 'View Gallery', en: 'View Gallery' },
 };
 
 export const brandConfig: BrandConfig = {
-  brand1: '/images/home-1/brand-1.png',
-  brand2: '/images/home-1/brand-2.png',
-  brand3: '/images/home-1/brand-3.png',
+  brand1: ADYTON_LOGO,
+  brand2: ADYTON_LOGO,
+  brand3: ADYTON_LOGO,
 };

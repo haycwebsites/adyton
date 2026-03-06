@@ -67,7 +67,7 @@ const Footer3 = () => {
         <div className="py-5 md:py-6 lg:py-[22px]   flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <p className="text-[13px] xsm:text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white">
             Copyright ©{" "}
-            <span className="text-khaki">{`${new Date().getFullYear()} Royella.`}</span>{" "}
+            <span className="text-khaki">{`${new Date().getFullYear()} ADYTON Mykonos.`}</span>{" "}
             All Rights Reserved.
           </p>
           <div>

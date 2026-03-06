@@ -100,52 +100,10 @@ const Navbar = () => {
                   ? "pending"
                   : isActive
                   ? "active"
-                  : ""} text-lightBlack lg:text-white dark:text-white  lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative`}
+                  : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/"
             >
-              <span className="flex items-center">
-                {t(nav.home)}
-                <BiChevronDown className="ml-1" />
-              </span>
-              <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-2xl hidden group-hover:block rounded-sm bg-white text-black w-[200px] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 ">
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/" className="py-2 block">
-                        {t(nav.homeHotel)}
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home2" className="py-2 block">
-                        {t(nav.homeResort)}
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home3" className="py-2 block">
-                        {t(nav.homeHostel)}
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home4" className="py-2 block">
-                        {t(nav.homeCityHotel)}
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className=" px-5 group hover:bg-khaki hover:text-white">
-                    <li className="hover:ml-3 duration-300  ">
-                      <NavLink to="/home5" className="py-2 block">
-                        {t(nav.homeApartment)}
-                      </NavLink>
-                    </li>
-                  </div>
-                </ul>
-              </div>
+              {t(nav.home)}
             </NavLink>
             <NavLink
               className={`${({ isActive, isPending }) =>

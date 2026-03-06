@@ -58,20 +58,22 @@ const HeroSection = () => {
                     {t(slide.location)}
                   </h1>
                 </div>
-                <Link to={"/about"}>
+                <Link to={"/contact"}>
                   <button
-                    className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 
+                    className="w-[185px] h-[48px] lg:h-[56px] bg-khaki rounded-2xl relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 
                 text-base
                font-Garamond
-                font-medium mt-[-6px] hover-animBg after:bg-normalBlack after:rounded-none hover:before:bg-normalBlack uppercase"
+                font-medium mt-[-6px] hover-animBg after:bg-normalBlack after:rounded-2xl hover:before:bg-normalBlack uppercase"
                   >
                     {t(h.ctaButton)}
                   </button>
                 </Link>
               </div>
-              <div className="w-[221px] h-[50px] border-white border hidden md:flex items-center justify-center absolute left-0 top-1/2 -rotate-90">
-                <BiPhoneCall className="w-5 h-5 mr-2 text-khaki" /> {h.phone}
-              </div>
+              {h.phone && (
+                <div className="w-[221px] h-[50px] border-white border hidden md:flex items-center justify-center absolute left-0 top-1/2 -rotate-90">
+                  <BiPhoneCall className="w-5 h-5 mr-2 text-khaki" /> {h.phone}
+                </div>
+              )}
             </div>
           </SwiperSlide>
         ))}

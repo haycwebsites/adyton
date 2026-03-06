@@ -39,7 +39,7 @@ const Offers = () => {
               {t(o.sectionLabel)}
             </h5>
             <h1 className="text-xl sm:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
-              ROYELLA’S LIMITED PERIOD BEST OFFERS
+              {t(o.title)}
             </h1>
           </div>
           <div className="flex items-center lg:space-x-5  space-x-3">

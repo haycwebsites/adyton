@@ -61,6 +61,11 @@ module.exports = {
           200: '#a7a7a7',
           100: '#d3d3d3',
         },
+        // ADYTON brand colors (client palette)
+        adytonPink: "#FFA8B5",
+        adytonCoral: "#FF8A4D",
+        // Legacy alias - maps to coral for compatibility
+        khaki: "#FF8A4D",
         // Royella colors
         Black: "#161616",
         mediumBlack: "#212121",
@@ -69,7 +74,6 @@ module.exports = {
         slateGray: "",
         gray: "#616161",
         lightGray: "#acacac",
-        khaki: "#c19d68",
         whiteSmoke: "#f8f6f3",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -104,6 +108,9 @@ module.exports = {
         'h6': ['1.25rem', { lineHeight: '1.5' }],
       },
       borderRadius: {
+        // Curved corners - friendly, approachable (client preference)
+        "4xl": "1.5rem",
+        "5xl": "2rem",
         xl: "calc(var(--radius) + 4px)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

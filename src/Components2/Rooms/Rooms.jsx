@@ -35,7 +35,7 @@ const Rooms = () => {
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base">
             A wonderful serenity has taken possession of my entire soul, like
-            these royella dolor consectetur adipiscing elit dos eiusmod tempor
+            these ADYTON dolor consectetur adipiscing elit dos eiusmod tempor
             incididunt resort sweet spring
           </p>
         </div>

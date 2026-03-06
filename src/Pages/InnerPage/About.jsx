@@ -234,7 +234,7 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>
@@ -266,7 +266,7 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>
@@ -298,7 +298,7 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>

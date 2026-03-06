@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div></div>
       <div className="px-5 font-Garamond text-center text-white">
         <h5 className="text-base lg:text-lg tracking-[3px] leading-7 font-medium">
-          ROYELLA HOTEL RESORT
+          ADYTON MYKONOS
         </h5>
         <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-[75px] mt-[30px] md:mt-[40px]   2xl:mt-[75px] relative before:absolute before:w-[1px] before:h-[30px] md:before:h-[40px] 2xl:before:h-[50px] before:-top-[18px] sm:before:-top-[28px] md:before:-top-[40px] 2xl:before:-top-[60px] before:left-1/2 before:bg-white">
           BOOK YOUR VACATION

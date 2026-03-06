@@ -478,7 +478,7 @@ const FindRoom = () => {
                     Send Email
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    example@gmail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>

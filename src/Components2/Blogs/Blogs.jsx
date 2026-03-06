@@ -21,7 +21,7 @@ const Blogs = () => {
             </h1>
             <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base ">
               A wonderful serenity has taken possession of my entire soul, like
-              these royella dolor consectetur adipiscing elit dos eiusmod tempor
+              these ADYTON dolor consectetur adipiscing elit dos eiusmod tempor
               incididunt resort sweet spring
             </p>
           </div>
@@ -67,7 +67,7 @@ const Blogs = () => {
                   </h5>
                   <p className="mt-[15px] pb-[33px] text-sm sm:text-base leading-6 md:leading-7 lg:leading-7 2xl:leading-[34px] text-gray dark:text-lightGray font-medium font-Lora text-justify">
                     Status A wonderful serenity taken possesion may entire sould
-                    these royela consetetur to royella dos eiusmod tempor.
+                    these ADYTON consetetur to ADYTON dos eiusmod tempor.
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Blogs = () => {
                   </h5>
                   <p className="mt-[15px] pb-[33px] text-sm sm:text-base leading-6 md:leading-7 lg:leading-7 2xl:leading-[34px] text-gray dark:text-lightGray font-medium font-Lora text-justify">
                     Status A wonderful serenity taken possesion may entire sould
-                    these royela consetetur to royella dos eiusmod tempor.
+                    these ADYTON consetetur to ADYTON dos eiusmod tempor.
                   </p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Blogs = () => {
                   </h5>
                   <p className="mt-[15px] pb-[33px] text-sm sm:text-base leading-6 md:leading-7 lg:leading-7 2xl:leading-[34px] text-gray dark:text-lightGray font-medium font-Lora text-justify">
                     Status A wonderful serenity taken possesion may entire sould
-                    these royela consetetur to royella dos eiusmod tempor.
+                    these ADYTON consetetur to ADYTON dos eiusmod tempor.
                   </p>
                 </div>
               </div>

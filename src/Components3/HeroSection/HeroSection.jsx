@@ -10,7 +10,7 @@ const HeroSection = () => {
       >
         <div className="px-5 font-Garamond text-center text-[#fefefe] ">
           <h5 className="text-sm sm:text-base lg:text-lg leading-[26px] md:leading-8 lg:leading-[36px] font-bold bg-khaki bg-opacity-40 inline-block text-center px-3 sm:px-6 uppercase  relative">
-            Welcome To Royella City Hotel
+            Welcome To ADYTON Mykonos
           </h5>
           <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-[80px] font-bold leading-[28px] md:leading-9 2xl:leading-[100px] mt-4 mb-5 md:mb-7">
             A New Vision Of Comfort

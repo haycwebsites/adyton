@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Wine } from 'lucide-react';
+import { Home } from 'lucide-react';
 import { useHayc } from '../hayc/config-context';
 
 export function Preloader({ onComplete }: { onComplete: () => void }) {
@@ -31,7 +31,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
     >
       {/* Logo Icon */}
       <div className="preloader-text mb-6">
-        <Wine className="w-12 h-12 text-gold-500" />
+        <Home className="w-12 h-12 text-[#FF8A4D]" />
       </div>
 
       {/* Brand Name */}
@@ -39,12 +39,12 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
         <h1 className="font-serif text-3xl md:text-4xl text-white tracking-wide mb-2">
           {t(preloaderConfig.brandName)}
         </h1>
-        <p className="font-script text-2xl text-gold-400">{t(preloaderConfig.brandSubname)}</p>
+        <p className="font-script text-2xl text-[#FFA8B5]">{t(preloaderConfig.brandSubname)}</p>
       </div>
 
       {/* Loading Line */}
       <div className="mt-8 w-48 h-px bg-white/10 overflow-hidden">
-        <div className="preloader-line h-full bg-gradient-to-r from-gold-500/50 via-gold-500 to-gold-500/50" />
+        <div className="preloader-line h-full bg-gradient-to-r from-[#FF8A4D]/50 via-[#FF8A4D] to-[#FF8A4D]/50" />
       </div>
 
       {/* Year */}

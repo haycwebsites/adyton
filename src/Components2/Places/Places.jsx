@@ -10,11 +10,11 @@ const Places = () => {
         {/* section heading */}
         <div className="text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[280px] font-Garamond">
           <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white mb-[12px] font-bold">
-            Royella Is Waiting For You!
+            ADYTON Awaits You
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base mb-[35px]">
             A wonderful serenity has taken possession of my entire soul, like
-            these royella dolor consectetur adipiscing elit dos eiusmod tempor
+            these ADYTON dolor consectetur adipiscing elit dos eiusmod tempor
             incididunt resort sweet spring
           </p>
           <Link to={"/services"}>

@@ -60,7 +60,7 @@ const Navbar2 = () => {
                 <img
                   src="/images/home-2/logo.png"
                   className="block lg:hidden "
-                  alt="Royella_website_logo"
+                  alt="ADYTON_website_logo"
                 />
               </Link>
             </div>

@@ -157,7 +157,7 @@ const Footer5 = () => {
                     Email:
                   </p>
                   <p className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora">
-                    example@mail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>
@@ -183,8 +183,8 @@ const Footer5 = () => {
           <hr className=" text-white text-opacity-10 " />
           <p className="text-sm sm:text-base md:text-lg  leading-[27px] text-[#f7f9fb] font-normal font-Lora text-center py-[30px]">
             {`
-            Royella @${new Date().getFullYear()}. `}
-            <b>Royella</b> All Rights Reserved By{" "}
+            ADYTON Mykonos @${new Date().getFullYear()}. `}
+            <b>ADYTON Mykonos</b> All Rights Reserved{" "}
             <span className="text-khaki">Dream IT</span>
           </p>
         </div>

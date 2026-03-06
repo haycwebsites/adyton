@@ -55,7 +55,7 @@
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 41 54% 58%;
-    --radius: 0.375rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -318,9 +318,9 @@
   }
 }
 
-/* Royella component styles */
+/* ADYTON component styles */
 ::selection {
-  background-color: #c19d68;
+  background-color: #FF8A4D;
   color: white;
 }
 @layer components {
@@ -337,7 +337,7 @@
   @apply w-full sm:w-[540px] md:w-[720px] xl:w-[960px] 2xl:w-[1100px] 3xl:w-[1250px] px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
 }
 .hover-animBg {
-  @apply relative z-[1] after:absolute after:inset-0 after:content-[""] after:bg-[#C19C67] after:rounded-full after:w-full after:h-full after:scale-0 after:transition-all after:duration-500 after:z-[-1] after:top-0 after:left-0 hover:after:scale-[1];
+  @apply relative z-[1] after:absolute after:inset-0 after:content-[""] after:bg-[#FF8A4D] after:rounded-full after:w-full after:h-full after:scale-0 after:transition-all after:duration-500 after:z-[-1] after:top-0 after:left-0 hover:after:scale-[1];
 }
 .btn-primary {
   @apply h-[40px] lg:h-[60px] w-[145px] sm:w-[155px] lg:w-[170px] 2xl:w-[170px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-[48px] lg:before:top-[65px] xl:before:top-16 text-white uppercase text-sm lg:text-base font-medium font-Garamond hover-animBg after:bg-normalBlack after:rounded-none hover:border-normalBlack hover:before:bg-normalBlack transition-all duration-300;
@@ -380,10 +380,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: brightness(24.3) invert(15);
 }
 select option:checked {
-  background: -webkit-linear-gradient(bottom, #633c05 0%, #c19d68 100%);
+  background: -webkit-linear-gradient(bottom, #d45a1a 0%, #FF8A4D 100%);
 }
 option:checked, option:hover {
-  background-color: #c19d68;
+  background-color: #FF8A4D;
   color: white;
 }
 .boxShadow:hover {

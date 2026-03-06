@@ -69,7 +69,7 @@ const HotelAndResort = () => {
             <div className="flex items-center mt-4 md:mt-3 lg:mt-4">
               <div>
                 <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  3xl:text-[70px] leading-[42px] text-khaki font-medium ">
-                  250 +
+                  6
                 </h1>
                 <p className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[94px] lg:w-full">
                   {t(h.roomsCountLabel)}
@@ -77,7 +77,7 @@ const HotelAndResort = () => {
               </div>
               <div className="ml-10 xl:ml-[60px] 2xl:ml-20 3xl:ml-[100px]">
                 <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  3xl:text-[70px] leading-[42px] text-khaki font-medium ">
-                  4.9
+                  5
                 </h1>
                 <p className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[134px] lg:w-full">
                   {t(h.ratingsLabel)}

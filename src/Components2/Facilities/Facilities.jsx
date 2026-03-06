@@ -22,7 +22,7 @@ const Facilities = () => {
           </h1>
           <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base">
             A wonderful serenity has taken possession of my entire soul, like
-            these royella dolor consectetur adipiscing elit dos eiusmod tempor
+            these ADYTON dolor consectetur adipiscing elit dos eiusmod tempor
             incididunt resort sweet spring
           </p>
         </div>
@@ -42,8 +42,8 @@ const Facilities = () => {
                 Air Conditioner
               </h2>
               <p className="text-sm sm:text-base leading-[26px] text-gray dark:text-lightGray font-Lora mb-[20px] font-normal">
-                A wonderful serenity has taken posesion royela design soul like
-                these royella dolor consectetur tempor incididunt resort sweet
+                A wonderful serenity has taken posesion ADYTON design soul like
+                these ADYTON dolor consectetur tempor incididunt resort sweet
               </p>
               <Link
                 to={"/find_room"}
@@ -69,8 +69,8 @@ const Facilities = () => {
                 Swimming Pool
               </h2>
               <p className="text-sm sm:text-base leading-[26px] text-gray dark:text-lightGray font-Lora mb-[20px] font-normal">
-                A wonderful serenity has taken posesion royela design soul like
-                these royella dolor consectetur tempor incididunt resort sweet
+                A wonderful serenity has taken posesion ADYTON design soul like
+                these ADYTON dolor consectetur tempor incididunt resort sweet
               </p>
               <Link
                 to={"/find_room"}
@@ -99,8 +99,8 @@ const Facilities = () => {
                 Comfortable rooms
               </h2>
               <p className="text-sm sm:text-base leading-[26px] text-gray dark:text-lightGray font-Lora mb-[20px] font-normal">
-                A wonderful serenity has taken posesion royela design soul like
-                these royella dolor consectetur tempor incididunt resort sweet
+                A wonderful serenity has taken posesion ADYTON design soul like
+                these ADYTON dolor consectetur tempor incididunt resort sweet
               </p>
               <Link
                 to={"/find_room"}

@@ -1,8 +1,8 @@
 import { IoIosCall } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import Brand from "../../components/Brand/Brand";
-import { BiEnvelope, BiLogoLinkedin } from "react-icons/bi";
-import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
+import { BiEnvelope } from "react-icons/bi";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
 
@@ -28,20 +28,24 @@ const Footer = () => {
                     {t(f.contactTitle)}
                   </h1>
                   <div className="space-y-4 pt-[30px]  pb-2 2xl:pb-[30px] ">
-                    <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2">
-                      <IoIosCall
-                        className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
-                        size={14}
-                      />
-                      {f.phone}
-                    </p>
-                    <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
-                      <BiEnvelope
-                        className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
-                        size={14}
-                      />
-                      {f.email}
-                    </p>
+                    {f.phone ? (
+                      <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2">
+                        <IoIosCall
+                          className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
+                          size={14}
+                        />
+                        {f.phone}
+                      </p>
+                    ) : null}
+                    {f.email ? (
+                      <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
+                        <BiEnvelope
+                          className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
+                          size={14}
+                        />
+                        {f.email}
+                      </p>
+                    ) : null}
                     <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
                       <IoLocationSharp
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
@@ -51,30 +55,17 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-                <div>
-                  <ul className="flex space-x-3">
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#" className="">
-                        <FaFacebookF className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <FaTwitter className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <BiLogoLinkedin className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <FaPinterestP className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                {f.instagramUrl && (
+                  <div>
+                    <ul className="flex space-x-3">
+                      <li className="hover-animBg group transition-all duration-300 rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
+                        <a href={f.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                          <FaInstagram className="text-lightGray text-opacity-75 group-hover:text-white w-4 h-4" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
             <div
@@ -100,7 +91,11 @@ const Footer = () => {
                     <Link to="#">{t(f.linkReservations)}</Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkNews)}</Link>
+                    {f.instagramUrl ? (
+                      <a href={f.instagramUrl} target="_blank" rel="noopener noreferrer">{t(f.linkNews)}</a>
+                    ) : (
+                      <Link to="#">{t(f.linkNews)}</Link>
+                    )}
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
                     <Link to="#">{t(f.linkContact)}</Link>

@@ -63,7 +63,7 @@ const Room = () => {
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
             </div>
             <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-9 lg:leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
-              Royella’s Rooms & Suites
+              ADYTON Suites & Villas
             </h1>
           </div>
           {/* Rooms Slider Container */}
@@ -746,7 +746,7 @@ const Room = () => {
                     Send Email
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack  font-medium ">
-                    example@gmail.com
+                    inquiries@adytonmykonos.com
                   </p>
                 </div>
               </div>
