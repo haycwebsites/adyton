@@ -99,6 +99,7 @@ export interface FooterConfig {
 export interface HeroConfig {
   bgImage1: string;
   bgImage2: string;
+  bgImage3: string;
   subtitle: LocaleString;
   mainTitle: LocaleString;
   location1: LocaleString;
@@ -278,26 +279,26 @@ export const scrollToTopConfig: ScrollToTopConfig = {
 
 export const mainConfig: MainConfig = {
   pageTitle: { el: 'Κρατήσεις Ξενοδοχείου', en: 'Hotel Booking' },
-  siteName: { el: 'Royella', en: 'Royella' },
+  siteName: { el: 'Adyton', en: 'Adyton' },
 };
 
 export const navConfig: NavConfig = {
-  logo: '/images/home-3/logo.png',
-  mobileLogo: '/images/home-1/brand-1.png',
+  logo: '/images/inner/AdytonLogo.png',
+  mobileLogo: '/images/inner/AdytonLogo.png',
   altLogo: { el: 'Λογότυπο ιστοσελίδας', en: 'Website logo' },
   altMobileLogo: { el: 'Λογότυπο Royella', en: 'Royella website logo' },
-  home: { el: 'Αρχική', en: 'Home' },
+  home: { el: 'Home', en: 'Home' },
   homeHotel: { el: 'Κρατήσεις Ξενοδοχείου', en: 'Hotel Booking' },
   homeResort: { el: 'Resort', en: 'Resort' },
   homeHostel: { el: 'Hostel', en: 'Hostel' },
   homeCityHotel: { el: 'City Hotel', en: 'City Hotel' },
   homeApartment: { el: 'Διαμέρισμα', en: 'Apartment' },
-  about: { el: 'Σχετικά', en: 'About' },
-  rooms: { el: 'Δωμάτια', en: 'Rooms' },
+  about: { el: 'About', en: 'About' },
+  rooms: { el: 'Rooms', en: 'Rooms' },
   room: { el: 'Δωμάτιο', en: 'Room' },
   findRoom: { el: 'Εύρεση Δωματίου', en: 'Find Room' },
   roomDetails: { el: 'Λεπτομέρειες Δωματίου', en: 'Room Details' },
-  page: { el: 'Σελίδα', en: 'Page' },
+  page: { el: 'Services', en: 'Services' },
   aboutUs: { el: 'ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ', en: 'ABOUT US' },
   service: { el: 'ΥΠΗΡΕΣΙΕΣ', en: 'SERVICE' },
   serviceDetails: { el: 'ΛΕΠΤΟΜΕΡΕΙΕΣ ΥΠΗΡΕΣΙΩΝ', en: 'SERVICE DETAILS' },
@@ -305,8 +306,8 @@ export const navConfig: NavConfig = {
   pricing: { el: 'ΤΙΜΕΣ', en: 'PRICING' },
   blog: { el: 'BLOG', en: 'BLOG' },
   blogDetails: { el: 'ΛΕΠΤΟΜΕΡΕΙΕΣ BLOG', en: 'BLOG DETAILS' },
-  contact: { el: 'Επικοινωνία', en: 'Contact' },
-  bookingBtn: { el: 'Κράτηση Online', en: 'Booking Online' },
+  contact: { el: 'Contact', en: 'Contact' },
+  bookingBtn: { el: 'Book Online', en: 'Book Online' },
   lightModeTitle: { el: 'Εφαρμογή Φωτεινής Λειτουργίας', en: 'Apply Light Mode' },
   darkModeTitle: { el: 'Εφαρμογή Σκοτεινής Λειτουργίας', en: 'Apply Dark Mode' },
 };
@@ -340,8 +341,9 @@ export const footerConfig: FooterConfig = {
 };
 
 export const heroConfig: HeroConfig = {
-  bgImage1: '/images/home-1/hero-bg.jpg',
-  bgImage2: '/images/home-1/hero-bg2.jpg',
+  bgImage1: '/images/mykonos-hero.jpg',
+  bgImage2: '/images/villa-pool.jpg',
+  bgImage3: '/images/villa-terrace.jpg',
   subtitle: { el: 'ΞΕΝΟΔΟΧΕΙΟ LUXURY ΚΑΙ RESORT', en: 'LUXURY HOTEL AND RESORT' },
   mainTitle: { el: 'ΤΟ ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY', en: 'THE BEST LUXURY HOTEL' },
   location1: { el: 'ΣΤΗΝ CALIFORNIA', en: 'IN CALIFORNIA' },
@@ -468,7 +470,7 @@ export const testimonialConfig: TestimonialConfig = {
 };
 
 export const latestBlogConfig: LatestBlogConfig = {
-  sectionLogo: '/images/home-1/section-shape1.png',
+  sectionLogo: '/images/inner/AdytonLogo.png',
   bgShape: '/images/home-1/section-shape2.png',
   blogImage1: '/images/home-1/blog-1.jpg',
   blogImage2: '/images/home-1/blog-2.jpg',
@@ -482,7 +484,7 @@ export const latestBlogConfig: LatestBlogConfig = {
 };
 
 export const brandConfig: BrandConfig = {
-  brand1: '/images/home-1/brand-1.png',
-  brand2: '/images/home-1/brand-2.png',
-  brand3: '/images/home-1/brand-3.png',
+  brand1: '/images/inner/AdytonLogo.png',
+  brand2: '/images/inner/AdytonLogo.png',
+  brand3: '/images/inner/AdytonLogo.png',
 };

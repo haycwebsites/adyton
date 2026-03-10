@@ -14,7 +14,7 @@ const HeroSection = () => {
   const slides = [
     { bg: h.bgImage1, location: h.location1 },
     { bg: h.bgImage2, location: h.location2 },
-    { bg: h.bgImage1, location: h.location3 },
+    { bg: h.bgImage3, location: h.location3 },
     { bg: h.bgImage2, location: h.location4 },
   ];
 
