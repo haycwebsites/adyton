@@ -8,6 +8,7 @@ import { useHayc } from "../../hayc/config-context";
 const Offers = () => {
   const { t, img, config } = useHayc();
   const o = config.offersConfig;
+  const slides = [o.offer1, o.offer2, o.offer3, o.offer4];
   const [sliderRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 320px)": {
@@ -39,7 +40,7 @@ const Offers = () => {
               {t(o.sectionLabel)}
             </h5>
             <h1 className="text-xl sm:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
-              ROYELLA’S LIMITED PERIOD BEST OFFERS
+            MORE IMAGES OF OUR SUITE
             </h1>
           </div>
           <div className="flex items-center lg:space-x-5  space-x-3">
@@ -65,151 +66,23 @@ const Offers = () => {
         {/* offers carusal */}
         <div className="relative">
           <div className="mt-14 2xl:mt-[60px] keen-slider " ref={sliderRef}>
-            {/* slide - 1 */}
-            <div className="keen-slider__slide number-slide1 ">
-              {/* card one */}
-              <div
-                className="overflow-x-hidden group "
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div className="relative">
-                  <img
-                    src={img(o.offer1)}
-                    className="w-full h-full object-cover"
-                    alt=""
-                  />
-                </div>
-                <div className="font-Garamond border border-t-0 border-white dark:border-[#3f4040]">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white   group-hover:bg-khaki transition-all duration-300">
-                    <span className="text-[22px] leading-[26px] font-Garamond ">
-                      {t(o.discount1)}
-                    </span>
-                  </div>
-
-                  <div className="bg-white dark:bg-lightBlack">
-                    <div className="py-[30px] text-center">
-                      <Link to="/room">
-                        <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
-                        "
-                        >
-                          {t(o.room1)}
-                        </h2>
-                      </Link>
-                    </div>
-                  </div>
+            {slides.map((slide, index) => (
+              <div key={index} className="keen-slider__slide number-slide1">
+                <div
+                  className="overflow-hidden group"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <Link to="/room" className="block aspect-square w-full">
+                    <img
+                      src={img(slide)}
+                      className="w-full h-full object-cover"
+                      alt="offer"
+                    />
+                  </Link>
                 </div>
               </div>
-            </div>
-            {/* slide - 2 */}
-            <div className="keen-slider__slide number-slide1 ">
-              <div
-                className="overflow-x-hidden group "
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div className="relative">
-                  <img
-                    src={img(o.offer2)}
-                    className="w-full h-full object-cover"
-                    alt=""
-                  />
-                </div>
-                <div className="font-Garamond border border-t-0 border-white dark:border-[#3f4040]">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white   group-hover:bg-khaki transition-all duration-300">
-                    <span className="text-[22px] leading-[26px] font-Garamond ">
-                      {t(o.discount2)}
-                    </span>
-                  </div>
-
-                  <div className="bg-white dark:bg-lightBlack">
-                    <div className="py-[30px] text-center">
-                      <Link to="/room">
-                        <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
-                        "
-                        >
-                          {t(o.room2)}
-                        </h2>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* slide - 3 */}
-            <div className="keen-slider__slide number-slide1 ">
-              <div
-                className="overflow-x-hidden group "
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div className="relative">
-                  <img
-                    src={img(o.offer3)}
-                    className="w-full h-full object-cover"
-                    alt=""
-                  />
-                </div>
-                <div className="font-Garamond border border-t-0 border-white dark:border-[#3f4040]">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white   group-hover:bg-khaki transition-all duration-300">
-                    <span className="text-[22px] leading-[26px] font-Garamond ">
-                      {t(o.discount3)}
-                    </span>
-                  </div>
-
-                  <div className="bg-white dark:bg-lightBlack">
-                    <div className="py-[30px] text-center">
-                      <Link to="/room">
-                        <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
-                        "
-                        >
-                          {t(o.room3)}
-                        </h2>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* slide - 4 */}
-            <div className="keen-slider__slide number-slide1 ">
-              <div
-                className="overflow-x-hidden group "
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div className="relative">
-                  <img
-                    src={img(o.offer4)}
-                    className="w-full h-full object-cover"
-                    alt=""
-                  />
-                </div>
-                <div className="font-Garamond border border-t-0 border-white dark:border-[#3f4040]">
-                  <div className="px-6 3xl:px-7 py-2 flex items-center justify-center text-white absolute top-[10px] left-[10px] border-[1px] border-white   group-hover:bg-khaki transition-all duration-300">
-                    <span className="text-[22px] leading-[26px] font-Garamond ">
-                      {t(o.discount4)}
-                    </span>
-                  </div>
-
-                  <div className="bg-white dark:bg-lightBlack">
-                    <div className="py-[30px] text-center">
-                      <Link to="/room">
-                        <h2
-                          className="text-[24px] leading-[26px] font-semibold text-lightBlack dark:text-white hover:underline hover:text-khaki dark:hover:text-khaki transition-[0.4s] hover:underline-offset-2
-                        "
-                        >
-                          {t(o.room4)}
-                        </h2>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

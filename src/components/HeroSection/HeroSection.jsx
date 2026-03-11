@@ -37,7 +37,7 @@ const HeroSection = () => {
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div
-              className="w-full h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px]  bg-[rgba(30,30,30,0.4)] bg-opacity-40 grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0 "
+              className="w-full h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] bg-[rgba(0,0,0,0.4)] bg-blend-multiply grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0"
               style={{ backgroundImage: `url(${img(slide.bg)})` }}
               data-aos="fade-down"
             >
@@ -54,11 +54,9 @@ const HeroSection = () => {
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[70px]">
                     {t(h.mainTitle)}
                   </h1>
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-semibold leading-[40px] lg:leading-[50px] 2xl:leading-[60px]">
-                    {t(slide.location)}
-                  </h1>
+                 
                 </div>
-                <Link to={"/about"}>
+                <Link to={"/adyton-suite"}>
                   <button
                     className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 
                 text-base

@@ -67,6 +67,7 @@ export interface NavConfig {
   pricing: LocaleString;
   blog: LocaleString;
   blogDetails: LocaleString;
+  adytonSuite: LocaleString;
   contact: LocaleString;
   bookingBtn: LocaleString;
   lightModeTitle: LocaleString;
@@ -142,6 +143,8 @@ export interface FacilitiesConfig {
   image2: string;
   image3: string;
   image4: string;
+  image5: string;
+  image6: string;
   sectionLabel: LocaleString;
   title: LocaleString;
   viewMoreBtn: LocaleString;
@@ -306,6 +309,7 @@ export const navConfig: NavConfig = {
   pricing: { el: 'ΤΙΜΕΣ', en: 'PRICING' },
   blog: { el: 'BLOG', en: 'BLOG' },
   blogDetails: { el: 'ΛΕΠΤΟΜΕΡΕΙΕΣ BLOG', en: 'BLOG DETAILS' },
+  adytonSuite: { el: 'Adyton Suite', en: 'Adyton Suite' },
   contact: { el: 'Contact', en: 'Contact' },
   bookingBtn: { el: 'Book Online', en: 'Book Online' },
   lightModeTitle: { el: 'Εφαρμογή Φωτεινής Λειτουργίας', en: 'Apply Light Mode' },
@@ -313,11 +317,11 @@ export const navConfig: NavConfig = {
 };
 
 export const footerConfig: FooterConfig = {
-  logo: '/images/home-1/logo-1.png',
+  logo: '/images/inner/AdytonLogo.png',
   galleryImages: [
-    '/images/home-1/gallery-1.jpg',
-    '/images/home-1/gallery-2.jpg',
-    '/images/home-1/gallery-3.jpg',
+    '/images/mykonos-suite.jpg',
+    '/images/villa-pool.jpg',
+    '/images/mykonos-hero.jpg',
     '/images/home-1/gallery-4.jpg',
     '/images/home-1/gallery-5.jpg',
     '/images/home-1/gallery-6.jpg',
@@ -341,16 +345,16 @@ export const footerConfig: FooterConfig = {
 };
 
 export const heroConfig: HeroConfig = {
-  bgImage1: '/images/mykonos-hero.jpg',
-  bgImage2: '/images/villa-pool.jpg',
+  bgImage1: '/images/LuxurySuites/589394453.jpg',
+  bgImage2: '/images/dan-v-lFGp1fQ6RjA-unsplash.jpg',
   bgImage3: '/images/villa-terrace.jpg',
-  subtitle: { el: 'ΞΕΝΟΔΟΧΕΙΟ LUXURY ΚΑΙ RESORT', en: 'LUXURY HOTEL AND RESORT' },
-  mainTitle: { el: 'ΤΟ ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY', en: 'THE BEST LUXURY HOTEL' },
+  subtitle: { el: 'Adyton Mykonos Luxury Suites & Pools', en: 'Adyton Mykonos Luxury Suites & Pools' },
+  mainTitle: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
   location1: { el: 'ΣΤΗΝ CALIFORNIA', en: 'IN CALIFORNIA' },
   location2: { el: 'ΣΤΟ KASHMIR', en: 'IN KASHMIR' },
   location3: { el: 'ΣΤΟ COLOSSEUM', en: 'IN COLOSSEUM' },
   location4: { el: 'ΣΤΗΝ SRILANKA', en: 'IN SRILANKA' },
-  ctaButton: { el: 'Ανακαλύψτε Περισσότερα', en: 'Discover More' },
+  ctaButton: { el: 'Discover More', en: 'Discover More' },
   phone: '+980 123 4567 890',
 };
 
@@ -367,8 +371,8 @@ export const roomsConfig: RoomsConfig = {
   guestsLabel: { el: 'Επισκέπτες', en: 'Guests' },
   childLabel: { el: 'Παιδί', en: 'Child' },
   checkoutBtn: { el: 'Κράτηση Τώρα', en: 'Checkout Now' },
-  sectionTitle: { el: 'Δωμάτια & Suites της Royella', en: "Royella's Rooms & Suites" },
-  sectionDesc: { el: 'Proactively morph optimal infomediaries...', en: 'Proactively morph optimal infomediaries...' },
+  sectionTitle: { el: 'Additional Services ', en: "Additional Services " },
+  sectionDesc: { el: 'Explore our luxurious services..', en: 'Explore our luxurious services..' },
   viewDetailsBtn: { el: 'Λεπτομέρειες', en: 'View Details' },
   nightLabel: { el: 'Νύχτα', en: 'Night' },
   roomType: { el: 'Δωμάτιο Luxury', en: 'Luxury Room' },
@@ -380,13 +384,15 @@ export const roomsConfig: RoomsConfig = {
 };
 
 export const facilitiesConfig: FacilitiesConfig = {
-  image1: '/images/home-1/facilities-1.png',
-  image2: '/images/home-1/facilities-thumb-2.jpg',
-  image3: '/images/home-1/facilities-thumb-3.jpg',
-  image4: '/images/home-1/facilities-thumb-4.jpg',
-  sectionLabel: { el: 'ΕΓΚΑΤΑΣΤΑΣΕΙΣ', en: 'FACILITIES' },
+  image1: '/images/LuxurySuites/725630499.jpg',
+  image2: '/images/LuxurySuites/590792439.jpg',
+  image3: '/images/LuxurySuites/725629382.jpg',
+  image4: '/images/LuxurySuites/714733282.jpg',
+  image5: '/images/LuxurySuites/590791343.jpg',
+  image6: '/images/LuxurySuites/725627447.jpg',
+  sectionLabel: { el: 'BASIC AMENITIES', en: 'FACILITIES' },
   title: { el: 'ΑΠΟΛΑΎΣΤΕ ΠΛΗΡΕΣ & ΚΑΛΗ ΠΟΙΟΤΗΤΑ ΕΓΚΑΤΑΣΤΑΣΕΩΝ', en: 'ENJOY COMPLETE & BEST QUALITY FACILITIES' },
-  viewMoreBtn: { el: 'περισσότερα', en: 'view more item' },
+  viewMoreBtn: { el: 'MORE', en: 'view more item' },
   fitnessLabel: { el: 'Γυμναστήριο', en: 'Fitness' },
   service1: { el: 'Γυμναστήριο και Περιοχή Προπόνησης', en: 'Gym Training Grounds' },
   service2: { el: 'Κλειστή Πισίνα', en: 'Indoor Swimming Pool' },
@@ -397,14 +403,14 @@ export const facilitiesConfig: FacilitiesConfig = {
 };
 
 export const hotelAndResortConfig: HotelAndResortConfig = {
-  sliderImage1: '/images/home-1/Hotel1.jpg',
-  sliderImage2: '/images/home-1/Hotel.png',
-  subtitle: { el: 'ΞΕΝΟΔΟΧΕΙΟ LUXURY ΚΑΙ RESORT', en: 'LUXURY HOTEL AND RESORT' },
-  title: { el: 'ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY ΣΤΗΝ ΠΟΛΗ CALIFORNIA, USA', en: 'LUXURY BEST HOTEL IN CITY CALIFORNIA, USA' },
-  description: { el: 'Rapidiously myocardinate cross-platform...', en: 'Rapidiously myocardinate cross-platform...' },
-  roomsCountLabel: { el: 'Δωμάτια Luxury', en: 'Luxury Rooms' },
-  ratingsLabel: { el: 'Βαθμολογίες Πελατών', en: 'Customer Ratings' },
-  ctaBtn: { el: 'Περισσότερα', en: 'More About' },
+  sliderImage1: '/images/LuxurySuites/589394469.jpg',
+  sliderImage2: '/images/LuxurySuites/589394453.jpg',
+  subtitle: { el: 'Adyton Mykonos Luxury Suites & Pools', en: 'Adyton Mykonos Luxury Suites & Pools' },
+  title: { el: 'BEST LUXURY SUITE IN MYKONOS, GREECE', en: 'BEST LUXURY SUITE IN MYKONOS, GREECE' },
+  description: { el: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy, security and refined Mediterranean living.', en: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy, security and refined Mediterranean living.' },
+  roomsCountLabel: { el: 'Square Meters', en: 'Square Meters' },
+  ratingsLabel: { el: 'Customer Ratings', en: 'Customer Ratings' },
+  ctaBtn: { el: 'About', en: 'More About' },
 };
 
 export const hotelAndFacilitiesConfig: HotelAndFacilitiesConfig = {
@@ -430,19 +436,19 @@ export const actionConfig: ActionConfig = {
   avatarImage: '/images/home-1/call-do-action-img.png',
   mainImage: '/images/home-1/action-img.png',
   label: { el: 'ΔΙΕΥΘΥΝΤΗΣ', en: 'MANAGER' },
-  title: { el: 'ΚΑΛΥΤΕΡΟ ΞΕΝΟΔΟΧΕΙΟ LUXURY ΣΤΗΝ ΠΟΛΗ CALIFORNIA, USA', en: 'LUXURY BEST HOTEL IN CITY CALIFORNIA, USA' },
-  description: { el: 'Rapidiously myocardinate cross-platform...', en: 'Rapidiously myocardinate cross-platform...' },
+  title: { el: 'BEST LUXURY SUITE IN MYKONOS, GREECE', en: 'BEST LUXURY SUITE IN MYKONOS, GREECE' },
+  description: { el: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy, security and refined Mediterranean living.', en: 'An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy, security and refined Mediterranean living.' },
   authorName: { el: 'John D. Alexon', en: 'John D. Alexon' },
   authorRole: { el: 'Διευθυντής', en: 'Manger' },
 };
 
 export const offersConfig: OffersConfig = {
-  offer1: '/images/home-1/offers-1.jpg',
-  offer2: '/images/home-1/offers-2.jpg',
-  offer3: '/images/home-1/offers-3.jpg',
-  offer4: '/images/home-1/offers-4.jpg',
-  sectionLabel: { el: 'ΠΡΟΣΦΟΡΕΣ', en: 'OFFERS' },
-  title: { el: "ΚΑΛΥΤΕΡΕΣ ΠΡΟΣΦΟΡΕΣ ΠΕΠΕΡΑΣΜΕΝΗΣ ΠΕΡΙΟΔΟΥ ΤΗΣ ROYELLA", en: "ROYELLA'S LIMITED PERIOD BEST OFFERS" },
+  offer1: '/images/LuxurySuites/590781352.jpg',
+  offer2: '/images/LuxurySuites/589394667.jpg',
+  offer3: '/images/LuxurySuites/714733127.jpg',
+  offer4: '/images/LuxurySuites/758041493.jpg',
+  sectionLabel: { el: 'ADYTON LUXURY SUITE', en: 'OFFERS' },
+  title: { el: "MORE IMAGES OF OUR SUITE", en: "MORE IMAGES OF OUR SUITE" },
   discount1: { el: '25% έκπτωση', en: '25% off' },
   discount2: { el: '24% έκπτωση', en: '24% off' },
   discount3: { el: '26% έκπτωση', en: '26% off' },

@@ -16,7 +16,7 @@ function App() {
     <HaycProvider>
       <HelmetProvider context={helmetContext}>
         {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
-        <div className={`min-h-screen bg-[#141414] ${isLoading ? 'overflow-hidden max-h-screen' : ''}`}>
+        <div className={`min-h-screen bg-white dark:bg-[#141414] ${isLoading ? 'overflow-hidden max-h-screen' : ''}`}>
           <RouterProvider router={router} />
         </div>
         <ScrollToTop />

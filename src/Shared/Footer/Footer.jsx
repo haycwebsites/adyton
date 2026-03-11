@@ -116,9 +116,15 @@ const Footer = () => {
               <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 {t(f.galleryTitle)}
               </h1>
-              <div className="grid grid-cols-3 gap-2 mt-[45px] w-[250px] sm:w-[300px] lg:w-full  content-center ">
+              <div className="grid grid-cols-3 gap-2 mt-[45px] w-full max-w-[300px] lg:max-w-none content-center">
                 {f.galleryImages.map((src, i) => (
-                  <img key={i} src={img(src)} alt="" />
+                  <div key={i} className="w-full aspect-square overflow-hidden">
+                    <img
+                      src={img(src)}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
             </div>

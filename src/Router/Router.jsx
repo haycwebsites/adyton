@@ -66,6 +66,10 @@ const router = createBrowserRouter([
         element: <ServiceDetails />,
       },
       {
+        path: "/adyton-suite",
+        element: <RoomDetails />,
+      },
+      {
         path: "/our_team",
         element: <Team />,
       },
