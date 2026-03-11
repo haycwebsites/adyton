@@ -1,14 +1,15 @@
 import { IoIosCall } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import Brand from "../../components/Brand/Brand";
-import { BiEnvelope, BiLogoLinkedin } from "react-icons/bi";
-import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
+import { BiEnvelope } from "react-icons/bi";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
 
 const Footer = () => {
   const { t, img, config } = useHayc();
   const f = config.footerConfig;
+  const nav = config.navConfig;
 
   return (
     <>
@@ -54,23 +55,12 @@ const Footer = () => {
                 <div>
                   <ul className="flex space-x-3">
                     <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#" className="">
-                        <FaFacebookF className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <FaTwitter className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <BiLogoLinkedin className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
-                      </Link>
-                    </li>
-                    <li className="hover-animBg group transition-all duration-300  rounded-full border border-lightGray border-opacity-75 hover:border-khaki cursor-pointer w-[37px] h-[37px] grid items-center justify-center">
-                      <Link to="#">
-                        <FaPinterestP className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
+                      <Link
+                        to="https://www.instagram.com/adyton_mykonos?igsh=MTI1eGR4bGE3ZnVyaQ=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaInstagram className="text-lightGray text-opacity-75 group-hover:text-white group-hover:text-slateBlue-0 w-4 h-4 " />
                       </Link>
                     </li>
                   </ul>
@@ -91,19 +81,19 @@ const Footer = () => {
                  "
                 >
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkAbout)}</Link>
+                    <Link to="/">{t(nav.home)}</Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkRooms)}</Link>
+                    <Link to="/adyton-suite">{t(nav.adytonSuite)}</Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkReservations)}</Link>
+                    <Link to="/room">{t(nav.rooms)}</Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkNews)}</Link>
+                    <Link to="/blog">{t(nav.blog)}</Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="#">{t(f.linkContact)}</Link>
+                    <Link to="/contact">{t(nav.contact)}</Link>
                   </li>
                 </ul>
               </div>
@@ -153,7 +143,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center py-5 2xl:py-7 bg-[#161616] text-sm md:text-base text-lightGray font-Lora font-normal">
-            {` © ${new Date().getFullYear()} , ${t(f.copyrightPrefix)}`}
+            <p>Copyright © 2026 All Right Reserved.</p>
+            <p>Made by hayc with 💙</p>
           </div>
         </div>
       </footer>

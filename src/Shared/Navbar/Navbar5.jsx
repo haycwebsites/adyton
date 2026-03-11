@@ -44,11 +44,11 @@ const Navbar5 = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="z-[1]">
+    <nav className="z-[9999]">
       <div
-        className={` w-full lg:fixed font-Lora z-10 transition-all duration-300  py-2  ${navbarBgColor}`}
+        className={` w-full lg:fixed font-Lora z-[9999] transition-all duration-300  py-2  ${navbarBgColor}`}
       >
-        <div className=" z-[1] ">
+        <div className=" z-[9999] ">
           {/* Top Navbar */}
           <div
             className={`border-b-[1px] border-b-white border-opacity-20 ${navbarBgColor} ${topbarHide}`}

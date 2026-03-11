@@ -11,27 +11,27 @@ const Rooms = () => {
   const r = config.roomsConfig;
   const roomSlides = [
     {
-      image: "/images/LuxurySuites/725630499.jpg",
+      image: "/images/privateSecurity.jpg",
       title: "Private security",
     },
     {
-      image: "/images/LuxurySuites/590792439.jpg",
+      image: "/images/chauffeurDriver.jpg",
       title: "Chauffeur / Driver",
     },
     {
-      image: "/images/LuxurySuites/725629382.jpg",
+      image: "/images/privateChef.jpg",
       title: "Private chef",
     },
     {
-      image: "/images/LuxurySuites/714733282.jpg",
+      image: "/images/hairAndBeauty.jpg",
       title: "Hair & beauty services",
     },
     {
-      image: "/images/LuxurySuites/590791343.jpg",
+      image: "/images/vipConcierge.jpg",
       title: "VIP concierge services",
     },
     {
-      image: "/images/LuxurySuites/725627447.jpg",
+      image: "/images/securityEscort.jpg",
       title: "Personalized security escort",
     },
   ];
@@ -63,8 +63,13 @@ const Rooms = () => {
   return (
     <div className="bg-whiteSmoke dark:bg-lightBlack">
       {/* Rooms section heading */}
-      <div className=" py-20 2xl:py-[120px] w-full bg-no-repeat bg-top bg-opacity-[0.07]" style={{ backgroundImage: `url(${img(r.bgShape)})` }}>
-        <div className="Container ">
+      <div className="relative overflow-hidden py-20 2xl:py-[120px] w-full">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-no-repeat bg-top bg-[length:240px] opacity-[0.04] dark:opacity-[0.08]"
+          style={{ backgroundImage: `url(${img(r.bgShape)})` }}
+        />
+        <div className="Container relative z-10">
           {/* section heading */}
           <div
             className=" text-center sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px]  mx-auto  px-5"
@@ -106,7 +111,7 @@ const Rooms = () => {
                         />
                       </div>
                       <div className="">
-                        <Link to={"/room_details"}>
+                        <Link to={"/contact"}>
                           <button className="flex items-center justify-center text-[15px] leading-[38px] bg-lightBlack absolute bottom-0 -left-40 px-5 text-white  group-hover:left-0 transition-all duration-300 hover:bg-khaki">
                             {t(r.viewDetailsBtn)}{" "}
                             <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -120,7 +125,7 @@ const Rooms = () => {
                           <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                             ADYTON LUXURY SERVICES
                           </h4>
-                          <Link to="/room">
+                          <Link to="/contact">
                             <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
                               {slide.title}
                             </h2>

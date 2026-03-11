@@ -29,8 +29,12 @@ const amenities = [
 const HotelAndFacilities = () => {
   return (
     <section className="bg-lightBlack z-[1]">
-      <div className="py-[110px] bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-top bg-opacity-[0.07]">
-        <div className="Container">
+      <div className="relative overflow-hidden py-[110px]">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[url('/images/inner/AdytonLogo.png')] bg-no-repeat bg-top bg-[length:240px] opacity-[0.04]"
+        />
+        <div className="Container relative z-10">
           <div
             className=" text-center mx-auto px-5 sm:px-8 md:px-[80px] lg:px-[120px] xl:px-[200px] 2xl:px-[335px] "
             data-aos="fade-up"
@@ -40,19 +44,19 @@ const HotelAndFacilities = () => {
             <div className="flex items-center justify-center space-x-2 mb-4 lg:mb-5">
               <hr className="w-[100px] h-[1px] bg-[#3b3b3b] text-[#3b3b3b] " />
               <img
-                src="/images/home-1/section-shape1.png"
+                src="/images/inner/AdytonLogo.png"
                 alt="room_section_logo"
                 className="w-[50px] h-[50px]"
               />
               <hr className="w-[100px] h-[1px] bg-[#3b3b3b] text-[#3b3b3b] " />
             </div>
             <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] 2xl:leading-[52px] text-white mb-[6px] font-Garamond font-semibold uppercase">
-              HOTEL’S FACILITIES
+              ADYTON LUXURY AMENITIES
             </h1>
             <p className="font-Lora leading-[26px] text-lightGray font-normal text-sm sm:text-base">
-              Proactively morph optimal infomediaries rather than accurate
-              expertise. Intrinsicly progressive resources rather than
-              resource-leveling
+              Discover premium facilities designed for extended luxury stays in
+              Mykonos, with comfort, privacy and concierge-level support at
+              every step.
             </p>
           </div>
           {/* HOTEL’S FACILITIES content */}

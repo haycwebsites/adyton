@@ -1,7 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import BlogSideBar from "./BlogSideBar";
-import { BiChevronsRight } from "react-icons/bi";
 import { blogPosts } from "../../data/blogPosts";
 
 const BlogDetails = () => {
@@ -91,12 +90,12 @@ const BlogDetails = () => {
               >
                 <div className="pb-2 sm:pb-3 md:pb-4 lg:pb-[19px] 2xl:pb-6 grid items-center grid-cols-1 sm:grid-cols-2 gap-5 2xl:gap-[30px]">
                   <img
-                    src="/images/inner/blog-details-2.jpg"
+                    src="/images/LuxurySuites/590794402.jpg"
                     alt=""
                     className="w-full h-[220px] md:h-[260px] lg:h-[300px] object-cover"
                   />
                   <img
-                    src="/images/inner/blog-details-3.jpg"
+                    src="/images/LuxurySuites/590796492.jpg"
                     alt=""
                     className="w-full h-[220px] md:h-[260px] lg:h-[300px] object-cover"
                   />
@@ -114,30 +113,12 @@ const BlogDetails = () => {
                     Share :
                   </h5>
                   <Link
-                    to="#"
-                    className="text-sm  px-3 py-1 dark:text-white hover:text-khaki hover:underline underline-offset-4"
-                  >
-                    FB
-                  </Link>
-                  <Link
-                    to="#"
-                    className="text-sm  px-3 py-1 dark:text-white hover:text-khaki hover:underline underline-offset-4"
-                  >
-                    TW
-                  </Link>
-                  <Link
-                    to="#"
-                    className="text-sm  px-3 py-1 dark:text-white hover:text-khaki hover:underline underline-offset-4"
-                  >
-                    LN
-                  </Link>
-                  <Link
                     to="https://www.instagram.com/adyton_mykonos"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm px-3 py-1 dark:text-white hover:text-khaki hover:underline underline-offset-4"
                   >
-                    IG
+                    Instagram
                   </Link>
                 </div>
               </div>
@@ -175,142 +156,6 @@ const BlogDetails = () => {
                       </Link>
                     </div>
                   ))}
-              </div>
-              {/* Comment Section */}
-              <div className="my-10 2xl:my-[60px] 3xl:my-[80px]">
-                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[32px] text-lightBlack dark:text-white font-semibold font-Garamond mb-5 2xl:mb-[30px]">
-                  ‘2’ Comments
-                </h3>
-                <div>
-                  <div
-                    className="border-[1px] border-lightGray dark:border-gray rounded-sm p-4 sm:p-5 md:p-6 2xl:p-[30px]"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    <div className="grid gap-3 sm:flex md:grid md:gap-5 lg:flex ">
-                      <img
-                        src="/images/inner/blog-details-author-2.png"
-                        alt=""
-                        className="w-[70px]  h-[70px] "
-                      />
-
-                      <div className="ml-3 2xl:ml-4">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center">
-                            <span className="text-base sm:text-lg lg:text-xl font-Garamond font-semibold leading-6 md:leading-7 text-lightBlack dark:text-white">
-                              Moris Barbar
-                            </span>
-                            <hr className="w-[10px] sm:w-[27px] h-[1px] text-lightBlack dark:text-white mx-1 sm:mx-2 " />
-                            <span className="text-[13px] sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray">
-                              August 10, 2023
-                            </span>
-                          </div>
-                          <span className="text-[13px] sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray cursor-pointer">
-                            REPLY
-                          </span>
-                        </div>
-                        <p className="text-sm sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray mt-3 xl:mt-[15px]">
-                          Interactively visualize top-line internal or "organic"
-                          sources rather than top-line niche mark unleash 24/7
-                          opportunities after high standards in process
-                          improvements. Uniquely deploy methodologies with
-                          reliable information.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* comment -2 */}
-                  <div
-                    className="border-[1px] border-lightGray dark:border-gray rounded-sm p-4 sm:p-5 md:p-6 2xl:p-[30px] ml-0 lg:ml-10 3xl:ml-14  mt-5"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    <div className="grid gap-3 sm:flex md:grid md:gap-5 lg:flex ">
-                      <img
-                        src="/images/inner/blog-details-author-1.png"
-                        alt=""
-                        className="w-[70px]  h-[70px] "
-                      />
-
-                      <div className="ml-3 2xl:ml-4">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center">
-                            <span className="text-base sm:text-lg lg:text-xl font-Garamond font-semibold leading-6 md:leading-7 text-lightBlack dark:text-white">
-                              Moris Barbar
-                            </span>
-                            <hr className="w-[10px] sm:w-[27px] h-[1px] text-lightBlack dark:text-white mx-1 sm:mx-2 " />
-                            <span className="text-[13px] sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray">
-                              August 10, 2023
-                            </span>
-                          </div>
-                          <span className="text-[13px] sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray cursor-pointer">
-                            REPLY
-                          </span>
-                        </div>
-                        <p className="text-sm sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray mt-3 xl:mt-[15px]">
-                          Interactively visualize top-line internal or "organic"
-                          sources rather than top-line niche mark unleash 24/7
-                          opportunities after high standards in process
-                          improvements. Uniquely deploy methodologies with
-                          reliable information.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Comment form */}
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[32px] text-lightBlack dark:text-white font-semibold font-Garamond mb-5 2xl:mb-[30px]">
-                  Leave A Comments
-                </h3>
-                <div>
-                  <div className="flex sm:flex-row flex-col items-center  gap-5 mb-5">
-                    <input
-                      type="text"
-                      name=""
-                      className="w-full h-[50px] border-none outline-none focus:ring-0 placeholder:text-base placeholder:text-lightGray placeholder:leading-[38px] placeholder:font-Lora placeholder:font-normal px-5 dark:bg-normalBlack bg-whiteSmoke dark:text-white"
-                      placeholder="Your Name"
-                      id=""
-                    />
-                    <input
-                      type="email"
-                      name=""
-                      className="w-full h-[50px] border-none outline-none focus:ring-0 placeholder:text-base placeholder:text-lightGray placeholder:leading-[38px] placeholder:font-Lora placeholder:font-normal px-5 dark:bg-normalBlack bg-whiteSmoke dark:text-white"
-                      placeholder="Email Address"
-                      id=""
-                    />
-                  </div>
-                  <div className="grid items-center gap-5 mb-5 md:mb-0">
-                    <input
-                      type="text"
-                      name=""
-                      className="w-full h-[50px] border-none outline-none focus:ring-0 placeholder:text-base placeholder:text-lightGray placeholder:leading-[38px] placeholder:font-Lora placeholder:font-normal px-5 dark:bg-normalBlack bg-whiteSmoke dark:text-white"
-                      placeholder="Your Website"
-                      id=""
-                    />
-
-                    <textarea
-                      className="w-full h-[160px]  border-none outline-none focus:ring-0 placeholder:text-base placeholder:text-lightGray placeholder:leading-[38px] placeholder:font-Lora placeholder:font-normal px-5 dark:bg-normalBlack bg-whiteSmoke dark:text-white resize-none"
-                      placeholder="Type Your Comment"
-                      name=""
-                      id=""
-                      cols="30"
-                    ></textarea>
-                    <div className="flex items-center">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id=""
-                        className="border-khaki text-khaki focus:ring-0 focus:outline-none focus:border-none"
-                      />
-                      <p className="text-[13px] sm:text-[15px] font-Lora font-normal text-gray dark:text-lightGray ml-2">
-                        Save your email info in the browser for next comments.
-                      </p>
-                    </div>
-                    <button className="btn-primary">Submit Now</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

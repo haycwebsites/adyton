@@ -1,6 +1,5 @@
 import { HaycProvider } from './hayc/config-context';
 import { Preloader } from './components/Preloader';
-import { ScrollToTop } from './components/ScrollToTop';
 import { useState, useCallback } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -19,7 +18,6 @@ function App() {
         <div className={`min-h-screen bg-white dark:bg-[#141414] ${isLoading ? 'overflow-hidden max-h-screen' : ''}`}>
           <RouterProvider router={router} />
         </div>
-        <ScrollToTop />
       </HelmetProvider>
     </HaycProvider>
   );

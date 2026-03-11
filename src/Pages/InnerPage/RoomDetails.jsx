@@ -90,7 +90,7 @@ const RoomDetails = () => {
               >
                 {bookingsData && bookingsData.title
                   ? bookingsData.title
-                  : "Adyton Mykonos Luxury Suites & Pools"}
+                  : "Adyton Mykonos Villa With Pool"}
               </h2>
               <p
                 className="text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora"

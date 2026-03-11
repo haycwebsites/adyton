@@ -1,4 +1,4 @@
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { Link } from "react-router-dom";
 import BlogSideBar from "./BlogSideBar";
@@ -69,44 +69,6 @@ const Blog = () => {
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="flex items-center gap-3 mt-10">
-              <span className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  dark:bg-lightBlack border-[1px] border-lightGray dark:border-gray bg-white  hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center  cursor-pointer group">
-                <BsArrowLeft
-                  size={20}
-                  className="text-lightBlack dark:text-white group-hover:text-white"
-                />
-              </span>
-              <span className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  dark:bg-lightBlack border-[1px] border-lightGray dark:border-gray bg-white  hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center font-semibold cursor-pointer group">
-                <span
-                  size={20}
-                  className="text-lightBlack dark:text-white group-hover:text-white"
-                >
-                  1
-                </span>
-              </span>
-              <span className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  dark:bg-lightBlack border-[1px] border-lightGray dark:border-gray bg-white  hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center font-semibold cursor-pointer group">
-                <span
-                  size={20}
-                  className="text-lightBlack dark:text-white group-hover:text-white"
-                >
-                  2
-                </span>
-              </span>
-              <span className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  dark:bg-lightBlack border-[1px] border-lightGray dark:border-gray bg-white  hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center font-semibold cursor-pointer group">
-                <span
-                  size={20}
-                  className="text-lightBlack dark:text-white group-hover:text-white"
-                >
-                  3
-                </span>
-              </span>
-              <span className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]  dark:bg-lightBlack border-[1px] border-lightGray dark:border-gray bg-white  hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center  cursor-pointer group">
-                <BsArrowRight
-                  size={20}
-                  className="text-lightBlack dark:text-white group-hover:text-white"
-                />
-              </span>
             </div>
           </div>
           <div className="col-span-6 md:col-span-3 lg:col-span-2">

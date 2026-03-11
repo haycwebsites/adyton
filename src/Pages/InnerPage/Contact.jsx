@@ -24,10 +24,9 @@ const Contact = () => {
                 CONTACT WITH US
               </h2>
               <p className="text-Lora text-sm sm:text-base leading-[26px]  text-gray dark:text-lightGray font-normal">
-                Rapidiously myocardinate cross-platform intellectual capital
-                after the model. Appropriately create interactive
-                infrastructures after maintance Holisticly facilitate
-                stand-alone
+                Reach out to ADYTON Mykonos for private long-stay inquiries,
+                availability details, and tailored support for your luxury stay
+                in Greece.
               </p>
 
               {/* call */}
@@ -43,7 +42,7 @@ const Contact = () => {
                     Call Us Now
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium">
-                    +980 123 (4567) 890
+                    +306934929203
                   </p>
                 </div>
               </div>
@@ -61,7 +60,7 @@ const Contact = () => {
                     Send Email
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -79,8 +78,7 @@ const Contact = () => {
                     Our Locations
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    New elephant Road, Dhanmondi <br />
-                    Dhaka - 1212
+                    Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
                   </p>
                 </div>
               </div>
@@ -173,7 +171,7 @@ const Contact = () => {
       {/* google map */}
       <div data-aos="fade-down" data-aos-duration="1000">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.279909073!2d-74.25987368715491!3d40.69767006458873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1633418400558!5m2!1sen!2sbd"
+          src="https://www.google.com/maps?q=Mykonos%20Greece&output=embed"
           height={450}
           allowFullScreen=""
           loading="lazy"

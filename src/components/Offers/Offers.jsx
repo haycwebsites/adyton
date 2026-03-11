@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
 import { useKeenSlider } from "keen-slider/react";
 import "../../Components4/Testimonial/testimonials.css";
 import "keen-slider/keen-slider.min.css";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useHayc } from "../../hayc/config-context";
 
 const Offers = () => {
@@ -43,23 +41,6 @@ const Offers = () => {
             MORE IMAGES OF OUR SUITE
             </h1>
           </div>
-          <div className="flex items-center lg:space-x-5  space-x-3">
-            <button
-              className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki hover:border-none group"
-              disabled
-              title="Button disabled use swapping"
-            >
-              <BsChevronLeft className="w-5 h-5 text-[#cccbc8] group-hover:text-white " />
-            </button>
-            <button
-              className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]  flex items-center justify-center border-[1px] border-[#cccbc8] text-[#cccbc8] hover:bg-khaki
-             hover:border-none group"
-              disabled
-              title="Button disabled use swapping"
-            >
-              <BsChevronRight className="w-5 h-5 text-[#cccbc8]  group-hover:text-white" />
-            </button>
-          </div>
         </div>
 
         <hr className="text-[#e8e8e8] dark:text-[#383838] my-[40px]" />
@@ -73,13 +54,13 @@ const Offers = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <Link to="/room" className="block aspect-square w-full">
+                  <div className="block aspect-square w-full">
                     <img
                       src={img(slide)}
                       className="w-full h-full object-cover"
                       alt="offer"
                     />
-                  </Link>
+                  </div>
                 </div>
               </div>
             ))}

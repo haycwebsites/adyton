@@ -38,14 +38,13 @@ const Footer2 = () => {
             </h4>
             <ul className="">
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                support@example.com
+                info@adyton.gr
               </li>
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                Bangladesh Mahanagari <br />
-                Dhaka
+                Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
               </li>
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                1-800-123-4567
+                +306934929203
               </li>
             </ul>
           </div>

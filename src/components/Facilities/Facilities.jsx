@@ -51,12 +51,12 @@ const Facilities = () => {
             <h5 className="text-base text-khaki leading-[26px] font-medium mb-[14px]  ">
               {t(f.sectionLabel)}
             </h5>
-            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-white font-semibold ">
+            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold ">
               {t(f.title)}
             </h1>
           </div>
           <div className="mt-5 md:mt-0">
-            <Link to="/services">
+            <Link to="/adyton-suite">
               <button className="btn-items">{t(f.viewMoreBtn)}</button>
             </Link>
           </div>

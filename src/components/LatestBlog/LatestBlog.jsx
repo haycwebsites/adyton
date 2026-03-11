@@ -23,8 +23,12 @@ const LatestBlog = () => {
   });
   return (
     <div className="dark:bg-normalBlack">
-      <div className="bg-[url('/images/home-1/section-shape2.png')] bg-no-repeat bg-top bg-opacity-[0.07]">
-        <section className="Container py-20 lg:py-[120px]">
+      <div className="relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[url('/images/inner/AdytonLogo.png')] bg-no-repeat bg-top bg-[length:300px] opacity-[0.04] dark:opacity-[0.08]"
+        />
+        <section className="Container relative z-10 py-20 lg:py-[120px]">
           {/* Section Header */}
           <div
             data-aos="fade-up"

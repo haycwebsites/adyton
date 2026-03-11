@@ -61,6 +61,9 @@ const Room = () => {
             <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-9 lg:leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
               ADYTON SUITE ROOMS 
             </h1>
+            <p className="text-sm sm:text-base text-gray dark:text-lightGray font-Lora">
+              Explore the elegant rooms of our luxury suite, designed for comfort and a refined stay.
+            </p>
           </div>
           {/* Rooms Slider Container */}
 
@@ -79,13 +82,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$450</span>
-                  <span className="mx-2">|</span>
-                  <span>Night</span>
-                </div>
-
-                <Link to={"/room_details"}>
+                <Link to={"/adyton-suite"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -99,7 +96,7 @@ const Room = () => {
                       Luxury Room
                     </h4>
                     <Link
-                      to="/find_room"
+                      to="/adyton-suite"
                       state={{
                         price: "450",
                         title:
@@ -148,12 +145,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$550</span>
-                  <span className="mx-2">|</span>
-                  <span>Night</span>
-                </div>
-                <Link to={"/room_details"}>
+                <Link to={"/adyton-suite"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -167,7 +159,7 @@ const Room = () => {
                       Luxury Room
                     </h4>
                     <Link
-                      to="/find_room"
+                      to="/adyton-suite"
                       state={{ price: "550", title: "Premium Quadruple Room" }}
                     >
                       <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
@@ -211,12 +203,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <div className="px-5 3xl:px-6 py-2 inline-flex bg-khaki text-sm  items-center justify-center text-white  absolute top-[10px] right-[10px] ">
-                  <span className="">$560</span>
-                  <span className="mx-2">|</span>
-                  <span>Night</span>
-                </div>
-                <Link to={"/room_details"}>
+                <Link to={"/adyton-suite"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -230,7 +217,7 @@ const Room = () => {
                       Luxury Room
                     </h4>
                     <Link
-                      to="/find_room"
+                      to="/adyton-suite"
                       state={{ price: "560", title: "Standard Apartment" }}
                     >
                       <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
@@ -260,7 +247,198 @@ const Room = () => {
               </div>
             </div>
 
-         
+            {/* Room - 4 (copy of first room) */}
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <img
+                    src="/images/590793718.jpg"
+                    className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
+                    alt=""
+                  />
+                </div>
+
+                <Link to={"/adyton-suite"}>
+                  <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
+                    View Details{" "}
+                    <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
+                  </button>
+                </Link>
+              </div>
+              <div className="font-Garamond">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
+                  <div className="py-6 px-[30px]">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
+                      Luxury Room
+                    </h4>
+                    <Link
+                      to="/adyton-suite"
+                      state={{
+                        price: "450",
+                        title:
+                          "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
+                      }}
+                    >
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                        Deluxe Double Room -
+                        with Pool Access
+                      </h2>
+                    </Link>
+                    <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
+                      25 sq met
+                    </p>
+                  </div>
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
+                    <div className="px-[30px] flex items-center justify-between">
+                      <div className="">
+                        <span className="font-Lora text-base flex items-center ">
+                          <img
+                            src="/images/home-1/room-bottom-icon.png"
+                            alt=""
+                          />
+                          <span className="ml-[10px] text-gray dark:text-lightGray">
+                            1 double or 2 single
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Room - 5 (copy of first room) */}
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <img
+                    src="/images/590793718.jpg"
+                    className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
+                    alt=""
+                  />
+                </div>
+
+                <Link to={"/adyton-suite"}>
+                  <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
+                    View Details{" "}
+                    <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
+                  </button>
+                </Link>
+              </div>
+              <div className="font-Garamond">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
+                  <div className="py-6 px-[30px]">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
+                      Luxury Room
+                    </h4>
+                    <Link
+                      to="/adyton-suite"
+                      state={{
+                        price: "450",
+                        title:
+                          "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
+                      }}
+                    >
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                        Deluxe Double Room -
+                        with Pool Access
+                      </h2>
+                    </Link>
+                    <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
+                      25 sq met
+                    </p>
+                  </div>
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
+                    <div className="px-[30px] flex items-center justify-between">
+                      <div className="">
+                        <span className="font-Lora text-base flex items-center ">
+                          <img
+                            src="/images/home-1/room-bottom-icon.png"
+                            alt=""
+                          />
+                          <span className="ml-[10px] text-gray dark:text-lightGray">
+                            1 double or 2 single
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Room - 6 (copy of first room) */}
+            <div
+              className="overflow-x-hidden 3xl:w-[410px] group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <img
+                    src="/images/590793718.jpg"
+                    className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
+                    alt=""
+                  />
+                </div>
+
+                <Link to={"/adyton-suite"}>
+                  <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
+                    View Details{" "}
+                    <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
+                  </button>
+                </Link>
+              </div>
+              <div className="font-Garamond">
+                <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242]  border-t-0">
+                  <div className="py-6 px-[30px]">
+                    <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
+                      Luxury Room
+                    </h4>
+                    <Link
+                      to="/adyton-suite"
+                      state={{
+                        price: "450",
+                        title:
+                          "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
+                      }}
+                    >
+                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                        Deluxe Double Room -
+                        with Pool Access
+                      </h2>
+                    </Link>
+                    <p className="text-sm font-normal text-gray  dark:text-lightGray font-Lora">
+                      25 sq met
+                    </p>
+                  </div>
+                  <div className="  border-t-[1px] border-[#e8e8e8] dark:border-[#424242]  py-5">
+                    <div className="px-[30px] flex items-center justify-between">
+                      <div className="">
+                        <span className="font-Lora text-base flex items-center ">
+                          <img
+                            src="/images/home-1/room-bottom-icon.png"
+                            alt=""
+                          />
+                          <span className="ml-[10px] text-gray dark:text-lightGray">
+                            1 double or 2 single
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ const Navbar3 = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 ${navbarBgColor} border-b border-[#635e58]  `}
+      className={` w-full lg:fixed font-Lora z-[9999] transition-all duration-300 ${navbarBgColor} border-b border-[#635e58]  `}
     >
       <div className="Container3">
         <div className="flex flex-col lg:flex-row items-center justify-between">

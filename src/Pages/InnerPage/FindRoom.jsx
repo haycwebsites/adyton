@@ -460,7 +460,7 @@ const FindRoom = () => {
                     Call Us Now
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium">
-                    +980 123 (4567) 890
+                    +306934929203
                   </p>
                 </div>
               </div>
@@ -478,7 +478,7 @@ const FindRoom = () => {
                     Send Email
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -496,8 +496,7 @@ const FindRoom = () => {
                     Our Locations
                   </p>
                   <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    New elephant Road, Dhanmondi <br />
-                    Dhaka - 1212
+                    Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
                   </p>
                 </div>
               </div>

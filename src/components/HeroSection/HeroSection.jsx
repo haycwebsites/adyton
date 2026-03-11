@@ -14,14 +14,14 @@ const HeroSection = () => {
   const slides = [
     { bg: h.bgImage1, location: h.location1 },
     { bg: h.bgImage2, location: h.location2 },
-    { bg: h.bgImage3, location: h.location3 },
-    { bg: h.bgImage2, location: h.location4 },
+    { bg: h.bgImage3, location: h.location3 }, 
   ];
 
   return (
     <div className="">
       <Swiper
         centeredSlides={true}
+        loop={true}
         navigation={true}
         speed="3000"
         autoplay={{

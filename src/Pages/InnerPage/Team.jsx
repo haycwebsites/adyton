@@ -61,7 +61,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>
@@ -221,7 +221,7 @@ const Team = () => {
                     <FaPinterestP className="" />
                   </div>
                   <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
-                    example@gmail.com
+                    info@adyton.gr
                   </p>
                 </div>
               </div>

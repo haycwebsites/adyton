@@ -39,7 +39,7 @@ const Navbar4 = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10 transition-all duration-300 bg-white dark:bg-lightBlack grid items-center `}
+      className={` w-full lg:fixed font-Lora z-[9999] transition-all duration-300 bg-white dark:bg-lightBlack grid items-center `}
     >
       <div className="Container3 ">
         <div className="flex flex-col lg:flex-row items-center justify-between">

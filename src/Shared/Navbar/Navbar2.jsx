@@ -39,7 +39,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={` w-full lg:fixed font-Lora z-10  lg:px-5 lg:py-[6px]  transition-all duration-300 ${navbarBgColor} border-b border-[#837b67] `}
+      className={` w-full lg:fixed font-Lora z-[9999]  lg:px-5 lg:py-[6px]  transition-all duration-300 ${navbarBgColor} border-b border-[#837b67] `}
     >
       <div className="w-full lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]   mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
