@@ -27,9 +27,12 @@ const Footer3 = () => {
               >
                 <BiSolidPhoneCall className="text-white" size={15} />
               </span>
-              <p className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300">
+              <a
+                href="tel:(+088)210-123-4567"
+                className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300"
+              >
                 (+088) 210 - 123 - 4567
-              </p>
+              </a>
             </div>
             <div
               className="flex items-center group"
@@ -42,9 +45,12 @@ const Footer3 = () => {
               >
                 <FaEnvelope className="text-white" size={15} />
               </span>
-              <p className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300">
+              <a
+                href="mailto:info@plethorathemes.com"
+                className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300"
+              >
                 info@plethorathemes.com
-              </p>
+              </a>
             </div>
             <div
               className="flex items-center group"
@@ -57,9 +63,12 @@ const Footer3 = () => {
               >
                 <IoLocationSharp className="text-white" size={15} />
               </span>
-              <p className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300">
+              <Link
+                to="/contact#contact-map"
+                className="text-sm sm:text-base leading-[26px] lg:leading-[38px] font-Lora font-medium ml-4 text-white group-hover:text-khaki transition-all duration-300"
+              >
                 79 Folsom Ave, San Francisco
-              </p>
+              </Link>
             </div>
           </div>
         </div>

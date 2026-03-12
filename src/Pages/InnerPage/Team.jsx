@@ -60,9 +60,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -92,9 +95,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -124,9 +130,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -156,9 +165,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -188,9 +200,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -220,9 +235,12 @@ const Team = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

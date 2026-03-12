@@ -60,7 +60,7 @@ const Navbar4 = () => {
           </div>
 
           {/* small screen size */}
-          <div className="px-3 w-full lg:hidden flex justify-between items-center text-white bg-white dark:bg-lightBlack h-[70px] p-3">
+          <div className="px-3 w-full lg:hidden flex justify-between items-center text-lightBlack dark:text-white bg-white dark:bg-lightBlack h-[70px] p-3">
             <div className=" w-28  ">
               <Link to="/">
                 <img

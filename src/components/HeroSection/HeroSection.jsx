@@ -67,9 +67,13 @@ const HeroSection = () => {
                   </button>
                 </Link>
               </div>
-              <div className="w-[221px] h-[50px] border-white border hidden md:flex items-center justify-center absolute left-0 top-1/2 -rotate-90">
+              <a
+                href={`tel:${h.phone}`}
+                className="w-[221px] h-[50px] border-white border hidden md:flex items-center justify-center absolute left-0 top-1/2 -rotate-90"
+                aria-label={`Call ${h.phone}`}
+              >
                 <BiPhoneCall className="w-5 h-5 mr-2 text-khaki" /> {h.phone}
-              </div>
+              </a>
             </div>
           </SwiperSlide>
         ))}

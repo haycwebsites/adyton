@@ -1,8 +1,22 @@
 import { MdEmail, MdOutlineShareLocation } from "react-icons/md";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { IoIosCall } from "react-icons/io";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+  const location = useLocation();
+  const phone = "+306934929203";
+  const email = "info@adyton.gr";
+  const address = "Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece";
+
+  useEffect(() => {
+    if (location.hash === "#contact-map") {
+      const mapSection = document.getElementById("contact-map");
+      mapSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location.hash]);
+
   return (
     <div>
       <BreadCrumb title="Contact " />
@@ -41,9 +55,12 @@ const Contact = () => {
                   <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
                     Call Us Now
                   </p>
-                  <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium">
-                    +306934929203
-                  </p>
+                  <a
+                    href={`tel:${phone}`}
+                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                  >
+                    {phone}
+                  </a>
                 </div>
               </div>
               <hr className="dark:text-gray dark:bg-gray text-lightGray bg-lightGray h-[1px]" />
@@ -59,9 +76,12 @@ const Contact = () => {
                   <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
                     Send Email
                   </p>
-                  <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    info@adyton.gr
-                  </p>
+                  <a
+                    href={`mailto:${email}`}
+                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                  >
+                    {email}
+                  </a>
                 </div>
               </div>
               <hr className="dark:text-gray dark:bg-gray text-lightGray bg-lightGray h-[1px]" />
@@ -77,9 +97,12 @@ const Contact = () => {
                   <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
                     Our Locations
                   </p>
-                  <p className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium ">
-                    Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
-                  </p>
+                  <a
+                    href="#contact-map"
+                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                  >
+                    {address}
+                  </a>
                 </div>
               </div>
             </div>
@@ -169,7 +192,7 @@ const Contact = () => {
       </div>
 
       {/* google map */}
-      <div data-aos="fade-down" data-aos-duration="1000">
+      <div id="contact-map" data-aos="fade-down" data-aos-duration="1000">
         <iframe
           src="https://www.google.com/maps?q=Mykonos%20Greece&output=embed"
           height={450}

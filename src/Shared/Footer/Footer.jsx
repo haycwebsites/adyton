@@ -29,27 +29,36 @@ const Footer = () => {
                     {t(f.contactTitle)}
                   </h1>
                   <div className="space-y-4 pt-[30px]  pb-2 2xl:pb-[30px] ">
-                    <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2">
+                    <a
+                      href={`tel:${f.phone}`}
+                      className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2 hover:text-khaki transition-all duration-300"
+                    >
                       <IoIosCall
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
                         size={14}
                       />
                       {f.phone}
-                    </p>
-                    <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
+                    </a>
+                    <a
+                      href={`mailto:${f.email}`}
+                      className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] hover:text-khaki transition-all duration-300"
+                    >
                       <BiEnvelope
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
                         size={14}
                       />
                       {f.email}
-                    </p>
-                    <p className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
+                    </a>
+                    <Link
+                      to="/contact#contact-map"
+                      className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] hover:text-khaki transition-all duration-300"
+                    >
                       <IoLocationSharp
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
                         size={14}
                       />
                       {t(f.address)}
-                    </p>
+                    </Link>
                   </div>
                 </div>
                 <div>

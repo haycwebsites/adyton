@@ -143,9 +143,12 @@ const Footer5 = () => {
                   <p className="text-lg sm:text-xl leading-[27px] text-[#f7f9fb] font-bold font-Garamond ">
                     Location:{" "}
                   </p>
-                  <p className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora">
+                  <Link
+                    to="/contact#contact-map"
+                    className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora hover:text-khaki transition-all duration-300"
+                  >
                     2976 Sunrise Avenue, Las Vegas
-                  </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -156,9 +159,12 @@ const Footer5 = () => {
                   <p className="text-lg sm:text-xl leading-[27px] text-[#f7f9fb] font-bold font-Garamond ">
                     Email:
                   </p>
-                  <p className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora">
+                  <a
+                    href="mailto:example@mail.com"
+                    className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora hover:text-khaki transition-all duration-300"
+                  >
                     example@mail.com
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -169,9 +175,12 @@ const Footer5 = () => {
                   <p className="text-lg sm:text-xl leading-[27px] text-[#f7f9fb] font-bold font-Garamond ">
                     Phone:
                   </p>
-                  <p className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora">
+                  <a
+                    href="tel:+891230456789"
+                    className="text-sm sm:text-base leading-[27px] text-[#f7f9fb] font-normal font-Lora hover:text-khaki transition-all duration-300"
+                  >
                     +8 91230 456 789
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

@@ -88,9 +88,12 @@ const About = () => {
               </p>
 
               <div className="bg-whiteSmoke dark:bg-lightBlack px-[30px] py-5">
-                <p className="text-sm sm:text-base leading-10 3xl:leading-[50px] text-lightBlack dark:text-white font-medium font-Lora ">
+                <Link
+                  to="/contact#contact-map"
+                  className="text-sm sm:text-base leading-10 3xl:leading-[50px] text-lightBlack dark:text-white font-medium font-Lora hover:text-khaki transition-all duration-300"
+                >
                   Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
-                </p>
+                </Link>
               </div>
               <button className="btn-primary mt-[30px]">MORE ABOUT</button>
             </div>
@@ -230,9 +233,12 @@ const About = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -262,9 +268,12 @@ const About = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -294,9 +303,12 @@ const About = () => {
                     <FaLinkedinIn className="" />
                     <FaPinterestP className="" />
                   </div>
-                  <p className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond">
+                  <a
+                    href="mailto:info@adyton.gr"
+                    className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
+                  >
                     info@adyton.gr
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

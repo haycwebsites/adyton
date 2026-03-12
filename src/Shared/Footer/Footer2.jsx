@@ -37,14 +37,29 @@ const Footer2 = () => {
               CONTACT US
             </h4>
             <ul className="">
-              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                info@adyton.gr
+              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
+                <a
+                  href="mailto:info@adyton.gr"
+                  className="hover:text-khaki"
+                >
+                  info@adyton.gr
+                </a>
               </li>
-              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
+              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
+                <Link
+                  to="/contact#contact-map"
+                  className="hover:text-khaki"
+                >
+                  Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece
+                </Link>
               </li>
-              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] hover:text-khaki transition-all duration-300">
-                +306934929203
+              <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
+                <a
+                  href="tel:+306934929203"
+                  className="hover:text-khaki"
+                >
+                  +306934929203
+                </a>
               </li>
             </ul>
           </div>
