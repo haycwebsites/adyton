@@ -13,8 +13,7 @@ const Footer = () => {
 
   return (
     <>
-      <Brand />
-      <footer className="">
+      <footer className="lg:mt-[50px]">
         <div className="bg-lightBlack   ">
           <div className="Container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 2xl:grid-cols-12 gap-5 lg:gap-3 xl:gap-5 2xl:gap-[30px] pt-14 lg:pt-[100px] ">
             <div

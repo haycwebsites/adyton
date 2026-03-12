@@ -42,16 +42,9 @@ const HeroSection = () => {
               data-aos="fade-down"
             >
               <div className="font-Garamond 2xl:w-[720px] text-center">
-                <div className="flex space-x-2 items-center justify-center mb-5 lg:mb-6">
-                  <FaStar className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] text-khaki" />
-                  <FaStar className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] text-khaki" />
-                  <FaStar className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] text-khaki" />
-                  <FaStar className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] text-khaki" />
-                  <FaStar className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] text-khaki" />
-                </div>
                 <h4 className="text-base mb-4">{t(h.subtitle)}</h4>
                 <div className="mb-7 md:mb-8 lg:mb-9 xl:mb-10">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[70px]">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-8xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[90px]">
                     {t(h.mainTitle)}
                   </h1>
                  
