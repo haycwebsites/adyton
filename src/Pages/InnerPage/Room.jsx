@@ -74,14 +74,14 @@ const Room = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn-secondary">6 months</button>
+                <button className="btn-items">6 months</button>
               </a>
               <a
                 href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn-secondary">12 months</button>
+                <button className="btn-items">12 months</button>
               </a>
             </div>
           </div>
