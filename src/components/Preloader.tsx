@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import { Wine } from 'lucide-react';
 import { useHayc } from '../hayc/config-context';
 
 export function Preloader({ onComplete }: { onComplete: () => void }) {
-  const { t, img, config } = useHayc();
+  const { t, config } = useHayc();
   const preloaderConfig = config.preloaderConfig;
 
   // Null check: if config is empty, complete immediately
@@ -30,11 +31,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
     >
       {/* Logo Icon */}
       <div className="preloader-text mb-6">
-        <img
-          src={img(config.navConfig.logo)}
-          alt={t(config.navConfig.altLogo)}
-          className="w-16 h-16 object-contain"
-        />
+        <Wine className="w-12 h-12 text-gold-500" />
       </div>
 
       {/* Brand Name */}
@@ -42,11 +39,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
         <h1 className="font-serif text-3xl md:text-4xl text-white tracking-wide mb-2">
           {t(preloaderConfig.brandName)}
         </h1>
-        {t(preloaderConfig.brandSubname).trim() && (
-          <p className="font-script text-2xl text-gold-400">
-            {t(preloaderConfig.brandSubname)}
-          </p>
-        )}
+        <p className="font-script text-2xl text-gold-400">{t(preloaderConfig.brandSubname)}</p>
       </div>
 
       {/* Loading Line */}
