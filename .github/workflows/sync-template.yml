@@ -17,6 +17,7 @@ on:
       - 'components.json'
       - 'src/hayc/config-context.tsx'
       - 'src/components/LanguageSwitcher.tsx'
+      - 'src/components/ContactForm.tsx'
       - 'src/components/Preloader.tsx'
       - 'src/components/ScrollToTop.tsx'
       - 'src/components/ui/accordion.tsx'
