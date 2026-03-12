@@ -7,7 +7,7 @@ export const blogPosts = [
     title: "Why Choose a Private Luxury Compound for Your Extended Stay in Mykonos",
     date: "March 8, 2025",
     category: "Luxury Living",
-    image: "/images/hero-villa.jpg",
+    image: "/images/LuxurySuites/590780018.jpg",
     excerpt:
       "An exclusive private residential compound in Mykonos, designed for high-level international clientele seeking privacy, security and refined Mediterranean living.",
     content: {
@@ -28,7 +28,7 @@ export const blogPosts = [
     title: "Understanding Long-Term Lease Options: 6-Month vs Annual at ADYTON Mykonos",
     date: "March 5, 2025",
     category: "Lease Terms",
-    image: "/images/villa-pool.jpg",
+    image: "/images/LuxurySuites/589394632.jpg",
     excerpt:
       "Flexible lease terms to suit your needs: €125,000 for 6 months or €145,000 for a full year, all taxes and utilities included.",
     content: {
@@ -49,7 +49,7 @@ export const blogPosts = [
     title: "Corporate Housing in the Aegean: ADYTON as Your Seasonal Headquarters",
     date: "March 1, 2025",
     category: "Corporate",
-    image: "/images/villa-aerial.jpg",
+    image: "/images/LuxurySuites/590792439.jpg",
     excerpt:
       "A rare opportunity to lease a fully serviced luxury property complex with private pools for corporate housing, embassy use or international families.",
     content: {
@@ -70,7 +70,7 @@ export const blogPosts = [
     title: "Privacy, Security & Refined Living: What ADYTON Mykonos Offers",
     date: "February 25, 2025",
     category: "Amenities",
-    image: "/images/villa-terrace.jpg",
+    image: "/images/LuxurySuites/590775857.jpg",
     excerpt:
       "Private pools, fully furnished suites, high-speed internet and a secure, discreet environment in the heart of the Cyclades.",
     content: {
@@ -91,7 +91,7 @@ export const blogPosts = [
     title: "The Perfect Base for Exploring Mykonos: Location, Beaches & Convenience",
     date: "February 20, 2025",
     category: "Location",
-    image: "/images/mykonos-beach.jpg",
+    image: "/images/LuxurySuites/697089993.jpg",
     excerpt:
       "A calm, elegant retreat in Ano Mera, ideal for couples and families seeking privacy with easy, quick access to beaches and attractions.",
     content: {
@@ -112,7 +112,7 @@ export const blogPosts = [
     title: "From Suite to Villa: The Complete ADYTON Property Composition",
     date: "February 15, 2025",
     category: "Property",
-    image: "/images/villa-suite-1.jpg",
+    image: "/images/LuxurySuites/725629742.jpg",
     excerpt:
       "1 private maisonette, 4 double luxury suites with pools, 1 suite with living room, plus communal pool and flexible auxiliary space.",
     content: {
