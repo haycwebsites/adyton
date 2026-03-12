@@ -108,6 +108,8 @@ export interface HeroConfig {
   location3: LocaleString;
   location4: LocaleString;
   ctaButton: LocaleString;
+  leaseButton6Months: LocaleString;
+  leaseButton12Months: LocaleString;
   phone: string;
 }
 
@@ -355,6 +357,8 @@ export const heroConfig: HeroConfig = {
   location3: { el: 'ΣΤΟ COLOSSEUM', en: 'IN COLOSSEUM' },
   location4: { el: 'ΣΤΗΝ SRILANKA', en: 'IN SRILANKA' },
   ctaButton: { el: 'Discover More', en: 'Discover More' },
+  leaseButton6Months: { el: '6 Months Lease', en: '6 Months Lease' },
+  leaseButton12Months: { el: '12 Months Lease', en: '12 Months Lease' },
   phone: '+306934929203',
 };
 

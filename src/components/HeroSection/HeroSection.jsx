@@ -49,16 +49,28 @@ const HeroSection = () => {
                   </h1>
                  
                 </div>
-                <Link to={"/adyton-suite"}>
-                  <button
-                    className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative before:w-8 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-16 
-                text-base
-               font-Garamond
-                font-medium mt-[-6px] hover-animBg after:bg-normalBlack after:rounded-none hover:before:bg-normalBlack uppercase"
-                  >
-                    {t(h.ctaButton)}
-                  </button>
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Link to={"/adyton-suite"}>
+                    <button
+                      className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
+                  text-base
+                 font-Garamond
+                  font-medium hover-animBg after:bg-normalBlack after:rounded-none uppercase"
+                    >
+                      {t(h.leaseButton6Months)}
+                    </button>
+                  </Link>
+                  <Link to={"/adyton-suite"}>
+                    <button
+                      className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
+                  text-base
+                 font-Garamond
+                  font-medium hover-animBg after:bg-normalBlack after:rounded-none uppercase"
+                    >
+                      {t(h.leaseButton12Months)}
+                    </button>
+                  </Link>
+                </div>
               </div>
               <a
                 href={`tel:${h.phone}`}
