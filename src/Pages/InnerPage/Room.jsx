@@ -36,7 +36,11 @@ const Room = () => {
 
   return (
     <section className="">
-      <BreadCrumb title="ROOMS" home={"/"} />
+      <BreadCrumb
+        title="ROOMS"
+        home={"/"}
+        bgImage="/images/LuxurySuites/590781834.jpg"
+      />
 
       {/* All rooms */}
 
@@ -62,8 +66,24 @@ const Room = () => {
               ADYTON SUITE ROOMS 
             </h1>
             <p className="text-sm sm:text-base text-gray dark:text-lightGray font-Lora">
-              Explore the elegant rooms of our luxury suite, designed for comfort and a refined stay.
+              Explore the elegant rooms of our luxury suite, designed for comfort and a refined stay. Ready to make your booking? Choose your preferred lease plan and secure your stay instantly.
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-10 mb-12">
+              <a
+                href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-secondary">6 months</button>
+              </a>
+              <a
+                href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-secondary">12 months</button>
+              </a>
+            </div>
           </div>
           {/* Rooms Slider Container */}
 
@@ -103,7 +123,7 @@ const Room = () => {
                           "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
                       }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
                         Deluxe Double Room -
                         with Pool Access
                       </h2>
@@ -162,7 +182,7 @@ const Room = () => {
                       to="/adyton-suite"
                       state={{ price: "550", title: "Premium Quadruple Room" }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[30px] font-semibold text-lightBlack dark:text-white py-4">
                         Premium Quadruple Room
                       </h2>
                     </Link>
@@ -220,7 +240,7 @@ const Room = () => {
                       to="/adyton-suite"
                       state={{ price: "560", title: "Standard Apartment" }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[30px] font-semibold text-lightBlack dark:text-white py-4">
                         Standard Apartment
                       </h2>
                     </Link>
@@ -283,7 +303,7 @@ const Room = () => {
                           "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
                       }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
                         Deluxe Double Room -
                         with Pool Access
                       </h2>
@@ -347,7 +367,7 @@ const Room = () => {
                           "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
                       }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
                         Deluxe Double Room -
                         with Pool Access
                       </h2>
@@ -411,7 +431,7 @@ const Room = () => {
                           "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
                       }}
                     >
-                      <h2 className="text-2xl lg:text-[24px] xl:text-[28px] leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
+                      <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
                         Deluxe Double Room -
                         with Pool Access
                       </h2>

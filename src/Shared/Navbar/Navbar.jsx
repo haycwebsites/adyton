@@ -90,9 +90,11 @@ const Navbar = () => {
             </div>
           </div>
           <ul
-            className={`${
-              isOpen ? "block" : "hidden"
-            } text-left w-full lg:w-fit  ease-in-out lg:flex space-y-2 lg:space-y-0 lg:text-center space-x-0 lg:space-x-3 xl:space-x-4 2xl:space-x-5 3xl:space-x-[24px] flex flex-col lg:flex-row text-sm text-lightBlack lg:text-white dark:text-white uppercase font-normal bg-white dark:bg-normalBlack lg:bg-transparent dark:lg:bg-transparent py-3 lg:py-0 `}
+            className={`text-left w-full lg:w-fit lg:flex space-y-2 lg:space-y-0 lg:text-center space-x-0 lg:space-x-3 xl:space-x-4 2xl:space-x-5 3xl:space-x-[24px] flex flex-col lg:flex-row text-sm text-lightBlack lg:text-white dark:text-white uppercase font-normal bg-white dark:bg-normalBlack lg:bg-transparent dark:lg:bg-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden origin-top lg:overflow-visible ${
+              isOpen
+                ? "max-h-[520px] opacity-100 py-3 pointer-events-auto translate-y-0 scale-y-100"
+                : "max-h-0 opacity-0 py-0 pointer-events-none lg:pointer-events-auto -translate-y-2 scale-y-95"
+            } lg:max-h-none lg:opacity-100 lg:py-0 lg:translate-y-0 lg:scale-y-100`}
           >
             <NavLink
               className={`${({ isActive, isPending }) =>
@@ -166,9 +168,22 @@ const Navbar = () => {
                 />
               )}
             </span>
-            <Link to="/find_room">
-              <button className="btn-secondary ">{t(nav.bookingBtn)}</button>
-            </Link>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-secondary ">6 months</button>
+              </a>
+              <a
+                href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-secondary ">12 months</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

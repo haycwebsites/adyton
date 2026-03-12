@@ -15,7 +15,10 @@ const ServiceDetails = () => {
 
   return (
     <section className="">
-      <BreadCrumb title="Service Details" />
+      <BreadCrumb
+        title="Service Details"
+        bgImage="/images/LuxurySuites/590440988.jpg"
+      />
 
       {/* Service Details content */}
       <div className="py-20 2xl:py-[120px] dark:bg-lightBlack">
@@ -276,7 +279,7 @@ const ServiceDetails = () => {
                       className="w-[100px] h-[100px] sm:w-fit sm:h-fit rounded-2xl sm:rounded-none mb-5 sm:mb-0 "
                     />
                     <div className="px-5 md:px-6 2xl:px-[30px]">
-                      <div className="flex items-center justify-between pb-4">
+                      <div className="flex flex-col items-start gap-1 pb-4 sm:flex-row sm:items-center sm:justify-between">
                         <h4 className="text-lg sm:text-xl xl:text-2xl 2xl:text-[26px] leading-[26px] md:leading-7 lg:leading-8 xl:leading-[34px] 2xl:leading-[38px] text-lightBlack dark:text-white font-Garamond font-medium">
                           {item.title}
                         </h4>

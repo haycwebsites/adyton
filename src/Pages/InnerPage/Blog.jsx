@@ -7,7 +7,10 @@ import { blogPosts } from "../../data/blogPosts";
 const Blog = () => {
   return (
     <div>
-      <BreadCrumb title="Blog" />
+      <BreadCrumb
+        title="Blog"
+        bgImage="/images/LuxurySuites/590781352.jpg"
+      />
       <div className="dark:bg-lightBlack py-20 2xl:py-[120px]">
         <div className="Container grid grid-cols-6 md:grid-cols-7 lg:grid-cols-6 gap-5 ">
           <div className="col-span-6 md:col-span-4">
@@ -28,11 +31,11 @@ const Blog = () => {
                   </div>
                   <div className="font-Garamond border border-[#ddd] dark:border-gray border-t-0">
                     <div className="py-6 px-[30px] ">
-                      <div className="flex items-center space-x-6 ">
-                        <p className="text-sm 2xl:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase mr-7 ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                        <p className="text-sm 2xl:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
                           {post.date}
                         </p>
-                        <p className="text-sm 2xl:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase mr-7 ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
+                        <p className="text-sm 2xl:text-base leading-[26px] text-gray dark:text-lightGray font-normal uppercase ml-3 relative before:absolute before:w-[7px] before:h-[7px] before:left-[-13px] before:bg-[#d1d1d1] dark:before:bg-khaki before:top-[9px]">
                           {post.category}
                         </p>
                       </div>

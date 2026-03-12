@@ -42,7 +42,11 @@ const About = () => {
 
   return (
     <section className="">
-      <BreadCrumb title="About Us" home={""} />
+      <BreadCrumb
+        title="About Us"
+        home={""}
+        bgImage="/images/LuxurySuites/590794482.jpg"
+      />
 
       {/* about content */}
       <section className="dark:bg-mediumBlack">
@@ -122,12 +126,12 @@ const About = () => {
                 />
 
                 <div
-                  className="w-[70px] h-[70px]  text-white absolute top-1/2 md:top-[35%] lg:top-1/2 left-[45%] bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1] "
+                  className="w-[70px] h-[70px] text-white absolute left-1/2 top-1/2 md:top-[35%] lg:top-1/2 -translate-x-1/2 -translate-y-1/2 md:-translate-y-0 lg:-translate-y-1/2 bg-khaki rounded-full flex items-center justify-center cursor-pointer z-[1]"
                   onClick={() => setToggler(!toggler)}
                 >
                   <BsPlay className="w-8 h-8" />
                 </div>
-                <span className=" top-[47%] md:top-[33%] lg:top-[48%] left-[42%] lg:left-[43.5%] border w-[90px] h-[90px] rounded-full absolute border-white video-animation"></span>
+                <span className="top-1/2 left-1/2 md:top-[33%] lg:top-[48%] md:left-[42%] lg:left-[43.5%] -translate-x-1/2 -translate-y-1/2 md:translate-x-0 md:translate-y-0 border w-[90px] h-[90px] rounded-full absolute border-white video-animation"></span>
               </div>
               <FsLightbox
                 toggler={toggler}
@@ -224,8 +228,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -259,8 +262,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -294,8 +296,7 @@ const About = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />

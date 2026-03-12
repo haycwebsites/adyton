@@ -5,7 +5,10 @@ import { BsTwitter } from "react-icons/bs";
 const Team = () => {
   return (
     <div>
-      <BreadCrumb title="our team" />
+      <BreadCrumb
+        title="our team"
+        bgImage="/images/LuxurySuites/590775857.jpg"
+      />
       {/* Content */}
 
       {/* Expert Members */}
@@ -51,8 +54,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -86,8 +88,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -121,8 +122,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -156,8 +156,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -191,8 +190,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />
@@ -226,8 +224,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div
-                  className="p-[30px] bg-khaki grid items-center justify-center absolute bottom-[-150px] sm:bottom-[-170px] md:bottom-[-150px] group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all
-                 duration-500 left-0 right-0"
+                  className="p-[30px] bg-khaki grid items-center justify-center static mt-4 sm:mt-0 sm:absolute sm:bottom-[-170px] md:bottom-[-150px] sm:group-hover:bottom-[-38px] lg:group-hover:bottom-[-30px] transition-all duration-500 left-0 right-0"
                 >
                   <div className="flex items-center justify-center space-x-4 text-white">
                     <FaFacebookF className="" />

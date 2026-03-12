@@ -287,7 +287,7 @@ export const mainConfig: MainConfig = {
 
 export const navConfig: NavConfig = {
   logo: '/images/inner/AdytonLogo.png',
-  mobileLogo: '/images/inner/AdytonLogo.png',
+  mobileLogo: '/images/logo2.png',
   altLogo: { el: 'Λογότυπο ιστοσελίδας', en: 'Website logo' },
   altMobileLogo: { el: 'Λογότυπο Royella', en: 'Royella website logo' },
   home: { el: 'Home', en: 'Home' },
@@ -490,7 +490,7 @@ export const latestBlogConfig: LatestBlogConfig = {
 };
 
 export const brandConfig: BrandConfig = {
-  brand1: '/images/inner/AdytonLogo.png',
-  brand2: '/images/inner/AdytonLogo.png',
-  brand3: '/images/inner/AdytonLogo.png',
+  brand1: '/images/logo2.png',
+  brand2: '/images/logo2.png',
+  brand3: '/images/logo2.png',
 };

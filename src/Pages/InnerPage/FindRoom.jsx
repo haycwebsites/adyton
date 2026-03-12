@@ -41,7 +41,10 @@ const FindRoom = () => {
 
   return (
     <section>
-      <BreadCrumb title="Find Room" />
+      <BreadCrumb
+        title="Find Room"
+        bgImage="/images/LuxurySuites/590791838.jpg"
+      />
       {/* Check Availability */}
       <div className="bg-whiteSmoke dark:bg-normalBlack py-20 2xl:py-[120px]">
         <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[34px] leading-7 sm:leading-8 md:leading-9 lg:leading-10 2xl:leading-[44px] text-lightBlack dark:text-white  mb-5  md:mb-8 lg:mb-10 font-Garamond font-semibold uppercase text-center">
@@ -49,7 +52,7 @@ const FindRoom = () => {
         </h1>
         {/* Date and rome info */}
         <div
-          className="Container bg-white dark:bg-lightBlack  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki  px-5 md:px-7 2xl:px-10"
+          className="Container bg-white dark:bg-lightBlack grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 items-center justify-center font-Lora py-3 lg:py-4 xl:py-5 2xl:py-6 border-t-[3px] border-t-khaki px-5 md:px-7 2xl:px-10"
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
@@ -93,11 +96,11 @@ const FindRoom = () => {
               <div className="text-sm pt-[6px] lightBlack dark:text-white">
                 {room} Room
               </div>
-              <div className="absolute pt-5  z-20">
+              <div className="absolute pt-5 z-20 left-0 right-0 sm:right-auto">
                 <div
                   className={`shadow-2xl ${
                     open ? "" : "hidden"
-                  } rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 `}
+                  } rounded-sm bg-white text-black w-full max-w-[15rem] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 `}
                 >
                   <div className="py-2 px-5 group cursor-pointer">
                     <li className="flex items-center justify-between">
@@ -142,11 +145,11 @@ const FindRoom = () => {
               <div className="pt-[6px] text-sm  text-lightBlack dark:text-white">
                 {adult} Adult, {children} Child
               </div>
-              <div className="absolute pt-5  z-20 right-0 md:left-5">
+              <div className="absolute pt-5 z-20 left-0 right-0 sm:right-auto">
                 <div
                   className={`shadow-2xl ${
                     guestOpen ? "" : "hidden"
-                  } rounded-sm bg-white text-black w-60 text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 `}
+                  } rounded-sm bg-white text-black w-full max-w-[15rem] text-left dark:bg-normalBlack dark:text-white transition-all duration-500 text-sm py-4 `}
                 >
                   <div className="py-2 px-5 group cursor-pointer">
                     <li className="flex items-center justify-between">
@@ -190,8 +193,8 @@ const FindRoom = () => {
               </div>
             </div>
           </div>
-          <Link to="/room_details" state={bookingInfo ? bookingInfo : ""}>
-            <button className="w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white">
+          <Link to="/room_details" state={bookingInfo ? bookingInfo : ""} className="w-full sm:w-auto">
+            <button className="w-full sm:w-[142px] h-[50px] text-[15px] bg-khaki font-Garamond text-white">
               Checkout Now
             </button>
           </Link>
@@ -458,7 +461,7 @@ const FindRoom = () => {
                     className="text-khaki group-hover:text-whiteSmoke"
                   />
                 </div>
-                <div className="ml-3 md:ml-4">
+                <div className="ml-3 md:ml-4 min-w-0">
                   <p className="font-Lora text-sm leading-[26px] text-gray  font-normal dark:text-lightGray">
                     Call Us Now
                   </p>
@@ -506,7 +509,7 @@ const FindRoom = () => {
                   </p>
                   <Link
                     to="/contact#contact-map"
-                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300 break-words"
                   >
                     {address}
                   </Link>

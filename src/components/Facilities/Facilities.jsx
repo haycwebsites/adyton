@@ -40,7 +40,7 @@ const Facilities = () => {
   const f = config.facilitiesConfig;
   return (
     <div className="dark:bg-mediumBlack ">
-      <section className="Container py-[120px] md:py-0 md:pb-[120px] lg:py-[120px]">
+      <section className="Container py-16 md:py-20 lg:py-[120px]">
         {/* section title and button */}
         <div
           className="flex flex-col md:flex-row md:items-center justify-between mb-12 px-3 sm:px-5"

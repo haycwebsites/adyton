@@ -65,6 +65,22 @@ const Offers = () => {
               </div>
             ))}
           </div>
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
+            <a
+              href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn-items">6 months</button>
+            </a>
+            <a
+              href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn-items">12 months</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

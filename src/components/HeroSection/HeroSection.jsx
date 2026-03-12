@@ -37,7 +37,7 @@ const HeroSection = () => {
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div
-              className="w-full h-[700px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] bg-[rgba(0,0,0,0.4)] bg-blend-multiply grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0"
+              className="w-full h-[70svh] min-h-[560px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] bg-[rgba(0,0,0,0.4)] bg-blend-multiply grid items-center bg-cover justify-center text-white relative pb-[150px] lg:pb-16 xl:pb-0"
               style={{ backgroundImage: `url(${img(slide.bg)})` }}
               data-aos="fade-down"
             >

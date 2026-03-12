@@ -5,7 +5,10 @@ import AnimatedAccordionPage from "./Accordion/AnimatedAccordionPage";
 const Pricing = () => {
   return (
     <div>
-      <BreadCrumb title="Pricing" />
+      <BreadCrumb
+        title="Pricing"
+        bgImage="/images/LuxurySuites/590793377.jpg"
+      />
       {/* Pricing  */}
       <div className="dark:bg-normalBlack py-20 2xl:py-[120px]">
         <div className="Container">
@@ -91,7 +94,7 @@ const Pricing = () => {
                       </li>
                     </ul>
                   </div>
-                  <button className="btn-items dark:btn-secondary ">
+                  <button className="btn-items dark:btn-secondary w-full sm:w-[155px]">
                     PURCHASES NOW
                   </button>
                 </div>
@@ -151,7 +154,7 @@ const Pricing = () => {
                       </li>
                     </ul>
                   </div>
-                  <button className="btn-items dark:btn-secondary">
+                  <button className="btn-items dark:btn-secondary w-full sm:w-[155px]">
                     PURCHASES NOW
                   </button>
                 </div>
@@ -211,7 +214,7 @@ const Pricing = () => {
                       </li>
                     </ul>
                   </div>
-                  <button className="btn-items dark:btn-secondary">
+                  <button className="btn-items dark:btn-secondary w-full sm:w-[155px]">
                     PURCHASES NOW
                   </button>
                 </div>

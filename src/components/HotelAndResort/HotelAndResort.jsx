@@ -31,7 +31,7 @@ const HotelAndResort = () => {
       >
         <div className="md:flex items-center justify-between">
           <div
-            className="flex-1 keen-slider w-screen  md:w-[60%] 2xl:w-[580px] md:pr-5 lg:pr-6 xl:pr-8 2xl:pr-9 3xl:pr-10  md:mt-0"
+            className="flex-1 keen-slider w-full max-w-full md:w-[60%] 2xl:w-[580px] md:pr-5 lg:pr-6 xl:pr-8 2xl:pr-9 3xl:pr-10 md:mt-0"
             ref={sliderRef}
           >
             {/* slider 1 */}

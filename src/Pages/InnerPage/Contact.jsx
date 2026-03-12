@@ -3,6 +3,7 @@ import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { IoIosCall } from "react-icons/io";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { BiChevronDown } from "react-icons/bi";
 
 const Contact = () => {
   const location = useLocation();
@@ -51,7 +52,7 @@ const Contact = () => {
                     className="text-khaki group-hover:text-whiteSmoke"
                   />
                 </div>
-                <div className="ml-3 md:ml-4">
+                <div className="ml-3 md:ml-4 min-w-0">
                   <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
                     Call Us Now
                   </p>
@@ -99,7 +100,7 @@ const Contact = () => {
                   </p>
                   <a
                     href="#contact-map"
-                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                    className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300 break-words"
                   >
                     {address}
                   </a>
@@ -128,51 +129,28 @@ const Contact = () => {
                     placeholder="Enter E-mail"
                     required
                   />
-                  <select
-                    className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none  bg-transparent mt-4 focus:ring-0  focus:border-gray dark:focus:border-lightGray focus:outline-none"
-                    onFocus={(e) => {
-                      e.target.size = 6;
-                    }}
-                    onBlur={(e) => {
-                      e.target.size = 0;
-                    }}
-                    onChange={(e) => {
-                      e.target.size = 1;
-                      e.target.blur();
-                    }}
-                  >
-                    <option
-                      className="bg-khaki text-white px-3 py-3"
-                      value=""
-                      disabled
+                  <div className="relative mt-4">
+                    <select
+                      defaultValue=""
+                      className="w-full h-12 md:h-13 lg:h-[59px] px-4 pr-10 border-2 border-khaki/70 dark:border-khaki text-lightBlack dark:text-white outline-none bg-white dark:bg-lightBlack focus:ring-0 focus:border-khaki focus:outline-none appearance-none"
                     >
-                      Select Subject
-                    </option>
-                    <option
-                      className="bg-whiteSmoke dark:bg-normalBlack text-lightBlack dark:text-white px-3 py-3"
-                      value="option1"
-                    >
-                      Subject One
-                    </option>
-                    <option
-                      className="bg-whiteSmoke dark:bg-normalBlack text-lightBlack dark:text-white px-3 py-3"
-                      value="option2"
-                    >
-                      Subject Two
-                    </option>
-                    <option
-                      className="bg-whiteSmoke dark:bg-normalBlack text-lightBlack dark:text-white px-3 py-3"
-                      value="option3"
-                    >
-                      Select Three
-                    </option>
-                    <option
-                      className="bg-whiteSmoke dark:bg-normalBlack text-lightBlack dark:text-white px-3 py-3"
-                      value="option4"
-                    >
-                      Select Four
-                    </option>
-                  </select>
+                      <option value="" disabled>
+                        Select Service
+                      </option>
+                      <option value="private-security">Private security</option>
+                      <option value="chauffeur-driver">Chauffeur / Driver</option>
+                      <option value="private-chef">Private chef</option>
+                      <option value="hair-beauty-services">Hair & beauty services</option>
+                      <option value="vip-concierge-services">VIP concierge services</option>
+                      <option value="personalized-security-escort">
+                        Personalized security escort
+                      </option>
+                    </select>
+                    <BiChevronDown
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-khaki pointer-events-none"
+                      size={22}
+                    />
+                  </div>
                   <textarea
                     name=""
                     id=""

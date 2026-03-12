@@ -17,7 +17,10 @@ const BlogDetails = () => {
 
   return (
     <div>
-      <BreadCrumb title="Blog Details" />
+      <BreadCrumb
+        title="Blog Details"
+        bgImage="/images/LuxurySuites/697090361.jpg"
+      />
       {/* Blog Details */}
       <div className="dark:bg-lightBlack py-20 2xl:py-[120px]">
         <div className="Container grid grid-cols-6 md:grid-cols-7 lg:grid-cols-6 gap-5 ">
