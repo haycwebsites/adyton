@@ -18,6 +18,10 @@ import {
   testimonialConfig,
   latestBlogConfig,
   brandConfig,
+  contactConfig,
+  errorPageConfig,
+  faqConfig,
+  breadCrumbConfig,
 } from '../src/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -42,6 +46,10 @@ const config = {
   testimonialConfig,
   latestBlogConfig,
   brandConfig,
+  contactConfig,
+  errorPageConfig,
+  faqConfig,
+  breadCrumbConfig,
 };
 
 const projectRoot = path.resolve(__dirname, '../../');

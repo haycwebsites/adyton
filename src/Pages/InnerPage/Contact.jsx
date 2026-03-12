@@ -10,13 +10,10 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const Contact = () => {
   const location = useLocation();
-  const { config } = useHayc();
+  const { t, img, config, cp } = useHayc();
+  const c = config.contactConfig;
   const siteId = config.siteConfig.siteId;
   const apiUrl = config.siteConfig.apiUrl;
-
-  const phone = "+306934929203";
-  const email = "development@hayc.gr";
-  const address = "Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece";
 
   // Form state
   const [name, setName] = useState("");
@@ -31,12 +28,12 @@ const Contact = () => {
 
   const validate = useCallback(() => {
     const errors = {};
-    if (!name.trim()) errors.name = "Name is required.";
-    if (!EMAIL_PATTERN.test(formEmail.trim())) errors.email = "Please enter a valid email.";
-    if (!message.trim()) errors.message = "Message is required.";
+    if (!name.trim()) errors.name = t(c.nameRequired);
+    if (!EMAIL_PATTERN.test(formEmail.trim())) errors.email = t(c.emailInvalid);
+    if (!message.trim()) errors.message = t(c.messageRequired);
     setFieldErrors(errors);
     return Object.keys(errors).length === 0;
-  }, [name, formEmail, message]);
+  }, [name, formEmail, message, t, c]);
 
   const handleSubmit = useCallback(
     async (e) => {
@@ -45,7 +42,7 @@ const Contact = () => {
       if (!validate()) return;
 
       if (!apiUrl || !siteId) {
-        setError("Something went wrong. Please try again.");
+        setError(t(c.errorMessage));
         return;
       }
 
@@ -66,12 +63,12 @@ const Contact = () => {
         if (!res.ok) throw new Error("Request failed");
         setSubmitted(true);
       } catch {
-        setError("Something went wrong. Please try again.");
+        setError(t(c.errorMessage));
       } finally {
         setLoading(false);
       }
     },
-    [apiUrl, siteId, name, formEmail, service, message, hp, validate]
+    [apiUrl, siteId, name, formEmail, service, message, hp, validate, t, c]
   );
 
   useEffect(() => {
@@ -83,10 +80,8 @@ const Contact = () => {
 
   return (
     <div>
-      <BreadCrumb title="Contact " />
+      <BreadCrumb title={t(c.breadcrumbTitle)} image={img(c.breadcrumbImage)} />
 
-      {/* Contact */}
-      {/* Contact with Us */}
       <div className="py-20 2xl:py-[120px] dark:bg-lightBlack">
         <div className="Container bg-whiteSmoke dark:bg-normalBlack px-7 md:px-10 lg:px-14 2xl:px-20 py-10 md:py-14 lg:py-18 xl:py-20 2xl:py-[100px] ">
           <div className="flex items-center flex-col md:flex-row">
@@ -95,16 +90,14 @@ const Contact = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1000"
             >
-              <p className="text-Garamond text-base leading-[26px] text-khaki font-medium">
-                CONTACT US
+              <p {...cp('contactConfig.sectionLabel')} className="text-Garamond text-base leading-[26px] text-khaki font-medium">
+                {t(c.sectionLabel)}
               </p>
-              <h2 className="text-Garamond text-[22px] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[38px] leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[44px] text-uppercase text-lightBlack dark:text-white font-semibold my-3 md:my-5">
-                CONTACT WITH US
+              <h2 {...cp('contactConfig.sectionTitle')} className="text-Garamond text-[22px] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[38px] leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[44px] text-uppercase text-lightBlack dark:text-white font-semibold my-3 md:my-5">
+                {t(c.sectionTitle)}
               </h2>
-              <p className="text-Lora text-sm sm:text-base leading-[26px]  text-gray dark:text-lightGray font-normal">
-                Reach out to ADYTON Mykonos for private long-stay inquiries,
-                availability details, and tailored support for your luxury stay
-                in Greece.
+              <p {...cp('contactConfig.sectionDesc')} className="text-Lora text-sm sm:text-base leading-[26px]  text-gray dark:text-lightGray font-normal">
+                {t(c.sectionDesc)}
               </p>
 
               {/* call */}
@@ -116,14 +109,14 @@ const Contact = () => {
                   />
                 </div>
                 <div className="ml-3 md:ml-4 min-w-0">
-                  <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
-                    Call Us Now
+                  <p {...cp('contactConfig.callLabel')} className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
+                    {t(c.callLabel)}
                   </p>
                   <a
-                    href={`tel:${phone}`}
+                    href={`tel:${c.phone}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
                   >
-                    {phone}
+                    {c.phone}
                   </a>
                 </div>
               </div>
@@ -137,14 +130,14 @@ const Contact = () => {
                   />
                 </div>
                 <div className="ml-3 md:ml-4">
-                  <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
-                    Send Email
+                  <p {...cp('contactConfig.emailLabel')} className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
+                    {t(c.emailLabel)}
                   </p>
                   <a
-                    href={`mailto:${email}`}
+                    href={`mailto:${c.email}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
                   >
-                    {email}
+                    {c.email}
                   </a>
                 </div>
               </div>
@@ -158,14 +151,15 @@ const Contact = () => {
                   />
                 </div>
                 <div className="ml-3 md:ml-4">
-                  <p className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
-                    Our Locations
+                  <p {...cp('contactConfig.locationLabel')} className="font-Lora text-sm leading-[26px] text-gray dark:text-lightGray font-normal">
+                    {t(c.locationLabel)}
                   </p>
                   <a
                     href="#contact-map"
+                    {...cp('contactConfig.address')}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300 break-words"
                   >
-                    {address}
+                    {t(c.address)}
                   </a>
                 </div>
               </div>
@@ -176,14 +170,14 @@ const Contact = () => {
               data-aos-duration="1000"
             >
               <div className="bg-lightBlack p-[30px] lg:p-[45px] 2xl:p-[61px]">
-                <h2 className="font-Garamond text-[22px] sm:text-2xl md:text-[28px] leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[44px] text-white font-semibold text-center">
-                  GET IN TOUCH
+                <h2 {...cp('contactConfig.formTitle')} className="font-Garamond text-[22px] sm:text-2xl md:text-[28px] leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[44px] text-white font-semibold text-center">
+                  {t(c.formTitle)}
                 </h2>
 
                 {submitted ? (
                   <div className="text-center mt-8 space-y-4">
-                    <h3 className="text-xl font-semibold text-khaki">Message sent!</h3>
-                    <p className="text-lightGray">We will get back to you shortly.</p>
+                    <h3 {...cp('contactConfig.successTitle')} className="text-xl font-semibold text-khaki">{t(c.successTitle)}</h3>
+                    <p {...cp('contactConfig.successMessage')} className="text-lightGray">{t(c.successMessage)}</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="grid items-center grid-cols-1 gap-2 mt-8">
@@ -209,7 +203,7 @@ const Contact = () => {
                         }}
                         disabled={loading}
                         className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none bg-transparent mt-4 focus:ring-0 placeholder:text-gray focus:border-gray dark:focus:border-lightGray focus:outline-none disabled:opacity-50"
-                        placeholder="Your Name"
+                        placeholder={t(c.namePlaceholder)}
                       />
                       {fieldErrors.name && (
                         <p className="text-red-500 text-sm mt-1">{fieldErrors.name}</p>
@@ -226,7 +220,7 @@ const Contact = () => {
                         }}
                         disabled={loading}
                         className="w-full h-12 md:h-13 lg:h-[59px] px-4 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none bg-transparent mt-4 focus:ring-0 placeholder:text-gray focus:border-gray dark:focus:border-lightGray focus:outline-none disabled:opacity-50"
-                        placeholder="Enter E-mail"
+                        placeholder={t(c.emailPlaceholder)}
                       />
                       {fieldErrors.email && (
                         <p className="text-red-500 text-sm mt-1">{fieldErrors.email}</p>
@@ -241,15 +235,15 @@ const Contact = () => {
                         className="w-full h-12 md:h-13 lg:h-[59px] px-4 pr-10 border-2 border-khaki/70 dark:border-khaki text-lightBlack dark:text-white outline-none bg-white dark:bg-lightBlack focus:ring-0 focus:border-khaki focus:outline-none appearance-none disabled:opacity-50"
                       >
                         <option value="" disabled>
-                          Select Service
+                          {t(c.serviceSelect)}
                         </option>
-                        <option value="private-security">Private security</option>
-                        <option value="chauffeur-driver">Chauffeur / Driver</option>
-                        <option value="private-chef">Private chef</option>
-                        <option value="hair-beauty-services">Hair & beauty services</option>
-                        <option value="vip-concierge-services">VIP concierge services</option>
+                        <option value="private-security">{t(c.servicePrivateSecurity)}</option>
+                        <option value="chauffeur-driver">{t(c.serviceChauffeur)}</option>
+                        <option value="private-chef">{t(c.servicePrivateChef)}</option>
+                        <option value="hair-beauty-services">{t(c.serviceHairBeauty)}</option>
+                        <option value="vip-concierge-services">{t(c.serviceVipConcierge)}</option>
                         <option value="personalized-security-escort">
-                          Personalized security escort
+                          {t(c.serviceSecurityEscort)}
                         </option>
                       </select>
                       <BiChevronDown
@@ -269,7 +263,7 @@ const Contact = () => {
                         cols="30"
                         rows="10"
                         className="w-full h-[121px] px-4 py-3 border border-gray dark:border-lightGray text-gray dark:text-lightGray outline-none bg-transparent mt-4 focus:ring-0 placeholder:text-gray resize-none focus:border-gray dark:focus:border-lightGray focus:outline-none disabled:opacity-50"
-                        placeholder="Write Message:"
+                        placeholder={t(c.messagePlaceholder)}
                       ></textarea>
                       {fieldErrors.message && (
                         <p className="text-red-500 text-sm mt-1">{fieldErrors.message}</p>
@@ -279,9 +273,10 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={loading}
+                      {...cp('contactConfig.submitButton')}
                       className="w-full bg-khaki text-white text-center h-10 2xl:h-[55px] mt-5 hover:bg-khaki/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      {loading ? "SENDING..." : "SEND MESSAGE"}
+                      {loading ? t(c.submittingButton) : t(c.submitButton)}
                     </button>
 
                     {error && (
@@ -300,7 +295,7 @@ const Contact = () => {
       {/* google map */}
       <div id="contact-map" data-aos="fade-down" data-aos-duration="1000">
         <iframe
-          src="https://www.google.com/maps?q=Mykonos%20Greece&output=embed"
+          src={c.mapUrl}
           height={450}
           allowFullScreen=""
           loading="lazy"

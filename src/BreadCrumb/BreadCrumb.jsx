@@ -1,8 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
+import { useHayc } from "../hayc/config-context";
 
-const BreadCrumb = ({ title, home, bgImage = "/images/LuxurySuites/590780018.jpg" }) => {
+const BreadCrumb = ({ title, image }) => {
   const location = useLocation();
+  const { t, img, config, cp } = useHayc();
+  const bc = config.breadCrumbConfig;
   const pathName = location.pathname.split("/")[1];
+  const bgImage = image || img(bc.defaultImage);
+
   return (
     <section
       className="bg-[rgba(0,0,0,0.42)] bg-blend-multiply bg-no-repeat bg-cover h-[550px] bg-center grid items-center justify-center"
@@ -17,7 +22,7 @@ const BreadCrumb = ({ title, home, bgImage = "/images/LuxurySuites/590780018.jpg
             to={`${pathName ? `/${pathName}` : "/"}`}
             className="text-base lg:text-2xl leading-10 2xl:leading-[70px] text-khaki font-semibold font-Garamond flex items-center"
           >
-            Home <span className="mx-2 text-white">/</span>
+            <span {...cp('breadCrumbConfig.homeLink')}>{t(bc.homeLink)}</span> <span className="mx-2 text-white">/</span>
           </Link>
           <Link
             to={`#`}

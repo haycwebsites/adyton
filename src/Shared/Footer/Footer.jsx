@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
 
 const Footer = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const f = config.footerConfig;
   const nav = config.navConfig;
 
@@ -24,7 +24,7 @@ const Footer = () => {
               <div className=" py-6 md:py-7 lg:py-[50px]  px-10 lg:px-5 xl:px-8 2xl:px-9 ">
                 <img src={img(f.logo)} alt="" />
                 <div className="py-8 2xl:py-[50px] ">
-                  <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10">
+                  <h1 {...cp('footerConfig.contactTitle')} className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10">
                     {t(f.contactTitle)}
                   </h1>
                   <div className="space-y-4 pt-[30px]  pb-2 2xl:pb-[30px] ">
@@ -56,7 +56,7 @@ const Footer = () => {
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
                         size={14}
                       />
-                      {t(f.address)}
+                      <span {...cp('footerConfig.address')}>{t(f.address)}</span>
                     </Link>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h1 className=" text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 {...cp('footerConfig.linksTitle')} className=" text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 {t(f.linksTitle)}
               </h1>
               <div className="pt-[30px] pb-0 lg:py-[30px]">
@@ -111,7 +111,7 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 {...cp('footerConfig.galleryTitle')} className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 {t(f.galleryTitle)}
               </h1>
               <div className="grid grid-cols-3 gap-2 mt-[45px] w-full max-w-[300px] lg:max-w-none content-center">
@@ -131,11 +131,11 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h1 className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
+              <h1 {...cp('footerConfig.newsletterTitle')} className="text-lg sm:text-xl md:text-[22px] leading-[38px] font-medium text-white relative font-Garamond before:w-7 before:h-[1px] before:bg-khaki before:absolute before:left-0 before:top-10 uppercase ">
                 {t(f.newsletterTitle)}
               </h1>
               <div className="space-y-4 py-[30px]">
-                <p className="text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
+                <p {...cp('footerConfig.newsletterDesc')} className="text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px]">
                   {t(f.newsletterDesc)}
                 </p>
                 <form action="" className="space-y-4">
@@ -145,14 +145,14 @@ const Footer = () => {
                     className="placeholder:text-gray placeholder:font-Lora placeholder:font-normal placeholder:text-[15px] text-center h-[56px] w-full px-10 placeholder:leading-[26px] text-[15px] text-gray border-none outline-none focus:outline-none focus:border-khaki focus:ring-0"
                     required
                   />
-                  <button className="btn-subscribe">{t(f.subscribeBtn)}</button>
+                  <button {...cp('footerConfig.subscribeBtn')} className="btn-subscribe">{t(f.subscribeBtn)}</button>
                 </form>
               </div>
             </div>
           </div>
           <div className="text-center py-5 2xl:py-7 bg-[#161616] text-sm md:text-base text-lightGray font-Lora font-normal">
-            <p>Copyright © 2026 All Right Reserved.</p>
-            <p>Made by hayc with 💙</p>
+            <p {...cp('footerConfig.copyrightText')}>{t(f.copyrightText)}</p>
+            <p {...cp('footerConfig.madeByText')}>{t(f.madeByText)}</p>
           </div>
         </div>
       </footer>

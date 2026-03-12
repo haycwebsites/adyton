@@ -24,6 +24,8 @@ export interface SiteConfig {
   keywords: LocaleString;
   ogImage: string;
   canonical: string;
+  siteId: string;
+  apiUrl: string;
 }
 
 export interface PreloaderConfig {
@@ -94,6 +96,8 @@ export interface FooterConfig {
   emailPlaceholder: LocaleString;
   subscribeBtn: LocaleString;
   copyrightPrefix: LocaleString;
+  copyrightText: LocaleString;
+  madeByText: LocaleString;
 }
 
 // Royella - Hero (Home1)
@@ -259,6 +263,65 @@ export interface BrandConfig {
   brand3: string;
 }
 
+// Contact Page
+export interface ContactConfig {
+  breadcrumbTitle: LocaleString;
+  breadcrumbImage: string;
+  sectionLabel: LocaleString;
+  sectionTitle: LocaleString;
+  sectionDesc: LocaleString;
+  callLabel: LocaleString;
+  emailLabel: LocaleString;
+  locationLabel: LocaleString;
+  formTitle: LocaleString;
+  namePlaceholder: LocaleString;
+  emailPlaceholder: LocaleString;
+  serviceSelect: LocaleString;
+  servicePrivateSecurity: LocaleString;
+  serviceChauffeur: LocaleString;
+  servicePrivateChef: LocaleString;
+  serviceHairBeauty: LocaleString;
+  serviceVipConcierge: LocaleString;
+  serviceSecurityEscort: LocaleString;
+  messagePlaceholder: LocaleString;
+  submitButton: LocaleString;
+  submittingButton: LocaleString;
+  successTitle: LocaleString;
+  successMessage: LocaleString;
+  errorMessage: LocaleString;
+  nameRequired: LocaleString;
+  emailInvalid: LocaleString;
+  messageRequired: LocaleString;
+  phone: string;
+  email: string;
+  address: LocaleString;
+  mapUrl: string;
+}
+
+// Error Page
+export interface ErrorPageConfig {
+  errorCode: LocaleString;
+  errorTitle: LocaleString;
+  goHomeButton: LocaleString;
+}
+
+// FAQ Config
+export interface FAQItem {
+  question: LocaleString;
+  answer: LocaleString;
+}
+
+export interface FAQConfig {
+  sectionTitle: LocaleString;
+  items: FAQItem[];
+}
+
+// BreadCrumb Config
+export interface BreadCrumbConfig {
+  homeLink: LocaleString;
+  defaultImage: string;
+}
+
 // =============================================================================
 // CONSTANTS
 // =============================================================================
@@ -270,6 +333,8 @@ export const siteConfig: SiteConfig = {
   keywords: { el: 'ξενοδοχείο, resort', en: 'hotel, resort' },
   ogImage: '/images/home-1/hero-bg.jpg',
   canonical: '',
+  siteId: 'adyton-luxury-suites',
+  apiUrl: 'https://harmonious-embrace-staging.up.railway.app',
 };
 
 export const preloaderConfig: PreloaderConfig = {
@@ -344,6 +409,8 @@ export const footerConfig: FooterConfig = {
   emailPlaceholder: { el: 'Enter Email', en: 'Enter Email' },
   subscribeBtn: { el: 'Subscribe Now', en: 'Subscribe Now' },
   copyrightPrefix: { el: 'Royella. All Rights Reserved.', en: 'Royella. All Rights Reserved.' },
+  copyrightText: { el: 'Copyright © 2026 All Right Reserved.', en: 'Copyright © 2026 All Right Reserved.' },
+  madeByText: { el: 'Made by hayc with 💙', en: 'Made by hayc with 💙' },
 };
 
 export const heroConfig: HeroConfig = {
@@ -375,7 +442,7 @@ export const roomsConfig: RoomsConfig = {
   guestsLabel: { el: 'Επισκέπτες', en: 'Guests' },
   childLabel: { el: 'Παιδί', en: 'Child' },
   checkoutBtn: { el: 'Κράτηση Τώρα', en: 'Checkout Now' },
-  sectionTitle: { el: 'Additional Services ', en: "Additional Services " },
+  sectionTitle: { el: 'Additional Services ', en: 'Additional Services ' },
   sectionDesc: { el: 'Explore our luxurious services..', en: 'Explore our luxurious services..' },
   viewDetailsBtn: { el: 'View More', en: 'View More' },
   nightLabel: { el: 'Νύχτα', en: 'Night' },
@@ -426,7 +493,7 @@ export const hotelAndFacilitiesConfig: HotelAndFacilitiesConfig = {
   feature4: '/images/home-1/feature-4.png',
   feature5: '/images/home-1/feature-5.png',
   hoverImage: '/images/home-1/feature-imgs-1.jpg',
-  title: { el: "ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΞΕΝΟΔΟΧΕΙΟΥ", en: "HOTEL'S FACILITIES" },
+  title: { el: 'ΕΓΚΑΤΑΣΤΑΣΕΙΣ ΞΕΝΟΔΟΧΕΙΟΥ', en: 'HOTEL\'S FACILITIES' },
   description: { el: 'Proactively morph optimal infomediaries...', en: 'Proactively morph optimal infomediaries...' },
   service1: { el: 'Υπηρεσίες Δωματίου', en: 'Room Services' },
   service2: { el: 'Wi-Fi Internet', en: 'Wi-Fi Internet' },
@@ -452,7 +519,7 @@ export const offersConfig: OffersConfig = {
   offer3: '/images/LuxurySuites/714733127.jpg',
   offer4: '/images/LuxurySuites/758041493.jpg',
   sectionLabel: { el: 'ADYTON LUXURY SUITE', en: 'OFFERS' },
-  title: { el: "MORE IMAGES OF OUR SUITE", en: "MORE IMAGES OF OUR SUITE" },
+  title: { el: 'MORE IMAGES OF OUR SUITE', en: 'MORE IMAGES OF OUR SUITE' },
   discount1: { el: '25% έκπτωση', en: '25% off' },
   discount2: { el: '24% έκπτωση', en: '24% off' },
   discount3: { el: '26% έκπτωση', en: '26% off' },
@@ -470,7 +537,7 @@ export const testimonialConfig: TestimonialConfig = {
   author1: '/images/home-1/testi-author.png',
   author2: '/images/home-1/testi-author-2.png',
   author3: '/images/home-1/call-do-action-img.png',
-  title: { el: "Μαρτυρία Πελάτη", en: "Ustomer's TestimonialL" },
+  title: { el: 'Μαρτυρία Πελάτη', en: 'Ustomer\'s TestimonialL' },
   quote: { el: 'Professionally repurpose flexible testing procedures...', en: 'Professionally repurpose flexible testing procedures...' },
   authorName1: { el: 'Maicle clork', en: 'Maicle clork' },
   authorName2: { el: 'Marina Trange', en: 'Marina Trange' },
@@ -497,4 +564,87 @@ export const brandConfig: BrandConfig = {
   brand1: '/images/logo2.png',
   brand2: '/images/logo2.png',
   brand3: '/images/logo2.png',
+};
+
+export const contactConfig: ContactConfig = {
+  breadcrumbTitle: { el: 'Επικοινωνία', en: 'Contact' },
+  breadcrumbImage: '/images/LuxurySuites/590780018.jpg',
+  sectionLabel: { el: 'ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ', en: 'CONTACT US' },
+  sectionTitle: { el: 'ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ', en: 'CONTACT WITH US' },
+  sectionDesc: { el: 'Επικοινωνήστε με το ADYTON Mykonos για ιδιωτικές ερωτήσεις μακροχρόνιας διαμονής, λεπτομέρειες διαθεσιμότητας και εξατομικευμένη υποστήριξη για την πολυτελή διαμονή σας στην Ελλάδα.', en: 'Reach out to ADYTON Mykonos for private long-stay inquiries, availability details, and tailored support for your luxury stay in Greece.' },
+  callLabel: { el: 'Καλέστε μας τώρα', en: 'Call Us Now' },
+  emailLabel: { el: 'Στείλτε Email', en: 'Send Email' },
+  locationLabel: { el: 'Η τοποθεσία μας', en: 'Our Locations' },
+  formTitle: { el: 'ΕΠΙΚΟΙΝΩΝΗΣΤΕ', en: 'GET IN TOUCH' },
+  namePlaceholder: { el: 'Το όνομά σας', en: 'Your Name' },
+  emailPlaceholder: { el: 'Εισάγετε E-mail', en: 'Enter E-mail' },
+  serviceSelect: { el: 'Επιλέξτε υπηρεσία', en: 'Select Service' },
+  servicePrivateSecurity: { el: 'Ιδιωτική ασφάλεια', en: 'Private security' },
+  serviceChauffeur: { el: 'Οδηγός / Σοφέρ', en: 'Chauffeur / Driver' },
+  servicePrivateChef: { el: 'Ιδιωτικός σεφ', en: 'Private chef' },
+  serviceHairBeauty: { el: 'Υπηρεσίες ομορφιάς', en: 'Hair & beauty services' },
+  serviceVipConcierge: { el: 'VIP concierge', en: 'VIP concierge services' },
+  serviceSecurityEscort: { el: 'Εξατομικευμένη συνοδεία ασφαλείας', en: 'Personalized security escort' },
+  messagePlaceholder: { el: 'Γράψτε το μήνυμά σας:', en: 'Write Message:' },
+  submitButton: { el: 'ΑΠΟΣΤΟΛΗ ΜΗΝΥΜΑΤΟΣ', en: 'SEND MESSAGE' },
+  submittingButton: { el: 'ΑΠΟΣΤΟΛΗ...', en: 'SENDING...' },
+  successTitle: { el: 'Το μήνυμα στάλθηκε!', en: 'Message sent!' },
+  successMessage: { el: 'Θα επικοινωνήσουμε μαζί σας σύντομα.', en: 'We will get back to you shortly.' },
+  errorMessage: { el: 'Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.', en: 'Something went wrong. Please try again.' },
+  nameRequired: { el: 'Το όνομα είναι υποχρεωτικό.', en: 'Name is required.' },
+  emailInvalid: { el: 'Παρακαλώ εισάγετε έγκυρο email.', en: 'Please enter a valid email.' },
+  messageRequired: { el: 'Το μήνυμα είναι υποχρεωτικό.', en: 'Message is required.' },
+  phone: '+306934929203',
+  email: 'info@adyton.gr',
+  address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
+  mapUrl: 'https://www.google.com/maps?q=Mykonos%20Greece&output=embed',
+};
+
+export const errorPageConfig: ErrorPageConfig = {
+  errorCode: { el: '404', en: '404' },
+  errorTitle: { el: 'Η σελίδα δεν βρέθηκε', en: 'Page Not Found' },
+  goHomeButton: { el: 'Αρχική', en: 'Go Home' },
+};
+
+export const faqConfig: FAQConfig = {
+  sectionTitle: { el: 'ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ', en: 'FREQUENTLY ASKED QUESTIONS' },
+  items: [
+    {
+      question: { el: 'Ποιες είναι οι διαθέσιμες επιλογές μίσθωσης;', en: 'What are the available lease options?' },
+      answer: { el: 'Προσφέρουμε δύο ευέλικτες επιλογές: 6μηνη εποχιακή μίσθωση (€125.000) ή ετήσια μίσθωση (€145.000), όλα τα έξοδα συμπεριλαμβάνονται.', en: 'We offer two flexible options: 6-month seasonal lease (€125,000) or annual lease (€145,000), all taxes and utilities included.' },
+    },
+    {
+      question: { el: 'Τι περιλαμβάνεται στην τιμή μίσθωσης;', en: 'What is included in the lease price?' },
+      answer: { el: 'Όλες οι κοινόχρηστες δαπάνες, συντήρηση κήπου και πισίνας, πλήρης τεχνική υποστήριξη και ηλεκτρισμός/νερό περιλαμβάνονται.', en: 'All utilities, garden and pool maintenance, full technical support, and electricity/water are included.' },
+    },
+    {
+      question: { el: 'Ποιο είναι το ιδανικό πελατολόγιο για αυτό το ακίνητο;', en: 'Who is the ideal clientele for this property?' },
+      answer: { el: 'Εταιρική στέγαση, πρεσβευτικές ή διπλωματικές κατοικίες, διεθνείς οικογένειες και πελάτες πολυτελούς μακροχρόνιας διαμονής.', en: 'Corporate housing, embassy or diplomatic residences, international families, and luxury long-stay clientele.' },
+    },
+    {
+      question: { el: 'Πόσες σουίτες και πισίνες περιλαμβάνει;', en: 'How many suites and pools does it include?' },
+      answer: { el: '1 ιδιωτική μεζονέτα, 4 διπλές σουίτες πολυτελείας με ιδιωτική πισίνα, 1 σουίτα με σαλόνι, και 1 κοινόχρηστη πισίνα.', en: '1 private maisonette, 4 double luxury suites each with a private pool, 1 suite with living room, and 1 main communal pool.' },
+    },
+    {
+      question: { el: 'Υπάρχει internet και parking;', en: 'Is there internet and parking?' },
+      answer: { el: 'Ναι, δωρεάν Wi-Fi υψηλής ταχύτητας και ιδιωτικό parking περιλαμβάνονται.', en: 'Yes, free high-speed Wi-Fi and private parking are included.' },
+    },
+    {
+      question: { el: 'Πού βρίσκεται το ακίνητο;', en: 'Where is the property located?' },
+      answer: { el: 'Στην Άνω Μερά, Μύκονος. 2 χλμ από παραλία Καλό Λιβάδι, 5 χλμ από αεροδρόμιο, 8,5 χλμ από Χώρα Μυκόνου.', en: 'In Ano Mera, Mykonos. 2 km from Kaló Livádi beach, 5 km from airport, 8.5 km from Mykonos Town.' },
+    },
+    {
+      question: { el: 'Υπάρχουν επιπλέον υπηρεσίες;', en: 'Are there additional services available?' },
+      answer: { el: 'Ναι, κατόπιν αιτήματος: ιδιωτική ασφάλεια, σοφέρ, ιδιωτικός σεφ, υπηρεσίες ομορφιάς, VIP concierge.', en: 'Yes, upon request: private security, chauffeur, private chef, hair & beauty services, VIP concierge.' },
+    },
+    {
+      question: { el: 'Πώς μπορώ να κάνω ερώτηση;', en: 'How can I make an inquiry?' },
+      answer: { el: 'Επικοινωνήστε μαζί μας τηλεφωνικά ή μέσω email. Σοβαρές ερωτήσεις και εμπιστευτικές διαπραγματεύσεις είναι ευπρόσδεκτες.', en: 'Contact us by phone or email. Serious inquiries and confidential negotiations are welcome.' },
+    },
+  ],
+};
+
+export const breadCrumbConfig: BreadCrumbConfig = {
+  homeLink: { el: 'Αρχική', en: 'Home' },
+  defaultImage: '/images/LuxurySuites/590780018.jpg',
 };

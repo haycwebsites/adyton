@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import { useHayc } from "../../../hayc/config-context";
 
 /* eslint-disable react/prop-types */
-export default function Accordion({ children, title, id, active = false }) {
+export default function Accordion({ children, title, id, active = false, cpPath }) {
   const [accordionOpen, setAccordionOpen] = useState(false);
+  const { cp } = useHayc();
 
   useEffect(() => {
     setAccordionOpen(active);
-  }, []);
+  }, [active]);
 
   return (
     <div className="py-2">
@@ -20,7 +22,7 @@ export default function Accordion({ children, title, id, active = false }) {
           aria-expanded={accordionOpen}
           aria-controls={`accordion-text-${id}`}
         >
-          <span className="text-white text-base sm:text-lg md:text-xl 2xl:text-[22px] ">
+          <span {...(cpPath ? cp(cpPath) : {})} className="text-white text-base sm:text-lg md:text-xl 2xl:text-[22px] ">
             {title}
           </span>
           <svg

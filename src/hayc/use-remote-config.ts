@@ -15,6 +15,10 @@ import {
   testimonialConfig,
   latestBlogConfig,
   brandConfig,
+  contactConfig,
+  errorPageConfig,
+  faqConfig,
+  breadCrumbConfig,
 } from '../config';
 
 export interface RemoteConfig {
@@ -36,6 +40,10 @@ export interface RemoteConfig {
   testimonialConfig: typeof testimonialConfig;
   latestBlogConfig: typeof latestBlogConfig;
   brandConfig: typeof brandConfig;
+  contactConfig: typeof contactConfig;
+  errorPageConfig: typeof errorPageConfig;
+  faqConfig: typeof faqConfig;
+  breadCrumbConfig: typeof breadCrumbConfig;
 }
 
 export const defaultConfig: RemoteConfig = {
@@ -57,6 +65,10 @@ export const defaultConfig: RemoteConfig = {
   testimonialConfig,
   latestBlogConfig,
   brandConfig,
+  contactConfig,
+  errorPageConfig,
+  faqConfig,
+  breadCrumbConfig,
 };
 
 export async function fetchRemoteConfig(): Promise<RemoteConfig> {
