@@ -331,11 +331,11 @@ export interface BreadCrumbConfig {
 // =============================================================================
 
 export const siteConfig: SiteConfig = {
-  title: { el: 'Royella', en: 'Royella' },
-  description: { el: 'Ξενοδοχείο και Resort', en: 'Hotel and Resort' },
+  title: { el: 'Adyton Mykonos Suite', en: 'Adyton Mykonos Suite' },
+  description: { el: 'Adyton Mykonos Luxury Suites & Pools', en: 'Adyton Mykonos Luxury Suites & Pools' },
   language: 'en',
-  keywords: { el: 'ξενοδοχείο, resort', en: 'hotel, resort' },
-  ogImage: '/images/home-1/hero-bg.jpg',
+  keywords: { el: 'Adyton Mykonos Suite', en: 'Adyton Mykonos Suite' },
+  ogImage: '/images/LuxurySuites/590780018.jpg',
   canonical: '',
   siteId: 'adyton-luxury-suites',
   apiUrl: 'https://harmonious-embrace-staging.up.railway.app',
@@ -344,7 +344,7 @@ export const siteConfig: SiteConfig = {
 export const preloaderConfig: PreloaderConfig = {
   brandName: { el: 'Adyton Mykonos Suite', en: 'Adyton Mykonos Suite' },
   brandSubname: { el: '', en: '' },
-  yearText: { el: '2024', en: '2024' },
+  yearText: { el: '2026', en: '2026' },
 };
 
 export const scrollToTopConfig: ScrollToTopConfig = {
