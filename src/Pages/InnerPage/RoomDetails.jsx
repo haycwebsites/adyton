@@ -1,6 +1,7 @@
 import { BsArrowLeft, BsArrowRight, BsCheck2 } from "react-icons/bs";
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { useState } from "react";
+import { useHayc } from "../../hayc/config-context";
 import {
   FaBath,
   FaBed,
@@ -22,6 +23,8 @@ import { MdOutlineAirportShuttle } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 
 const RoomDetails = () => {
+  const { img, config } = useHayc();
+  const bc = config.breadCrumbConfig;
   const [imageIndex, setImageIndex] = useState(0);
   const location = useLocation();
   const bookingsData = location.state && location.state;
@@ -49,7 +52,7 @@ const RoomDetails = () => {
     <section className="">
       <BreadCrumb
         title="Adyton Suite"
-        bgImage="/images/LuxurySuites/589394487.jpg"
+        image={img(bc.adytonSuiteImage)}
       />
 
       {/* Room Details */}

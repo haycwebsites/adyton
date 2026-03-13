@@ -3,13 +3,17 @@ import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { Link } from "react-router-dom";
 import BlogSideBar from "./BlogSideBar";
 import { blogPosts } from "../../data/blogPosts";
+import { useHayc } from "../../hayc/config-context";
 
 const Blog = () => {
+  const { img, config } = useHayc();
+  const bc = config.breadCrumbConfig;
+
   return (
     <div>
       <BreadCrumb
         title="Blog"
-        bgImage="/images/LuxurySuites/590781352.jpg"
+        image={img(bc.blogImage)}
       />
       <div className="dark:bg-lightBlack py-20 2xl:py-[120px]">
         <div className="Container grid grid-cols-6 md:grid-cols-7 lg:grid-cols-6 gap-5 ">

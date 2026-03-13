@@ -320,6 +320,10 @@ export interface FAQConfig {
 export interface BreadCrumbConfig {
   homeLink: LocaleString;
   defaultImage: string;
+  contactImage: string;
+  blogImage: string;
+  roomsImage: string;
+  adytonSuiteImage: string;
 }
 
 // =============================================================================
@@ -568,7 +572,7 @@ export const brandConfig: BrandConfig = {
 
 export const contactConfig: ContactConfig = {
   breadcrumbTitle: { el: 'Contact', en: 'Contact' },
-  breadcrumbImage: '/images/LuxurySuites/590780018.jpg',
+  breadcrumbImage: '/images/LuxurySuites/589394453.jpg',
   sectionLabel: { el: 'CONTACT US', en: 'CONTACT US' },
   sectionTitle: { el: 'CONTACT WITH US', en: 'CONTACT WITH US' },
   sectionDesc: { el: 'Reach out to ADYTON Mykonos for private long-stay inquiries, availability details, and tailored support for your luxury stay in Greece.', en: 'Reach out to ADYTON Mykonos for private long-stay inquiries, availability details, and tailored support for your luxury stay in Greece.' },
@@ -647,4 +651,8 @@ export const faqConfig: FAQConfig = {
 export const breadCrumbConfig: BreadCrumbConfig = {
   homeLink: { el: 'Home', en: 'Home' },
   defaultImage: '/images/LuxurySuites/590780018.jpg',
+  contactImage: '/images/LuxurySuites/589394453.jpg',
+  blogImage: '/images/LuxurySuites/589394592.jpg',
+  roomsImage: '/images/LuxurySuites/590792439.jpg',
+  adytonSuiteImage: '/images/LuxurySuites/590776503.jpg',
 };

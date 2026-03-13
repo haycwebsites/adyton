@@ -1,11 +1,15 @@
 import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { Link } from "react-router-dom";
+import { useHayc } from "../../hayc/config-context";
 import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 const Room = () => {
+  const { img, config } = useHayc();
+  const bc = config.breadCrumbConfig;
+
   // facilities slider breckpoints
   const [sliderRef] = useKeenSlider({
     breakpoints: {
@@ -38,8 +42,7 @@ const Room = () => {
     <section className="">
       <BreadCrumb
         title="ROOMS"
-        home={"/"}
-        bgImage="/images/LuxurySuites/590781834.jpg"
+        image={img(bc.roomsImage)}
       />
 
       {/* All rooms */}
