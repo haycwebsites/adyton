@@ -368,7 +368,7 @@ export const navConfig: NavConfig = {
   homeCityHotel: { el: 'City Hotel', en: 'City Hotel' },
   homeApartment: { el: 'Διαμέρισμα', en: 'Apartment' },
   about: { el: 'About', en: 'About' },
-  rooms: { el: 'Luxury suites and pools', en: 'Luxury suites and pools' },
+  rooms: { el: 'Luxury suites', en: 'Luxury suites' },
   room: { el: 'Room', en: 'Room' },
   findRoom: { el: 'Find Room', en: 'Find Room' },
   roomDetails: { el: 'Room Details', en: 'Room Details' },

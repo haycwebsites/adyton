@@ -42,6 +42,12 @@ const HeroSection = () => {
               data-aos="fade-down"
             >
               <div className="font-Garamond 2xl:w-[720px] text-center">
+                {/* Logo with lines */}
+                <div className="flex items-center justify-center space-x-3 md:space-x-4 mb-5 md:mb-8">
+                  <hr className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[220px] h-[2px] bg-white/90" />
+                  <img src={img(config?.navConfig?.logo ?? '/images/inner/AdytonLogo.png')} alt="" className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px] object-contain" />
+                  <hr className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[220px] h-[2px] bg-white/90" />
+                </div>
                 <h4 className="text-base mb-4">{t(h.subtitle)}</h4>
                 <div className="mb-7 md:mb-8 lg:mb-9 xl:mb-10">
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-8xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[90px]">
