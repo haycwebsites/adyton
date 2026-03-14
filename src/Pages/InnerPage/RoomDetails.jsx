@@ -118,9 +118,6 @@ The complex features six ground-floor suites (25–30 m² each), every one with 
                 data-aos="zoom-in-up"
                 data-aos-duration="1000"
               >
-               The property also includes a reception area and operational support spaces. In addition, there is the possibility to operate a 50 m² food & beverage venue with an additional 50 m² covered outdoor area, ideal for a breakfast area, coffee bar, or restaurant.
-
-The property is fully furnished, newly built, and designed to a luxury standard, and it operates with an official EOT (Greek Tourism Organization) license.
 
 Each suite is equipped with air conditioning, a television, a bathroom with shower and amenities, a refrigerator/mini bar, an espresso machine, and a kettle. Free Wi-Fi is available throughout the property.
 
