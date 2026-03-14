@@ -601,7 +601,7 @@ export const contactConfig: ContactConfig = {
   phone: '22890 305041',
   email: 'adytonmykonos@gmail.com',
   address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
-  mapUrl: 'https://maps.google.com/maps?q=Eparchiaki+Odos+Mykonou-Ano+Merias,+Ano+Mera,+84600,+Greece&t=&z=15&ie=UTF8&iwloc=&output=embed',
+  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813.3668125119325!2d25.391978196890864!3d37.443589851358055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b9c7a2ca8469%3A0x82134b26f3ce1d33!2sAdyton%20Luxury%20Suites%20%26%20Pools%20Mykonos!5e0!3m2!1sen!2sfr!4v1773488927998!5m2!1sen!2sfr',
 };
 
 export const errorPageConfig: ErrorPageConfig = {
