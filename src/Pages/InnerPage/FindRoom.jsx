@@ -88,9 +88,9 @@ const FindRoom = () => {
               <span
                 className="flex items-center justify-between text-sm text-gray dark:text-lightGray cursor-pointer"
                 onClick={() => setOpen(!open)}
-                title="click hear to open and close rooms extender"
+                title="Click to open and close luxury suites selector"
               >
-                Rooms
+                Luxury suites and pools
                 <BiChevronDown className="" />
               </span>
               <div className="text-sm pt-[6px] lightBlack dark:text-white">

@@ -12,22 +12,21 @@ import { MdPool } from "react-icons/md";
 import { LuTv } from "react-icons/lu";
 
 const amenities = [
-  { icon: MdPool, label: "Outdoor Swimming Pool" },
+  { icon: MdPool, label: "6 Private Swimming Pools" },
   { icon: FaParking, label: "Free Parking" },
-  { icon: FaSmokingBan, label: "Non-Smoking Rooms" },
+  { icon: FaSmokingBan, label: "Non-Smoking Luxury Suites" },
   { icon: FaWifi, label: "Free Wi-Fi" },
-  { icon: FaUsers, label: "Family Rooms" },
+  { icon: FaUsers, label: "Family Luxury Suites" },
   { icon: FaCoffee, label: "Coffee/Tea Maker" },
   { icon: FaBath, label: "Private Bathroom" },
   { icon: FaSnowflake, label: "Air Conditioning" },
   { icon: LuTv, label: "Flat-Screen TV" },
   { icon: FaBed, label: "Comfort Bedding" },
-  { icon: MdPool, label: "Seasonal Pool Access" },
 ];
 
 const HotelAndFacilities = () => {
   return (
-    <section className="bg-lightBlack z-[1]">
+    <section className="bg-white z-[1]">
       <div className="relative overflow-hidden py-[110px]">
         <div
           aria-hidden="true"
@@ -41,18 +40,18 @@ const HotelAndFacilities = () => {
           >
             {/* Section logo */}
             <div className="flex items-center justify-center space-x-2 mb-4 lg:mb-5">
-              <hr className="w-[100px] h-[1px] bg-[#3b3b3b] text-[#3b3b3b] " />
+              <hr className="w-[100px] h-[1px] bg-gray-300 " />
               <img
                 src="/images/inner/AdytonLogo.png"
                 alt="room_section_logo"
                 className="w-[50px] h-[50px]"
               />
-              <hr className="w-[100px] h-[1px] bg-[#3b3b3b] text-[#3b3b3b] " />
+              <hr className="w-[100px] h-[1px] bg-gray-300 " />
             </div>
-            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] 2xl:leading-[52px] text-white mb-[6px] font-Garamond font-semibold uppercase">
+            <h1 className="text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] 2xl:leading-[52px] text-lightBlack mb-[6px] font-Garamond font-semibold uppercase">
               ADYTON LUXURY AMENITIES
             </h1>
-            <p className="font-Lora leading-[26px] text-lightGray font-normal text-sm sm:text-base">
+            <p className="font-Lora leading-[26px] text-gray font-normal text-sm sm:text-base">
               Discover premium facilities designed for extended luxury stays in
               Mykonos, with comfort, privacy and concierge-level support at
               every step.
@@ -69,13 +68,13 @@ const HotelAndFacilities = () => {
               return (
                 <div
                   key={`${amenity.label}-${index}`}
-                  className="h-[200px] w-[191px] pt-[37px] pb-[27px] border border-[#343434] text-center transition-all duration-300 hover:bg-[#272727] group"
+                  className="h-[200px] w-[191px] pt-[37px] pb-[27px] border border-gray-200 bg-white text-center transition-all duration-300 hover:bg-gray-50 group"
                 >
                   <div>
                     <Icon className="mx-auto text-khaki" size={34} />
                   </div>
                   <div className="">
-                    <h4 className="text-[20px] leading-6 font-Garamond text-white font-medium mt-[36px] px-3 relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-slate-500 before:group-hover:bg-khaki">
+                    <h4 className="text-[20px] leading-6 font-Garamond text-lightBlack font-medium mt-[36px] px-3 relative before:absolute before:w-[1px] before:h-[25px] before:left-[50%] before:top-[-27px] before:bg-[#d1d5db] before:group-hover:bg-khaki">
                       {amenity.label}
                     </h4>
                   </div>
@@ -93,14 +92,14 @@ const HotelAndFacilities = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-secondary">6 months</button>
+              <button className="btn-items">6 months</button>
             </a>
             <a
               href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-secondary">12 months</button>
+              <button className="btn-items">12 months</button>
             </a>
           </div>
         </div>

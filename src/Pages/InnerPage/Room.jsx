@@ -41,7 +41,7 @@ const Room = () => {
   return (
     <section className="">
       <BreadCrumb
-        title="ROOMS"
+        title="LUXURY SUITES AND POOLS"
         image={img(bc.roomsImage)}
       />
 
@@ -66,10 +66,10 @@ const Room = () => {
               <hr className="w-[100px] h-[1px] bg-lightGray dark:bg-gray text-lightGray dark:text-gray" />
             </div>
             <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-9 lg:leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mt-[30px] mb-[24px] font-Garamond font-semibold uppercase">
-              ADYTON SUITE ROOMS 
+              ADYTON LUXURY SUITES AND POOLS 
             </h1>
             <p className="text-sm sm:text-base text-gray dark:text-lightGray font-Lora">
-              Explore the elegant rooms of our luxury suite, designed for comfort and a refined stay. Ready to make your booking? Choose your preferred lease plan and secure your stay instantly.
+              Explore the elegant luxury suites and pools of our compound, designed for comfort and a refined stay. Capacity 14 guests (up to 16 upon request with free extra bed in specific suites). Choose your preferred lease plan and secure your stay instantly.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-10 mb-12">
               <a

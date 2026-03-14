@@ -170,23 +170,14 @@ Plot size approximately 4,600 m², three-phase electricity, municipal water supp
                   </ul>
                 </div>
                 {/* check-out */}
-                <div className="mt-5 md:mt-0">
+                {/* <div className="mt-5 md:mt-0">
                   <div className="flex items-center space-x-2">
                     <FaMoneyBillWave className="text-khaki" size={22} />
                     <h4 className="text-xl md:text-2xl lg:text-[26px] leading-[26px] font-Garamond text-lightBlack dark:text-white font-semibold ">
                       Price
                     </h4>
                   </div>
-                  <ul className="space-y-2 lg:space-y-3 mt-5 lg:mt-[30px]">
-                    <li className="flex items-center">
-                      <BsCheck2 size={16} className="text-khaki mr-2" />
-                      <span className="text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                      €10,540 / month (€8,500 + 24% VAT), with company invoice.
-                      </span>
-                    </li>
-                   
-                  </ul>
-                </div>
+                </div> */}
               </div>
 
               {/* Price Includes */}
@@ -250,22 +241,22 @@ The Kalo Livadi Beach is located 2 km from Adyton Mykonos Luxury Suites & Pools,
                   data-aos="zoom-in-up"
                   data-aos-duration="1000"
                 >
-                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 ">
-                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                      <FaRulerCombined className="inline mr-2 text-khaki" />
-                      220 Square Meters
-                    </p>
-                  </div>
-                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                  <div className="bg-white dark:bg-lightBlack h-auto min-h-[50px] 2xl:min-h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6 py-3">
                     <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
                       <FaDoorOpen className="inline mr-2 text-khaki" />
-                      6 Rooms
+                      5 double luxury suites (convertible to triple) + 1 main residence maisonette with 2 double to 2 triple bedrooms
                     </p>
                   </div>
                   <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
                     <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
-                      <FaBed className="inline mr-2 text-khaki" />
-                      6 Beds
+                      <FaUsers className="inline mr-2 text-khaki" />
+                      Capacity: 14–21 guests
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
+                    <p className="text-sm md:text-[15px] leading-[26px] font-Lora font-medium text-lightBlack dark:text-white">
+                      <MdPool className="inline mr-2 text-khaki" />
+                      6 private pools
                     </p>
                   </div>
                   <div className="bg-white dark:bg-lightBlack h-10 lg:h-[50px] 2xl:h-[56px] grid items-center justify-start px-3 sm:px-5 2xl:px-6">
@@ -291,7 +282,7 @@ The Kalo Livadi Beach is located 2 km from Adyton Mykonos Luxury Suites & Pools,
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
                   <MdPool className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={18} />
                   <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                    Outdoor swimming pool
+                    6 private swimming pools
                   </span>
                 </div>
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
@@ -303,7 +294,7 @@ The Kalo Livadi Beach is located 2 km from Adyton Mykonos Luxury Suites & Pools,
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
                   <FaSmokingBan className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={16} />
                   <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                    Non-smoking rooms
+                    Non-smoking luxury suites
                   </span>
                 </div>
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
@@ -315,13 +306,13 @@ The Kalo Livadi Beach is located 2 km from Adyton Mykonos Luxury Suites & Pools,
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
                   <FaUsers className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={16} />
                   <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                    Family rooms
+                    Capacity 14 guests (up to 16 upon request, free extra bed in specific suites)
                   </span>
                 </div>
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
                   <FaCoffee className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={16} />
                   <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                    Coffee/tea maker in all rooms
+                    Coffee/tea maker in all luxury suites
                   </span>
                 </div>
                 <div className="flex items-center py-5 border-b-[1px] border-lightGray dark:border-gray">
