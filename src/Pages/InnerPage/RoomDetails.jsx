@@ -22,7 +22,8 @@ import { LuTv } from "react-icons/lu";
 import { useLocation } from "react-router-dom";
 
 const RoomDetails = () => {
-  const { img, config } = useHayc();
+  const { t, img, config } = useHayc();
+  const priceIncludesItem = config.faqConfig?.items?.[1];
   const bc = config.breadCrumbConfig;
   const [imageIndex, setImageIndex] = useState(0);
   const location = useLocation();
@@ -187,6 +188,23 @@ Plot size approximately 4,600 m², three-phase electricity, municipal water supp
                   </ul>
                 </div>
               </div>
+
+              {/* Price Includes */}
+              {priceIncludesItem && (
+                <div
+                  className="mt-6 pt-6 border-t border-lightGray dark:border-gray"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
+                  <h4 className="text-lg md:text-xl font-Garamond text-lightBlack dark:text-white font-semibold mb-3">
+                    {t(priceIncludesItem.question)}
+                  </h4>
+                  <p className="text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora">
+                    {t(priceIncludesItem.answer)}
+                  </p>
+                </div>
+              )}
+
               {/* House Roles */}
               <div data-aos="zoom-in-up" data-aos-duration="1000">
                 <h2
