@@ -10,30 +10,13 @@ const Rooms = () => {
   const { t, img, config } = useHayc();
   const r = config.roomsConfig;
   const roomSlides = [
-    {
-      image: "/images/privateSecurity.jpg",
-      title: "Private security",
-    },
-    {
-      image: "/images/chauffeurDriver.jpg",
-      title: "Chauffeur / Driver",
-    },
-    {
-      image: "/images/privateChef.jpg",
-      title: "Private chef",
-    },
-    {
-      image: "/images/hairAndBeauty.jpg",
-      title: "Hair & beauty services",
-    },
-    {
-      image: "/images/vipConcierge.jpg",
-      title: "VIP concierge services",
-    },
-    {
-      image: "/images/securityEscort.jpg",
-      title: "Personalized security escort",
-    },
+    { image: "/images/privateSecurity.jpg", titleEl: "Φύλαξη", titleEn: "Security" },
+    { image: "/images/chauffeurDriver.jpg", titleEl: "Υπηρεσίες μεταφοράς", titleEn: "Transportation services" },
+    { image: "/images/vipConcierge.jpg", titleEl: "Υπηρεσίες Concierge", titleEn: "Concierge services" },
+    { image: "/images/privateChef.jpg", titleEl: "Νταντά", titleEn: "Babysitting" },
+    { image: "/images/hairAndBeauty.jpg", titleEl: "Κομμωτήριο, μανικιούρ, πεντικιούρ", titleEn: "Hairdresser, manicure, pedicure" },
+    { image: "/images/privateSecurity.jpg", titleEl: "Υπηρεσίες καθαριότητας", titleEn: "Cleaning services" },
+    { image: "/images/vipConcierge.jpg", titleEl: "Και άλλα", titleEn: "And more" },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded] = useState(false);
@@ -123,11 +106,11 @@ const Rooms = () => {
                       <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242] border-t-0">
                         <div className="py-6 px-[30px]">
                           <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
-                            ADYTON LUXURY SERVICES
+                            ΥΠΗΡΕΣΙΕΣ ΜΕΤΑ ΑΠΟ ΑΙΤΗΜΑ ΚΑΙ ΕΞΤΡΑ ΚΟΣΤΟΣ
                           </h4>
                           <Link to="/contact">
                             <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                              {slide.title}
+                              {t({ el: slide.titleEl, en: slide.titleEn })}
                             </h2>
                           </Link>
                         </div>

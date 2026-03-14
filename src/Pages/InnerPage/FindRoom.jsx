@@ -10,8 +10,8 @@ import { IoIosCall } from "react-icons/io";
 const FindRoom = () => {
   //  room info
   const location = useLocation();
-  const phone = "+306934929203";
-  const email = "info@adyton.gr";
+  const phone = "22890 305041";
+  const email = "adytonmykonos@gmail.com";
   const address = "Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece";
   const roomsData = location.state && location.state;
   const [open, setOpen] = useState(false);

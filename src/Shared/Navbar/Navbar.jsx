@@ -2,18 +2,13 @@ import { Link, NavLink } from "react-router-dom";
 import useScrollPosition from "./useScrollPosition";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { BiSun } from "react-icons/bi";
-import { IoMoonSharp } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useHayc } from "../../hayc/config-context";
 
 const Navbar = () => {
   const { t, img, config } = useHayc();
   const nav = config.navConfig;
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem("darkMode") === "true"
-  );
   const scrollPosition = useScrollPosition();
   const navbarBgColor =
     scrollPosition > 100 ? "lg:bg-lightBlack" : "lg:bg-transparent";
@@ -21,20 +16,6 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
-  const handleClick = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    localStorage.setItem("darkMode", newMode);
-  };
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
 
   return (
     <nav
@@ -62,21 +43,6 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex items-center ">
-              <span onClick={handleClick} className="mr-3 cursor-pointer">
-                {isDarkMode ? (
-                  <BiSun
-                    className="text-white"
-                    title={t(nav.lightModeTitle)}
-                    size={20}
-                  />
-                ) : (
-                  <IoMoonSharp
-                    size={20}
-                    className="text-white"
-                    title={t(nav.darkModeTitle)}
-                  />
-                )}
-              </span>
               <button
                 className="lg:hidden block focus:outline-none "
                 onClick={toggleNavbar}
@@ -153,21 +119,6 @@ const Navbar = () => {
             </NavLink>
           </ul>
           <div className="hidden lg:flex items-center">
-            <span onClick={handleClick} className="mr-3 cursor-pointer group ">
-              {isDarkMode ? (
-                <BiSun
-                  className="text-white group-hover:rotate-90 rotate transition-all duration-300"
-                  title={t(nav.lightModeTitle)}
-                  size={35}
-                />
-              ) : (
-                <IoMoonSharp
-                  className="text-white group-hover:rotate-[360deg] transition-all duration-300"
-                  title={t(nav.darkModeTitle)}
-                  size={35}
-                />
-              )}
-            </span>
             <div className="flex items-center gap-3">
               <a
                 href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"

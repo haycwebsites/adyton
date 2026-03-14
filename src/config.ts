@@ -398,8 +398,8 @@ export const footerConfig: FooterConfig = {
     '/images/LuxurySuites/725629742.jpg',
   ],
   contactTitle: { el: 'CONTACT INFO', en: 'CONTACT INFO' },
-  phone: '+306934929203',
-  email: 'info@adyton.gr',
+  phone: '22890 305041',
+  email: 'adytonmykonos@gmail.com',
   address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
   linksTitle: { el: 'Useful Links', en: 'Useful Links' },
   linkAbout: { el: 'About Hotel', en: 'About Hotel' },
@@ -430,7 +430,7 @@ export const heroConfig: HeroConfig = {
   ctaButton: { el: 'Discover More', en: 'Discover More' },
   leaseButton6Months: { el: '6 Months Lease', en: '6 Months Lease' },
   leaseButton12Months: { el: '12 Months Lease', en: '12 Months Lease' },
-  phone: '+306934929203',
+  phone: '22890 305041',
 };
 
 export const roomsConfig: RoomsConfig = {
@@ -446,8 +446,8 @@ export const roomsConfig: RoomsConfig = {
   guestsLabel: { el: 'Επισκέπτες', en: 'Guests' },
   childLabel: { el: 'Παιδί', en: 'Child' },
   checkoutBtn: { el: 'Κράτηση Τώρα', en: 'Checkout Now' },
-  sectionTitle: { el: 'Additional Services ', en: 'Additional Services ' },
-  sectionDesc: { el: 'Explore our luxurious services..', en: 'Explore our luxurious services..' },
+  sectionTitle: { el: 'Υπηρεσίες μετά από αίτημα και έξτρα κόστος', en: 'Services upon request and extra cost' },
+  sectionDesc: { el: 'Υπηρεσίες που παρέχονται κατόπιν αιτήματος με πρόσθετη χρέωση', en: 'Services provided upon request with additional cost' },
   viewDetailsBtn: { el: 'View More', en: 'View More' },
   nightLabel: { el: 'Νύχτα', en: 'Night' },
   roomType: { el: 'Δωμάτιο Luxury', en: 'Luxury Room' },
@@ -598,10 +598,10 @@ export const contactConfig: ContactConfig = {
   nameRequired: { el: 'Name is required.', en: 'Name is required.' },
   emailInvalid: { el: 'Please enter a valid email.', en: 'Please enter a valid email.' },
   messageRequired: { el: 'Message is required.', en: 'Message is required.' },
-  phone: '+306934929203',
-  email: 'info@adyton.gr',
+  phone: '22890 305041',
+  email: 'adytonmykonos@gmail.com',
   address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
-  mapUrl: 'https://www.google.com/maps?q=Mykonos%20Greece&output=embed',
+  mapUrl: 'https://maps.google.com/maps?q=Eparchiaki+Odos+Mykonou-Ano+Merias,+Ano+Mera,+84600,+Greece&t=&z=15&ie=UTF8&iwloc=&output=embed',
 };
 
 export const errorPageConfig: ErrorPageConfig = {
@@ -618,8 +618,8 @@ export const faqConfig: FAQConfig = {
       answer: { el: 'We offer two flexible options: 6-month seasonal lease (€125,000) or annual lease (€145,000), all taxes and utilities included.', en: 'We offer two flexible options: 6-month seasonal lease (€125,000) or annual lease (€145,000), all taxes and utilities included.' },
     },
     {
-      question: { el: 'What is included in the lease price?', en: 'What is included in the lease price?' },
-      answer: { el: 'All utilities, garden and pool maintenance, full technical support, and electricity/water are included.', en: 'All utilities, garden and pool maintenance, full technical support, and electricity/water are included.' },
+      question: { el: 'Τι περιλαμβάνεται στην τιμή;', en: 'What is included in the lease price?' },
+      answer: { el: 'Στην τιμή περιλαμβάνονται: νερό, ρεύμα, καθαριότητα μία φορά την εβδομάδα (για περισσότερες καθαρίσεις κατόπιν αιτήματος και συμφωνίας), υπηρεσίες κηπουρού και υπηρεσίες φροντίδας πισίνας. Επίσης, Wi-Fi και ιδιωτικό parking.', en: 'The price includes: water, electricity, cleaning once per week (for additional cleanings upon request and agreement), gardener services, and pool maintenance services. Also included: Wi-Fi and private parking.' },
     },
     {
       question: { el: 'Who is the ideal clientele for this property?', en: 'Who is the ideal clientele for this property?' },
@@ -638,8 +638,8 @@ export const faqConfig: FAQConfig = {
       answer: { el: 'In Ano Mera, Mykonos. 2 km from Kaló Livádi beach, 5 km from airport, 8.5 km from Mykonos Town.', en: 'In Ano Mera, Mykonos. 2 km from Kaló Livádi beach, 5 km from airport, 8.5 km from Mykonos Town.' },
     },
     {
-      question: { el: 'Are there additional services available?', en: 'Are there additional services available?' },
-      answer: { el: 'Yes, upon request: private security, chauffeur, private chef, hair & beauty services, VIP concierge.', en: 'Yes, upon request: private security, chauffeur, private chef, hair & beauty services, VIP concierge.' },
+      question: { el: 'Υπάρχουν πρόσθετες υπηρεσίες;', en: 'Are there additional services available?' },
+      answer: { el: 'Ναι, μετά από αίτημα και έξτρα κόστος: φύλαξη, υπηρεσίες μεταφοράς, υπηρεσίες concierge, νταντά, κομμωτήριο/μανικιούρ/πεντικιούρ, υπηρεσίες καθαριότητας και άλλα.', en: 'Yes, upon request and extra cost: security, transportation services, concierge services, babysitting, hairdresser/manicure/pedicure, cleaning services, and more.' },
     },
     {
       question: { el: 'How can I make an inquiry?', en: 'How can I make an inquiry?' },

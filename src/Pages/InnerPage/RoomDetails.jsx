@@ -19,7 +19,6 @@ import {
 } from "react-icons/fa";
 import { MdPool } from "react-icons/md";
 import { LuTv } from "react-icons/lu";
-import { MdOutlineAirportShuttle } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 
 const RoomDetails = () => {
@@ -323,12 +322,6 @@ The Kalo Livadi Beach is located 2 km from Adyton Mykonos Luxury Suites & Pools,
                   <LuTv className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={16} />
                   <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
                     Flat-screen TV
-                  </span>
-                </div>
-                <div className="flex items-center py-5">
-                  <MdOutlineAirportShuttle className="text-khaki mr-2 md:mr-3 xl:mr-[15px]" size={16} />
-                  <span className="text-sm lg:text-[15px] leading-[26px] text-gray dark:text-lightGray font-normal font-Lora">
-                    Shuttle service
                   </span>
                 </div>
               </div>

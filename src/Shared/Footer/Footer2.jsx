@@ -39,10 +39,10 @@ const Footer2 = () => {
             <ul className="">
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
                 <a
-                  href="mailto:info@adyton.gr"
+                  href="mailto:adytonmykonos@gmail.com"
                   className="hover:text-khaki"
                 >
-                  info@adyton.gr
+                  adytonmykonos@gmail.com
                 </a>
               </li>
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
@@ -55,10 +55,10 @@ const Footer2 = () => {
               </li>
               <li className="text-gray dark:text-lightGray font-normal font-Lora text-sm xl:text-base mb-[15px] transition-all duration-300">
                 <a
-                  href="tel:+306934929203"
+                  href="tel:+3022890305041"
                   className="hover:text-khaki"
                 >
-                  +306934929203
+                  22890 305041
                 </a>
               </li>
             </ul>

@@ -237,10 +237,10 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <a
-                    href="mailto:info@adyton.gr"
+                    href="mailto:adytonmykonos@gmail.com"
                     className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
                   >
-                    info@adyton.gr
+                    adytonmykonos@gmail.com
                   </a>
                 </div>
               </div>
@@ -271,10 +271,10 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <a
-                    href="mailto:info@adyton.gr"
+                    href="mailto:adytonmykonos@gmail.com"
                     className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
                   >
-                    info@adyton.gr
+                    adytonmykonos@gmail.com
                   </a>
                 </div>
               </div>
@@ -305,10 +305,10 @@ const About = () => {
                     <FaPinterestP className="" />
                   </div>
                   <a
-                    href="mailto:info@adyton.gr"
+                    href="mailto:adytonmykonos@gmail.com"
                     className="text-white font-medium leading-10 text-xl lg:text-[22px] font-Garamond hover:underline"
                   >
-                    info@adyton.gr
+                    adytonmykonos@gmail.com
                   </a>
                 </div>
               </div>

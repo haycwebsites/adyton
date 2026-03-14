@@ -8,7 +8,7 @@ import {
   FaUsers,
   FaWifi,
 } from "react-icons/fa";
-import { MdOutlineAirportShuttle, MdPool } from "react-icons/md";
+import { MdPool } from "react-icons/md";
 import { LuTv } from "react-icons/lu";
 
 const amenities = [
@@ -21,7 +21,6 @@ const amenities = [
   { icon: FaBath, label: "Private Bathroom" },
   { icon: FaSnowflake, label: "Air Conditioning" },
   { icon: LuTv, label: "Flat-Screen TV" },
-  { icon: MdOutlineAirportShuttle, label: "Shuttle Service" },
   { icon: FaBed, label: "Comfort Bedding" },
   { icon: MdPool, label: "Seasonal Pool Access" },
 ];
