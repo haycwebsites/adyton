@@ -71,6 +71,7 @@ const Room = () => {
             <p className="text-sm sm:text-base text-gray dark:text-lightGray font-Lora">
               Explore the elegant luxury suites and pools of our compound, designed for comfort and a refined stay. Capacity 14 guests (up to 16 upon request with free extra bed in specific suites). Choose your preferred lease plan and secure your stay instantly.
             </p>
+            <p className="text-sm sm:text-base text-khaki font-semibold mb-2 text-center">Immediately available</p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-10 mb-12">
               <a
                 href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"

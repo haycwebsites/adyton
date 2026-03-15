@@ -82,6 +82,7 @@ const HotelAndFacilities = () => {
               );
             })}
           </div>
+          <p className="text-center text-sm sm:text-base text-khaki font-semibold mb-2">Immediately available</p>
           <div
             className="flex flex-wrap items-center justify-center gap-3 mt-2 pb-12"
             data-aos="fade-up"

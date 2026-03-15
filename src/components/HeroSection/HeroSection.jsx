@@ -55,6 +55,7 @@ const HeroSection = () => {
                   </h1>
                  
                 </div>
+                <p className="text-sm sm:text-base text-white/95 font-medium mb-3">Immediately available</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Link to={"/adyton-suite"}>
                     <button

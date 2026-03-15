@@ -124,6 +124,7 @@ Each suite is equipped with air conditioning, a television, a bathroom with show
 Technical details:
 Plot size approximately 4,600 m², three-phase electricity, municipal water supply and private borehole, and a corner plot with road frontage.
               </p>
+              <p className="text-sm sm:text-base text-khaki font-semibold mb-2">Immediately available</p>
               <div
                 className="flex flex-wrap items-center gap-3 mt-10 mb-8"
                 data-aos="zoom-in-up"
