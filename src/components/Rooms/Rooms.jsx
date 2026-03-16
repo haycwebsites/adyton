@@ -13,7 +13,7 @@ const Rooms = () => {
     { image: "/images/privateSecurity.jpg", title: "Security" },
     { image: "/images/chauffeurDriver.jpg", title: "Transportation services" },
     { image: "/images/vipConcierge.jpg", title: "Concierge services" },
-    { image: "/images/privateChef.jpg", title: "Babysitting" },
+    { image: "/images/privateChef.jpg", title: "Private Chef" },
     { image: "/images/hairAndBeauty.jpg", title: "Hairdresser, manicure, pedicure" },
     { image: "/images/privateSecurity.jpg", title: "Cleaning services" },
     { image: "/images/vipConcierge.jpg", title: "And more" },
@@ -106,7 +106,7 @@ const Rooms = () => {
                       <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242] border-t-0">
                         <div className="py-6 px-[30px]">
                           <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
-                            SERVICES UPON REQUEST AND EXTRA COST
+                            UPON REQUEST
                           </h4>
                           <Link to="/contact">
                             <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
@@ -146,6 +146,16 @@ const Rooms = () => {
                 </div>
               )}
             </div>
+
+            {/* mobile arrow hint */}
+            <button
+              type="button"
+              className="absolute right-3 top-1/2 -translate-y-1/2 flex md:hidden w-9 h-9 rounded-full border border-khaki bg-white/90 text-lightBlack items-center justify-center shadow-xs"
+              onClick={() => instanceRef.current?.next()}
+              aria-label="Next service"
+            >
+              <BsArrowRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </div>
