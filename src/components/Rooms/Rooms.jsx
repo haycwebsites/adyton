@@ -1,4 +1,4 @@
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "../../Components4/Testimonial/testimonials.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -76,6 +76,12 @@ const Rooms = () => {
             <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base mt-[15px] lg:mt-0">
               {t(r.sectionDesc)}
             </p>
+            {/* Mobile: arrow hint that content below is a slider */}
+            <div className="flex md:hidden items-center justify-center gap-4 mt-6 mb-2">
+              <BsArrowLeft className="w-6 h-6 text-khaki" />
+              <span className="text-xs text-gray dark:text-lightGray uppercase tracking-wider">Swipe</span>
+              <BsArrowRight className="w-6 h-6 text-khaki" />
+            </div>
           </div>
           {/* Rooms Slider Container */}
 
@@ -122,40 +128,25 @@ const Rooms = () => {
               ))}
             </div>
 
-            {/* slider breckpoints */}
-            <div className="mx-auto ">
-              {loaded && instanceRef.current && (
-                <div className="dots flex items-center justify-center">
-                  {[
-                    ...Array(
-                      instanceRef.current.track.details.slides.length
-                    ).keys(),
-                  ].map((idx) => {
-                    return (
-                      <button
-                        key={idx}
-                        onClick={() => {
-                          instanceRef.current?.moveToIdx(idx);
-                        }}
-                        className={
-                          "dot" + (currentSlide === idx ? " active" : "")
-                        }
-                      ></button>
-                    );
-                  })}
-                </div>
-              )}
+            {/* Arrows below slider: Previous | Next */}
+            <div className="flex items-center justify-center gap-6 mt-6">
+              <button
+                type="button"
+                onClick={() => instanceRef.current?.prev()}
+                aria-label="Previous"
+                className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-khaki bg-white dark:bg-lightBlack text-lightBlack dark:text-white flex items-center justify-center hover:bg-khaki hover:text-white hover:border-khaki transition-colors"
+              >
+                <BsArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
+              </button>
+              <button
+                type="button"
+                onClick={() => instanceRef.current?.next()}
+                aria-label="Next"
+                className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-khaki bg-white dark:bg-lightBlack text-lightBlack dark:text-white flex items-center justify-center hover:bg-khaki hover:text-white hover:border-khaki transition-colors"
+              >
+                <BsArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+              </button>
             </div>
-
-            {/* mobile arrow hint */}
-            <button
-              type="button"
-              className="absolute right-3 top-1/2 -translate-y-1/2 flex md:hidden w-9 h-9 rounded-full border border-khaki bg-white/90 text-lightBlack items-center justify-center shadow-xs"
-              onClick={() => instanceRef.current?.next()}
-              aria-label="Next service"
-            >
-              <BsArrowRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </div>
