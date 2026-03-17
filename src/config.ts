@@ -398,7 +398,7 @@ export const footerConfig: FooterConfig = {
     '/images/LuxurySuites/725629742.jpg',
   ],
   contactTitle: { el: 'CONTACT INFO', en: 'CONTACT INFO' },
-  phone: '22890 305041',
+  phone: '2289305041',
   email: 'adytonmykonos@gmail.com',
   address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
   linksTitle: { el: 'Useful Links', en: 'Useful Links' },
@@ -430,7 +430,7 @@ export const heroConfig: HeroConfig = {
   ctaButton: { el: 'Discover More', en: 'Discover More' },
   leaseButton6Months: { el: '6 Months Lease', en: '6 Months Lease' },
   leaseButton12Months: { el: '12 Months Lease', en: '12 Months Lease' },
-  phone: '22890 305041',
+  phone: '2289305041',
 };
 
 export const roomsConfig: RoomsConfig = {
@@ -598,7 +598,7 @@ export const contactConfig: ContactConfig = {
   nameRequired: { el: 'Name is required.', en: 'Name is required.' },
   emailInvalid: { el: 'Please enter a valid email.', en: 'Please enter a valid email.' },
   messageRequired: { el: 'Message is required.', en: 'Message is required.' },
-  phone: '22890 305041',
+  phone: '2289305041',
   email: 'adytonmykonos@gmail.com',
   address: { el: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece', en: 'Eparchiaki Odos Mykonou-Ano Merias, Ano Mera, 84600, Greece' },
   mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813.3668125119325!2d25.391978196890864!3d37.443589851358055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2b9c7a2ca8469%3A0x82134b26f3ce1d33!2sAdyton%20Luxury%20Suites%20%26%20Pools%20Mykonos!5e0!3m2!1sen!2sfr!4v1773488927998!5m2!1sen!2sfr',

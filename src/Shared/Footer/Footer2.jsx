@@ -58,7 +58,7 @@ const Footer2 = () => {
                   href="tel:+3022890305041"
                   className="hover:text-khaki"
                 >
-                  22890 305041
+                  2289305041
                 </a>
               </li>
             </ul>
