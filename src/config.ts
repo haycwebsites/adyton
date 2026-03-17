@@ -724,8 +724,8 @@ export const roomTypesConfig: RoomTypeConfig[] = [
     ],
     smokingPolicy: 'No smoking',
     images: [
+      '/images/LuxurySuites/589394592.jpg', // previously second, now first
       '/images/LuxurySuites/589394511.jpg',
-      '/images/LuxurySuites/589394592.jpg',
       '/images/LuxurySuites/590764778.jpg',
       '/images/LuxurySuites/590775857.jpg',
       '/images/LuxurySuites/590776195.jpg',

@@ -40,6 +40,7 @@ const RoomTypeDetails = () => {
                 alt={t(room.title)}
                 className="w-full h-auto object-cover transition-all duration-500 delay-300"
               />
+              {/* Slider controls */}
               <div className="flex ">
                 <span
                   className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] bg-white dark:bg-lightBlack hover:bg-khaki dark:hover:bg-khaki grid items-center justify-center absolute bottom-[45%] left-[-50px] group-hover:left-4 lg:group-hover:left-6 transition-all duration-300 cursor-pointer"
@@ -60,6 +61,11 @@ const RoomTypeDetails = () => {
                   />
                 </span>
               </div>
+
+              {/* Slide index indicator */}
+              <div className="absolute bottom-4 right-4 bg-black/60 text-white text-xs px-3 py-1 rounded-full font-Lora tracking-wide">
+                {imageIndex + 1} / {room.images.length}
+              </div>
             </div>
 
             <div className="pt-5 lg:pt-[35px]  pr-3">
@@ -78,6 +84,33 @@ const RoomTypeDetails = () => {
               <p className="mt-5 2xl:mt-7 text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora">
                 {t(room.description)}
               </p>
+
+              {/* Whole-house booking CTA */}
+              <div
+                className="mt-6 2xl:mt-8"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
+                <p className="text-sm sm:text-base text-khaki font-semibold mb-2">
+                  Book the whole house
+                </p>
+                <div className="flex flex-wrap items-center gap-3 mt-3 mb-6">
+                  <a
+                    href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn-items">6 months</button>
+                  </a>
+                  <a
+                    href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn-items">12 months</button>
+                  </a>
+                </div>
+              </div>
 
               {/* Bathroom / Views / Amenities */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
