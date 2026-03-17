@@ -29,14 +29,16 @@ const RoomDetails = () => {
   const location = useLocation();
   const bookingsData = location.state && location.state;
   const images = [
-    "/images/LuxurySuites/589394661.jpg",
-    "/images/LuxurySuites/589394632.jpg",
-    "/images/LuxurySuites/590764778.jpg",
-    "/images/LuxurySuites/590781834.jpg",
-    "/images/LuxurySuites/590793812.jpg",
     "/images/LuxurySuites/589394511.jpg",
-    "/images/LuxurySuites/589394590.jpg",
-    "/images/LuxurySuites/589394487.jpg",
+    "/images/LuxurySuites/589394592.jpg",
+    "/images/LuxurySuites/590764778.jpg",
+    "/images/LuxurySuites/590775857.jpg",
+    "/images/LuxurySuites/590776195.jpg",
+    "/images/LuxurySuites/590780018.jpg",
+    "/images/LuxurySuites/590793377.jpg",
+    "/images/LuxurySuites/590793718.jpg",
+    "/images/LuxurySuites/697089993.jpg",
+    "/images/LuxurySuites/697091297.jpg",
   ];
 
   const prevBtn = () => {

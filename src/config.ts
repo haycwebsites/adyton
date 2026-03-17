@@ -326,6 +326,20 @@ export interface BreadCrumbConfig {
   adytonSuiteImage: string;
 }
 
+// Room-type specific details (per suite/room)
+export interface RoomTypeConfig {
+  id: string;
+  title: LocaleString;
+  size: string;
+  bedSummary: string;
+  description: LocaleString;
+  bathroomAmenities: string[];
+  viewAmenities: string[];
+  roomAmenities: string[];
+  smokingPolicy: string;
+  images: string[];
+}
+
 // =============================================================================
 // CONSTANTS
 // =============================================================================
@@ -656,3 +670,153 @@ export const breadCrumbConfig: BreadCrumbConfig = {
   roomsImage: '/images/LuxurySuites/590792439.jpg',
   adytonSuiteImage: '/images/LuxurySuites/590776503.jpg',
 };
+
+// Room-type definitions for individual suite pages
+export const roomTypesConfig: RoomTypeConfig[] = [
+  {
+    id: 'deluxe-double-pool',
+    title: {
+      el: '',
+      en: 'Deluxe Double or Twin Room with Pool Access',
+    },
+    size: '25 sq.m.',
+    bedSummary: '1 large double bed or 2 single beds',
+    description: {
+      el: '',
+      en: 'The pool with a view is the standout feature of this twin/double room. It offers air conditioning, a private entrance, a terrace with garden and pool views, and a private bathroom with shower and amenities.',
+    },
+    bathroomAmenities: [
+      'Free toiletries',
+      'Toilet',
+      'Bathtub or shower',
+      'Towels',
+      'Slippers',
+      'Hair dryer',
+      'Towels/sheets at extra charge',
+      'Toilet paper',
+    ],
+    viewAmenities: [
+      'Garden view',
+      'Pool view',
+      'View of the inner courtyard',
+    ],
+    roomAmenities: [
+      'Veranda',
+      'Air conditioning',
+      'Linens',
+      'Socket near the bed',
+      'Cleaning products',
+      'Desk',
+      'Living room',
+      'Soundproofing',
+      'Private entrance',
+      'TV',
+      'Refrigerator',
+      'Coffee maker',
+      'Mini bar',
+      'Electric kettle',
+      'Outdoor furniture',
+      'Courtyard',
+      'Private pool',
+      'Wardrobe',
+      'Air conditioning in every room of the accommodation',
+      'Free Wi-Fi',
+    ],
+    smokingPolicy: 'No smoking',
+    images: [
+      '/images/LuxurySuites/589394511.jpg',
+      '/images/LuxurySuites/589394592.jpg',
+      '/images/LuxurySuites/590764778.jpg',
+      '/images/LuxurySuites/590775857.jpg',
+      '/images/LuxurySuites/590776195.jpg',
+      '/images/LuxurySuites/590780018.jpg',
+      '/images/LuxurySuites/590793377.jpg',
+      '/images/LuxurySuites/590793718.jpg',
+      '/images/LuxurySuites/697089993.jpg',
+      '/images/LuxurySuites/697091297.jpg',
+    ],
+  },
+  {
+    id: 'premium-quadruple',
+    title: {
+      el: '',
+      en: 'Premium Quadruple Room',
+    },
+    size: '70 sq.m.',
+    bedSummary: '2 double beds',
+    description: {
+      el: '',
+      en: 'A spacious quadruple room ideal for families or groups, combining comfort with generous living space and pool access.',
+    },
+    bathroomAmenities: [
+      'Free toiletries',
+      'Toilet',
+      'Shower',
+      'Towels',
+      'Hair dryer',
+      'Toilet paper',
+    ],
+    viewAmenities: ['Garden view', 'Pool view'],
+    roomAmenities: [
+      'Veranda',
+      'Air conditioning',
+      'Linens',
+      'Socket near the bed',
+      'TV',
+      'Refrigerator',
+      'Coffee maker',
+      'Mini bar',
+      'Outdoor furniture',
+      'Wardrobe',
+      'Free Wi-Fi',
+    ],
+    smokingPolicy: 'No smoking',
+    images: [
+      '/images/LuxurySuites/590779274.jpg',
+      '/images/LuxurySuites/590780018.jpg',
+      '/images/LuxurySuites/590792439.jpg',
+      '/images/LuxurySuites/589394592.jpg',
+    ],
+  },
+  {
+    id: 'standard-apartment',
+    title: {
+      el: '',
+      en: 'Standard Apartment',
+    },
+    size: '47 sq.m.',
+    bedSummary: '1 double bed and 1 couch bed',
+    description: {
+      el: '',
+      en: 'A comfortable apartment with separate sleeping and living areas, ideal for longer stays or small families.',
+    },
+    bathroomAmenities: [
+      'Free toiletries',
+      'Toilet',
+      'Shower',
+      'Towels',
+      'Hair dryer',
+      'Toilet paper',
+    ],
+    viewAmenities: ['Garden view'],
+    roomAmenities: [
+      'Living room',
+      'Air conditioning',
+      'Linens',
+      'Socket near the bed',
+      'TV',
+      'Refrigerator',
+      'Coffee maker',
+      'Mini bar',
+      'Outdoor furniture',
+      'Wardrobe',
+      'Free Wi-Fi',
+    ],
+    smokingPolicy: 'No smoking',
+    images: [
+      '/images/LuxurySuites/590441018.jpg',
+      '/images/LuxurySuites/590780018.jpg',
+      '/images/LuxurySuites/589394592.jpg',
+    ],
+  },
+];

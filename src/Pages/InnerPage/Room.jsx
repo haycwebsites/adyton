@@ -106,7 +106,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <Link to={"/adyton-suite"}>
+                <Link to={"/room-type/deluxe-double-pool"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -119,14 +119,7 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
-                    <Link
-                      to="/adyton-suite"
-                      state={{
-                        price: "450",
-                        title:
-                          "Deluxe Double Room – with 1 Double or 2 Single Beds – with Pool Access",
-                      }}
-                    >
+                    <Link to="/room-type/deluxe-double-pool">
                       <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[34px] font-semibold text-lightBlack dark:text-white py-4">
                         Deluxe Double Room -
                         with Pool Access
@@ -169,7 +162,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <Link to={"/adyton-suite"}>
+                <Link to={"/room-type/premium-quadruple"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -182,10 +175,7 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
-                    <Link
-                      to="/adyton-suite"
-                      state={{ price: "550", title: "Premium Quadruple Room" }}
-                    >
+                    <Link to="/room-type/premium-quadruple">
                       <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[30px] font-semibold text-lightBlack dark:text-white py-4">
                         Premium Quadruple Room
                       </h2>
@@ -227,7 +217,7 @@ const Room = () => {
                     alt=""
                   />
                 </div>
-                <Link to={"/adyton-suite"}>
+                <Link to={"/room-type/standard-apartment"}>
                   <button className="flex items-center justify-center text-[15px] leading-[38px] bg-khaki  absolute bottom-0 -left-40 px-6 py-1 text-white  group-hover:left-0 transition-all duration-300">
                     View Details{" "}
                     <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
@@ -240,10 +230,7 @@ const Room = () => {
                     <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
                       Luxury Room
                     </h4>
-                    <Link
-                      to="/adyton-suite"
-                      state={{ price: "560", title: "Standard Apartment" }}
-                    >
+                    <Link to="/room-type/standard-apartment">
                       <h2 className="text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] leading-7 sm:leading-8 lg:leading-[30px] font-semibold text-lightBlack dark:text-white py-4">
                         Standard Apartment
                       </h2>

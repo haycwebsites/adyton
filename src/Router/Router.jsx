@@ -21,6 +21,7 @@ import About from "../Pages/InnerPage/About";
 import Room from "../Pages/InnerPage/Room";
 import FindRoom from "../Pages/InnerPage/FindRoom";
 import RoomDetails from "../Pages/InnerPage/RoomDetails";
+import RoomTypeDetails from "../Pages/InnerPage/RoomTypeDetails";
 import Services from "../Pages/InnerPage/Services";
 import ServiceDetails from "../Pages/InnerPage/ServiceDetails";
 import Team from "../Pages/InnerPage/Team";
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/room",
         element: <Room />,
+      },
+      {
+        path: "/room-type/:roomId",
+        element: <RoomTypeDetails />,
       },
       {
         path: "/find_room",
@@ -111,6 +116,10 @@ const router = createBrowserRouter([
         element: <Room />,
       },
       {
+        path: "/home2/room-type/:roomId",
+        element: <RoomTypeDetails />,
+      },
+      {
         path: "/home2/find_room",
         element: <FindRoom />,
       },
@@ -165,6 +174,10 @@ const router = createBrowserRouter([
       {
         path: "/home3/room",
         element: <Room />,
+      },
+      {
+        path: "/home3/room-type/:roomId",
+        element: <RoomTypeDetails />,
       },
       {
         path: "/home3/find_room",
@@ -223,6 +236,10 @@ const router = createBrowserRouter([
         element: <Room />,
       },
       {
+        path: "/home4/room-type/:roomId",
+        element: <RoomTypeDetails />,
+      },
+      {
         path: "/home4/find_room",
         element: <FindRoom />,
       },
@@ -277,6 +294,10 @@ const router = createBrowserRouter([
       {
         path: "/home5/room",
         element: <Room />,
+      },
+      {
+        path: "/home5/room-type/:roomId",
+        element: <RoomTypeDetails />,
       },
       {
         path: "/home5/find_room",
