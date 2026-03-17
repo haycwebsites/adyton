@@ -101,7 +101,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590793718.jpg"
+                    src="/images/LuxurySuites/589394453.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
@@ -157,7 +157,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590779274.jpg "
+                    src="/images/LuxurySuites/589394592.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
@@ -212,7 +212,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590441018.jpg "
+                    src="/images/LuxurySuites/590440967.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
@@ -267,7 +267,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590793718.jpg"
+                    src="/images/LuxurySuites/589394453.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
@@ -324,7 +324,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590793718.jpg"
+                    src="/images/LuxurySuites/589394511.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
@@ -381,7 +381,7 @@ const Room = () => {
               <div className="relative">
                 <div className="overflow-hidden">
                   <img
-                    src="/images/590793718.jpg"
+                    src="/images/LuxurySuites/589394590.jpg"
                     className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-all duration-300"
                     alt=""
                   />
