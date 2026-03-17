@@ -1,9 +1,8 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "./style.css";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaStar } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
@@ -11,34 +10,24 @@ import { useHayc } from "../../hayc/config-context";
 const HeroSection = () => {
   const { t, img, config } = useHayc();
   const h = config.heroConfig;
-  const slides = [
-    { bg: h.bgImage1, location: h.location1 },
-    { bg: h.bgImage2, location: h.location2 },
-    { bg: h.bgImage3, location: h.location3 }, 
-  ];
 
   return (
     <div className="">
       <Swiper
         centeredSlides={true}
-        loop={true}
-        navigation={true}
-        speed="3000"
-        autoplay={{
-          delay: 10000,
-          disableOnInteraction: true,
-        }}
+        loop={false}
+        navigation={false}
+        speed="0"
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
-        modules={[Navigation, Autoplay, Pagination]}
+        modules={[Navigation, Pagination]}
         className="mySwiper"
       >
-        {slides.map((slide, i) => (
-          <SwiperSlide key={i}>
+        <SwiperSlide>
             <div
               className="w-full h-[70svh] min-h-[560px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] bg-[rgba(0,0,0,0.4)] bg-blend-multiply grid items-end md:items-center bg-cover justify-center text-white relative pb-8 pt-20 sm:pt-32 md:pt-0 md:pb-16 xl:pb-0"
-              style={{ backgroundImage: `url(${img(slide.bg)})` }}
+              style={{ backgroundImage: `url(${img("/images/LuxurySuites/589394592.jpg")})` }}
               data-aos="fade-down"
             >
               <div className="font-Garamond 2xl:w-[720px] text-center">
@@ -88,7 +77,6 @@ const HeroSection = () => {
               </a>
             </div>
           </SwiperSlide>
-        ))}
       </Swiper>
     </div>
   );
