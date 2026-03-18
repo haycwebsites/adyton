@@ -10,24 +10,26 @@ import { useHayc } from "../../hayc/config-context";
 const HeroSection = () => {
   const { t, img, config } = useHayc();
   const h = config.heroConfig;
+  const heroBgImages = [h?.bgImage1, h?.bgImage2, h?.bgImage3].filter(Boolean);
 
   return (
     <div className="">
       <Swiper
         centeredSlides={true}
-        loop={false}
-        navigation={false}
-        speed="0"
+        loop={true}
+        navigation={true}
+        speed={600}
         pagination={{
           clickable: false,
         }}
         modules={[Navigation, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {heroBgImages.map((bgSrc, idx) => (
+          <SwiperSlide key={`${bgSrc}-${idx}`}>
             <div
               className="w-full h-[70svh] min-h-[560px] md:h-[800px] xl:h-[850px] 3xl:h-[950px] bg-[rgba(0,0,0,0.4)] bg-blend-multiply grid items-end md:items-center bg-cover justify-center text-white relative pb-8 pt-20 sm:pt-32 md:pt-0 md:pb-16 xl:pb-0"
-              style={{ backgroundImage: `url(${img("/images/LuxurySuites/589394592.jpg")})` }}
+              style={{ backgroundImage: `url(${img(bgSrc)})` }}
               data-aos="fade-down"
             >
               <div className="font-Garamond 2xl:w-[720px] text-center">
@@ -85,6 +87,7 @@ const HeroSection = () => {
               </a>
             </div>
           </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
