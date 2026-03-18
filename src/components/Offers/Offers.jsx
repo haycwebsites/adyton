@@ -34,11 +34,9 @@ const Offers = () => {
           data-aos-duration="1000"
         >
           <div className=" md:w-[450px] lg:w-[450px] xl:w-[500px] font-Garamond">
-            <h5 className="mb-3 text-base text-khaki leading-[26px] font-medium">
-              {t(o.sectionLabel)}
-            </h5>
+
             <h1 className="text-xl sm:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
-            MORE IMAGES OF OUR SUITE
+            MORE IMAGES OF THE COMPOUND
             </h1>
           </div>
         </div>
