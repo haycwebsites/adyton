@@ -966,7 +966,7 @@ export const roomTypesConfig: RoomTypeConfig[] = [
     bedSummary: '2 double beds',
     description: {
       el: '',
-      en: 'A spacious quadruple room ideal for families or groups, combining comfort with generous living space and pool access.',
+      en: 'A spacious quadruple room ideal for families or groups, combining comfort with generous living space and pool access. It includes a washing machine, a kitchenette with everything you need, and two showers.',
     },
     bathroomAmenities: [
       'Free toiletries',
