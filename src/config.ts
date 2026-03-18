@@ -633,7 +633,7 @@ export const faqConfig: FAQConfig = {
     },
     {
       question: { el: 'What is included in the lease price?', en: 'What is included in the lease price?' },
-      answer: { el: 'The price includes: water, electricity, cleaning once per week (for additional cleanings upon request and agreement), gardener services, and pool maintenance services. Also included: Wi-Fi and private parking.', en: 'The price includes: water, electricity, cleaning once per week (for additional cleanings upon request and agreement), gardener services, and pool maintenance services. Also included: Wi-Fi and private parking.' },
+      answer: { el: 'The price includes: water, electricity, cleaning once per week (for additional cleanings upon request and agreement), gardener services, pool maintenance services, and building maintenance services. Also included: Wi-Fi and private parking.', en: 'The price includes: water, electricity, cleaning once per week (for additional cleanings upon request and agreement), gardener services, pool maintenance services, and building maintenance services. Also included: Wi-Fi and private parking.' },
     },
     {
       question: { el: 'Who is the ideal clientele for this property?', en: 'Who is the ideal clientele for this property?' },
