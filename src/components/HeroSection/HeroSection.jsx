@@ -46,7 +46,11 @@ const HeroSection = () => {
                 </div>
                 <p className="text-sm sm:text-base text-white/95 font-medium mb-3">Immediately available</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link to={"/adyton-suite"}>
+                  <a
+                    href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button
                       className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
                   text-base
@@ -55,8 +59,12 @@ const HeroSection = () => {
                     >
                       {t(h.leaseButton6Months)}
                     </button>
-                  </Link>
-                  <Link to={"/adyton-suite"}>
+                  </a>
+                  <a
+                    href="https://buy.stripe.com/bJedR99Cgdkx90L6QJaZi00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button
                       className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
                   text-base
@@ -65,7 +73,7 @@ const HeroSection = () => {
                     >
                       {t(h.leaseButton12Months)}
                     </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <a
