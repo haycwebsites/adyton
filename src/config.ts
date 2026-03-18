@@ -107,6 +107,7 @@ export interface HeroConfig {
   bgImage3: string;
   subtitle: LocaleString;
   mainTitle: LocaleString;
+  immediatelyAvailable: LocaleString;
   location1: LocaleString;
   location2: LocaleString;
   location3: LocaleString;
@@ -115,6 +116,11 @@ export interface HeroConfig {
   leaseButton6Months: LocaleString;
   leaseButton12Months: LocaleString;
   phone: string;
+}
+
+export interface ServiceSlide {
+  image: string;
+  title: LocaleString;
 }
 
 // Royella - Rooms (Home1)
@@ -133,6 +139,9 @@ export interface RoomsConfig {
   checkoutBtn: LocaleString;
   sectionTitle: LocaleString;
   sectionDesc: LocaleString;
+  uponRequestLabel: LocaleString;
+  swipeLabel: LocaleString;
+  serviceSlides: ServiceSlide[];
   viewDetailsBtn: LocaleString;
   nightLabel: LocaleString;
   roomType: LocaleString;
@@ -437,6 +446,7 @@ export const heroConfig: HeroConfig = {
   bgImage3: '/images/LuxurySuites/590792439.jpg',
   subtitle: { el: 'Adyton Mykonos Luxury Suites & Pools', en: 'Adyton Mykonos Luxury Suites & Pools' },
   mainTitle: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
+  immediatelyAvailable: { el: 'Άμεσα διαθέσιμο', en: 'Immediately available' },
   location1: { el: 'ΣΤΗΝ CALIFORNIA', en: 'IN CALIFORNIA' },
   location2: { el: 'ΣΤΟ KASHMIR', en: 'IN KASHMIR' },
   location3: { el: 'ΣΤΟ COLOSSEUM', en: 'IN COLOSSEUM' },
@@ -462,6 +472,23 @@ export const roomsConfig: RoomsConfig = {
   checkoutBtn: { el: 'Κράτηση Τώρα', en: 'Checkout Now' },
   sectionTitle: { el: 'Upon request', en: 'Upon request' },
   sectionDesc: { el: 'Services provided upon request with additional cost', en: 'Services provided upon request with additional cost' },
+  uponRequestLabel: { el: 'UPON REQUEST', en: 'UPON REQUEST' },
+  swipeLabel: { el: 'Swipe', en: 'Swipe' },
+  serviceSlides: [
+    { image: '/images/privateSecurity.jpg', title: { el: 'Ασφάλεια', en: 'Security' } },
+    {
+      image: '/images/chauffeurDriver.jpg',
+      title: { el: 'Υπηρεσίες Μεταφοράς', en: 'Transportation services' },
+    },
+    { image: '/images/vipConcierge.jpg', title: { el: 'Υπηρεσίες Concierge', en: 'Concierge services' } },
+    { image: '/images/privateChef.jpg', title: { el: 'Ιδιωτικός Σεφ', en: 'Private Chef' } },
+    {
+      image: '/images/hairAndBeauty.jpg',
+      title: { el: 'Κομμωτής, μανικιούρ, πεντικιούρ', en: 'Hairdresser, manicure, pedicure' },
+    },
+    { image: '/images/privateSecurity.jpg', title: { el: 'Υπηρεσίες Καθαρισμού', en: 'Cleaning services' } },
+    { image: '/images/vipConcierge.jpg', title: { el: 'Και άλλα', en: 'And more' } },
+  ],
   viewDetailsBtn: { el: 'View More', en: 'View More' },
   nightLabel: { el: 'Νύχτα', en: 'Night' },
   roomType: { el: 'Δωμάτιο Luxury', en: 'Luxury Room' },

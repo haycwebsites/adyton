@@ -4,11 +4,10 @@ import "./style.css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BiPhoneCall } from "react-icons/bi";
-import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
 
 const HeroSection = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const h = config.heroConfig;
   const heroBgImages = [h?.bgImage1, h?.bgImage2, h?.bgImage3].filter(Boolean);
 
@@ -36,17 +35,27 @@ const HeroSection = () => {
                 {/* Logo with lines */}
                 <div className="flex items-center justify-center space-x-3 md:space-x-4 mb-5 md:mb-8">
                   <hr className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[220px] h-[2px] bg-white/90" />
-                  <img src={img(config?.navConfig?.logo ?? '/images/inner/AdytonLogo.png')} alt="" className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px] object-contain" />
+                  <img src={img(config.navConfig.logo)} alt="" className="w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px] object-contain" />
                   <hr className="w-[120px] sm:w-[150px] md:w-[180px] lg:w-[220px] h-[2px] bg-white/90" />
                 </div>
-                <h4 className="text-base mb-4">{t(h.subtitle)}</h4>
+                <h4 className="text-base mb-4" {...cp("heroConfig.subtitle")}>
+                  {t(h.subtitle)}
+                </h4>
                 <div className="mb-7 md:mb-8 lg:mb-9 xl:mb-10">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-8xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[90px]">
+                  <h1
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-8xl font-semibold leading-[40px] md:leading-[50px] 3xl:leading-[90px]"
+                    {...cp("heroConfig.mainTitle")}
+                  >
                     {t(h.mainTitle)}
                   </h1>
                  
                 </div>
-                <p className="text-sm sm:text-base text-white/95 font-medium mb-3">Immediately available</p>
+                <p
+                  className="text-sm sm:text-base text-white/95 font-medium mb-3"
+                  {...cp("heroConfig.immediatelyAvailable")}
+                >
+                  {t(h.immediatelyAvailable)}
+                </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a
                     href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
@@ -54,6 +63,7 @@ const HeroSection = () => {
                     rel="noopener noreferrer"
                   >
                     <button
+                      {...cp("heroConfig.leaseButton6Months")}
                       className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
                   text-base
                  font-Garamond
@@ -68,6 +78,7 @@ const HeroSection = () => {
                     rel="noopener noreferrer"
                   >
                     <button
+                      {...cp("heroConfig.leaseButton12Months")}
                       className="w-[185px] h-[48px] lg:h-[56px] bg-khaki relative
                   text-base
                  font-Garamond

@@ -7,17 +7,9 @@ import { useState } from "react";
 import { useHayc } from "../../hayc/config-context";
 
 const Rooms = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const r = config.roomsConfig;
-  const roomSlides = [
-    { image: "/images/privateSecurity.jpg", title: "Security" },
-    { image: "/images/chauffeurDriver.jpg", title: "Transportation services" },
-    { image: "/images/vipConcierge.jpg", title: "Concierge services" },
-    { image: "/images/privateChef.jpg", title: "Private Chef" },
-    { image: "/images/hairAndBeauty.jpg", title: "Hairdresser, manicure, pedicure" },
-    { image: "/images/privateSecurity.jpg", title: "Cleaning services" },
-    { image: "/images/vipConcierge.jpg", title: "And more" },
-  ];
+  const roomSlides = r.serviceSlides;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded] = useState(false);
 
@@ -70,16 +62,24 @@ const Rooms = () => {
               <hr className="w-[100px] h-[1px] text-[#dedbd4] dark:text-[#3b3b3b] " />
             </div>
 
-            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-9 lg:leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mb-[6]  font-Garamond font-semibold uppercase">
+            <h1
+              className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-7 sm:leading-8 md:leading-9 lg:leading-[42px] 2xl:leading-[52px] text-lightBlack dark:text-white mb-[6]  font-Garamond font-semibold uppercase"
+              {...cp("roomsConfig.sectionTitle")}
+            >
               {t(r.sectionTitle)}
             </h1>
             <p className="font-Lora leading-[26px] text-gray dark:text-lightGray font-normal text-sm sm:text-base mt-[15px] lg:mt-0">
-              {t(r.sectionDesc)}
+              <span {...cp("roomsConfig.sectionDesc")}>{t(r.sectionDesc)}</span>
             </p>
             {/* Mobile: arrow hint that content below is a slider */}
             <div className="flex md:hidden items-center justify-center gap-4 mt-6 mb-2">
               <BsArrowLeft className="w-6 h-6 text-khaki" />
-              <span className="text-xs text-gray dark:text-lightGray uppercase tracking-wider">Swipe</span>
+              <span
+                className="text-xs text-gray dark:text-lightGray uppercase tracking-wider"
+                {...cp("roomsConfig.swipeLabel")}
+              >
+                {t(r.swipeLabel)}
+              </span>
               <BsArrowRight className="w-6 h-6 text-khaki" />
             </div>
           </div>
@@ -101,7 +101,10 @@ const Rooms = () => {
                       </div>
                       <div className="">
                         <Link to={"/contact"}>
-                          <button className="flex items-center justify-center text-[15px] leading-[38px] bg-lightBlack absolute bottom-0 -left-40 px-5 text-white  group-hover:left-0 transition-all duration-300 hover:bg-khaki">
+                          <button
+                            {...cp("roomsConfig.viewDetailsBtn")}
+                            className="flex items-center justify-center text-[15px] leading-[38px] bg-lightBlack absolute bottom-0 -left-40 px-5 text-white  group-hover:left-0 transition-all duration-300 hover:bg-khaki"
+                          >
                             {t(r.viewDetailsBtn)}{" "}
                             <BsArrowRight className="w-4 h-4 ml-2  text-white" />{" "}
                           </button>
@@ -111,12 +114,18 @@ const Rooms = () => {
                     <div className="font-Garamond">
                       <div className=" border-[1px] border-[#e8e8e8] dark:border-[#424242] border-t-0">
                         <div className="py-6 px-[30px]">
-                          <h4 className="text-sm leading-[26px] text-khaki uppercase font-semibold">
-                            UPON REQUEST
+                          <h4
+                            className="text-sm leading-[26px] text-khaki uppercase font-semibold"
+                            {...cp("roomsConfig.uponRequestLabel")}
+                          >
+                            {t(r.uponRequestLabel)}
                           </h4>
                           <Link to="/contact">
-                            <h2 className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4">
-                              {slide.title}
+                            <h2
+                              className="text-2xl lg:text-[28px] leading-[26px] font-semibold text-lightBlack dark:text-white py-4"
+                              {...cp(`roomsConfig.serviceSlides[${idx}].title`)}
+                            >
+                              {t(slide.title)}
                             </h2>
                           </Link>
                         </div>
