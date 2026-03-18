@@ -113,7 +113,7 @@ const RoomDetails = () => {
                A calm and elegant retreat in Ano Mera, ideal for couples and families seeking privacy along with easy and quick access to nearby beaches.
 The property can operate year-round and is perfectly suited both for seasonal tourism use and for executive or corporate accommodation throughout the year.
 
-The complex features six ground-floor suites (25–30 m² each), every one with its own private pool and terrace. The shared areas include a landscaped garden, an outdoor swimming pool, and private parking, ensuring comfortable arrival and convenience for guests.
+The complex features five ground-floor luxury suites (25–30 m² each), each with its own private pool and terrace, plus one main residence maisonette with two double to two triple bedrooms. The shared areas include a landscaped garden, an outdoor swimming pool, and private parking, ensuring comfortable arrival and convenience for guests.
               </p>
               <p
                 className="mt-5 2xl:mt-7 text-sm lg:text-base leading-6 text-gray dark:text-lightGray font-normal font-Lora"
