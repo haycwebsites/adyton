@@ -442,8 +442,8 @@ export const footerConfig: FooterConfig = {
 
 export const heroConfig: HeroConfig = {
   bgImage1: '/images/LuxurySuites/590780018.jpg',
-  bgImage2: '/images/LuxurySuites/589394632.jpg',
-  bgImage3: '/images/LuxurySuites/590792439.jpg',
+  bgImage2: '/images/LuxurySuites/589394592.jpg',
+  bgImage3: '/images/LuxurySuites/697089993.jpg',
   subtitle: { el: 'Adyton Mykonos Luxury Suites & Pools', en: 'Adyton Mykonos Luxury Suites & Pools' },
   mainTitle: { el: 'Private Luxury Compound for Exclusive Long-Stay Lease', en: 'Private Luxury Compound for Exclusive Long-Stay Lease' },
   immediatelyAvailable: { el: 'Άμεσα διαθέσιμο', en: 'Immediately available' },
