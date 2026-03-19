@@ -245,6 +245,7 @@ const Contact = () => {
                         <option value="personalized-security-escort">
                           {t(c.serviceSecurityEscort)}
                         </option>
+                        <option value="other">{t(c.serviceOther)}</option>
                       </select>
                       <BiChevronDown
                         className="absolute right-3 top-1/2 -translate-y-1/2 text-khaki pointer-events-none"

@@ -292,6 +292,7 @@ export interface ContactConfig {
   serviceHairBeauty: LocaleString;
   serviceVipConcierge: LocaleString;
   serviceSecurityEscort: LocaleString;
+  serviceOther: LocaleString;
   messagePlaceholder: LocaleString;
   submitButton: LocaleString;
   submittingButton: LocaleString;
@@ -630,6 +631,7 @@ export const contactConfig: ContactConfig = {
   serviceHairBeauty: { el: 'Hair & beauty services', en: 'Hair & beauty services' },
   serviceVipConcierge: { el: 'VIP concierge services', en: 'VIP concierge services' },
   serviceSecurityEscort: { el: 'Personalized security escort', en: 'Personalized security escort' },
+  serviceOther: { el: 'Άλλο', en: 'Other' },
   messagePlaceholder: { el: 'Write Message:', en: 'Write Message:' },
   submitButton: { el: 'SEND MESSAGE', en: 'SEND MESSAGE' },
   submittingButton: { el: 'SENDING...', en: 'SENDING...' },
