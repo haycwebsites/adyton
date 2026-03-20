@@ -14,6 +14,7 @@ const Contact = () => {
   const c = config.contactConfig;
   const siteId = config.siteConfig.siteId;
   const apiUrl = config.siteConfig.apiUrl;
+  const telPhone = c?.phone?.startsWith("+") ? c.phone : `+30${c.phone}`;
 
   // Form state
   const [name, setName] = useState("");
@@ -113,7 +114,7 @@ const Contact = () => {
                     {t(c.callLabel)}
                   </p>
                   <a
-                    href={`tel:${c.phone}`}
+                    href={`tel:${telPhone}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
                   >
                     {c.phone}

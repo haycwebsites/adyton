@@ -466,7 +466,7 @@ const FindRoom = () => {
                     Call Us Now
                   </p>
                   <a
-                    href={`tel:${phone}`}
+                    href={`tel:+30${phone}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
                   >
                     {phone}

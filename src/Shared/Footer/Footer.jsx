@@ -10,6 +10,7 @@ const Footer = () => {
   const { t, img, config, cp } = useHayc();
   const f = config.footerConfig;
   const nav = config.navConfig;
+  const telPhone = f?.phone?.startsWith("+") ? f.phone : `+30${f.phone}`;
 
   return (
     <>
@@ -29,7 +30,7 @@ const Footer = () => {
                   </h1>
                   <div className="space-y-4 pt-[30px]  pb-2 2xl:pb-[30px] ">
                     <a
-                      href={`tel:${f.phone}`}
+                      href={`tel:${telPhone}`}
                       className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2 hover:text-khaki transition-all duration-300"
                     >
                       <IoIosCall

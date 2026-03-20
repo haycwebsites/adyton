@@ -10,6 +10,7 @@ const HeroSection = () => {
   const { t, img, config, cp } = useHayc();
   const h = config.heroConfig;
   const heroBgImages = [h?.bgImage1, h?.bgImage2, h?.bgImage3].filter(Boolean);
+  const telPhone = h?.phone?.startsWith("+") ? h.phone : `+30${h.phone}`;
 
   return (
     <div className="">
@@ -90,7 +91,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <a
-                href={`tel:${h.phone}`}
+                href={`tel:${telPhone}`}
                 className="w-[221px] h-[50px] border-white border hidden md:flex items-center justify-center absolute left-0 top-1/2 -rotate-90"
                 aria-label={`Call ${h.phone}`}
               >
