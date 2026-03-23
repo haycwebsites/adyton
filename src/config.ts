@@ -350,6 +350,29 @@ export interface RoomTypeConfig {
   images: string[];
 }
 
+export interface DigitalProduct {
+  id: string;
+  type: 'course';
+  title: string;
+  slug: string;
+  description?: string;
+  thumbnail?: string;
+  price: string;
+  language: string;
+  estimatedDurationMinutes?: number;
+  chapters?: {
+    id: string;
+    title: string;
+    lessons: { id: string; title: string }[];
+  }[];
+}
+
+export interface DigitalProductsConfig {
+  enabled: boolean;
+  lastSyncedAt?: string;
+  products: DigitalProduct[];
+}
+
 // =============================================================================
 // CONSTANTS
 // =============================================================================
@@ -1108,3 +1131,8 @@ export const roomTypesConfig: RoomTypeConfig[] = [
     ],
   },
 ];
+
+export const digitalProductsConfig: DigitalProductsConfig = {
+  enabled: false,
+  products: [],
+};
