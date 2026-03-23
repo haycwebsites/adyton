@@ -1,74 +1,17 @@
-import {
-  siteConfig,
-  preloaderConfig,
-  scrollToTopConfig,
-  mainConfig,
-  navConfig,
-  footerConfig,
-  heroConfig,
-  roomsConfig,
-  facilitiesConfig,
-  hotelAndResortConfig,
-  hotelAndFacilitiesConfig,
-  actionConfig,
-  offersConfig,
-  testimonialConfig,
-  latestBlogConfig,
-  brandConfig,
-  contactConfig,
-  errorPageConfig,
-  faqConfig,
-  breadCrumbConfig,
-} from '../config';
+import { siteConfig, digitalProductsConfig, type DigitalProductsConfig } from '../config';
 
 export interface RemoteConfig {
   version: number;
   exportedAt: string;
   siteConfig: typeof siteConfig;
-  preloaderConfig: typeof preloaderConfig;
-  scrollToTopConfig: typeof scrollToTopConfig;
-  mainConfig: typeof mainConfig;
-  navConfig: typeof navConfig;
-  footerConfig: typeof footerConfig;
-  heroConfig: typeof heroConfig;
-  roomsConfig: typeof roomsConfig;
-  facilitiesConfig: typeof facilitiesConfig;
-  hotelAndResortConfig: typeof hotelAndResortConfig;
-  hotelAndFacilitiesConfig: typeof hotelAndFacilitiesConfig;
-  actionConfig: typeof actionConfig;
-  offersConfig: typeof offersConfig;
-  testimonialConfig: typeof testimonialConfig;
-  latestBlogConfig: typeof latestBlogConfig;
-  brandConfig: typeof brandConfig;
-  contactConfig: typeof contactConfig;
-  errorPageConfig: typeof errorPageConfig;
-  faqConfig: typeof faqConfig;
-  breadCrumbConfig: typeof breadCrumbConfig;
+  digitalProductsConfig?: DigitalProductsConfig;
 }
 
 export const defaultConfig: RemoteConfig = {
   version: 1,
   exportedAt: '',
   siteConfig,
-  preloaderConfig,
-  scrollToTopConfig,
-  mainConfig,
-  navConfig,
-  footerConfig,
-  heroConfig,
-  roomsConfig,
-  facilitiesConfig,
-  hotelAndResortConfig,
-  hotelAndFacilitiesConfig,
-  actionConfig,
-  offersConfig,
-  testimonialConfig,
-  latestBlogConfig,
-  brandConfig,
-  contactConfig,
-  errorPageConfig,
-  faqConfig,
-  breadCrumbConfig,
+  digitalProductsConfig,
 };
 
 export async function fetchRemoteConfig(): Promise<RemoteConfig> {

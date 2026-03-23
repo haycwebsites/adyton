@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import { Wine } from 'lucide-react';
 import { useHayc } from '../hayc/config-context';
 
 export function Preloader({ onComplete }: { onComplete: () => void }) {
-  const { t, img, config } = useHayc();
+  const { t, config } = useHayc();
   const preloaderConfig = config.preloaderConfig;
 
   // Null check: if config is empty, complete immediately
@@ -28,9 +29,9 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
         phase === 'fading' ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      {/* Logo */}
+      {/* Logo Icon */}
       <div className="preloader-text mb-6">
-        <img src={img(config?.navConfig?.logo ?? '/images/inner/AdytonLogo.png')} alt="" className="w-24 h-auto max-h-16 object-contain" />
+        <Wine className="w-12 h-12 text-gold-500" />
       </div>
 
       {/* Brand Name */}
