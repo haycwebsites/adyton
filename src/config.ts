@@ -499,19 +499,34 @@ export const roomsConfig: RoomsConfig = {
   uponRequestLabel: { el: 'UPON REQUEST', en: 'UPON REQUEST' },
   swipeLabel: { el: 'Swipe', en: 'Swipe' },
   serviceSlides: [
-    { image: '/images/privateSecurity.jpg', title: { el: 'Ασφάλεια', en: 'Security' } },
+    {
+      image: '/images/privateSecurity.jpg',
+      title: { el: 'Ασφάλεια', en: 'Security' },
+    },
     {
       image: '/images/chauffeurDriver.jpg',
       title: { el: 'Υπηρεσίες Μεταφοράς', en: 'Transportation services' },
     },
-    { image: '/images/vipConcierge.jpg', title: { el: 'Υπηρεσίες Concierge', en: 'Concierge services' } },
-    { image: '/images/privateChef.jpg', title: { el: 'Ιδιωτικός Σεφ', en: 'Private Chef' } },
+    {
+      image: '/images/vipConcierge.jpg',
+      title: { el: 'Υπηρεσίες Concierge', en: 'Concierge services' },
+    },
+    {
+      image: '/images/privateChef.jpg',
+      title: { el: 'Ιδιωτικός Σεφ', en: 'Private Chef' },
+    },
     {
       image: '/images/hairAndBeauty.jpg',
       title: { el: 'Κομμωτής, μανικιούρ, πεντικιούρ', en: 'Hairdresser, manicure, pedicure' },
     },
-    { image: '/images/privateSecurity.jpg', title: { el: 'Υπηρεσίες Καθαρισμού', en: 'Cleaning services' } },
-    { image: '/images/vipConcierge.jpg', title: { el: 'Και άλλα', en: 'And more' } },
+    {
+      image: '/images/privateSecurity.jpg',
+      title: { el: 'Υπηρεσίες Καθαρισμού', en: 'Cleaning services' },
+    },
+    {
+      image: '/images/vipConcierge.jpg',
+      title: { el: 'Και άλλα', en: 'And more' },
+    },
   ],
   viewDetailsBtn: { el: 'View More', en: 'View More' },
   nightLabel: { el: 'Νύχτα', en: 'Night' },
@@ -723,20 +738,13 @@ export const breadCrumbConfig: BreadCrumbConfig = {
   adytonSuiteImage: '/images/LuxurySuites/590776503.jpg',
 };
 
-// Room-type definitions for individual suite pages
-export const roomTypesConfig: RoomTypeConfig[] = [
+export const roomTypesConfig = [
   {
     id: 'deluxe-double-pool',
-    title: {
-      el: '',
-      en: 'Deluxe Double or Twin Room with Pool Access',
-    },
+    title: { el: '', en: 'Deluxe Double or Twin Room with Pool Access' },
     size: '25 sq.m.',
     bedSummary: '1 large double bed',
-    description: {
-      el: '',
-      en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.',
-    },
+    description: { el: '', en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -801,16 +809,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
   },
   {
     id: 'deluxe-double-pool-2',
-    title: {
-      el: '',
-      en: 'Deluxe Double or Twin Room with Pool Access',
-    },
+    title: { el: '', en: 'Deluxe Double or Twin Room with Pool Access' },
     size: '25 sq.m.',
     bedSummary: '1 large double bed',
-    description: {
-      el: '',
-      en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.',
-    },
+    description: { el: '', en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -875,16 +877,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
   },
   {
     id: 'deluxe-double-pool-3',
-    title: {
-      el: '',
-      en: 'Deluxe Double or Twin Room with Pool Access',
-    },
+    title: { el: '', en: 'Deluxe Double or Twin Room with Pool Access' },
     size: '25 sq.m.',
     bedSummary: '1 large double bed',
-    description: {
-      el: '',
-      en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.',
-    },
+    description: { el: '', en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -943,16 +939,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
   },
   {
     id: 'deluxe-double-pool-4',
-    title: {
-      el: '',
-      en: 'Deluxe Double or Twin Room with Pool Access',
-    },
+    title: { el: '', en: 'Deluxe Double or Twin Room with Pool Access' },
     size: '25 sq.m.',
     bedSummary: '1 large double bed',
-    description: {
-      el: '',
-      en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.',
-    },
+    description: { el: '', en: 'The pool with a view is a top feature of this twin/double room. The twin/double room features air conditioning, a private entrance, a terrace with garden views as well as a private bathroom boasting a shower. The unit has 1 bed.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -1010,16 +1000,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
   },
   {
     id: 'premium-quadruple',
-    title: {
-      el: '',
-      en: 'Premium Quadruple Room',
-    },
+    title: { el: '', en: 'Premium Quadruple Room' },
     size: '70 sq.m.',
     bedSummary: '2 double beds',
-    description: {
-      el: '',
-      en: 'A spacious quadruple room ideal for families or groups, combining comfort with generous living space and pool access. It includes a washing machine, a kitchenette with everything you need, and two showers.',
-    },
+    description: { el: '', en: 'A spacious quadruple room ideal for families or groups, combining comfort with generous living space and pool access. It includes a washing machine, a kitchenette with everything you need, and two showers.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -1028,7 +1012,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
       'Hair dryer',
       'Toilet paper',
     ],
-    viewAmenities: ['Garden view', 'Pool view'],
+    viewAmenities: [
+      'Garden view',
+      'Pool view',
+    ],
     roomAmenities: [
       'Veranda',
       'Air conditioning',
@@ -1070,16 +1057,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
   },
   {
     id: 'standard-apartment',
-    title: {
-      el: '',
-      en: 'Standard Apartment',
-    },
+    title: { el: '', en: 'Standard Apartment' },
     size: '47 sq.m.',
     bedSummary: 'Bedroom: 1 sofa bed and 1 large double bed • Sitting room: 1 sofa bed',
-    description: {
-      el: '',
-      en: 'Featuring a private entrance, this air-conditioned apartment comprises 1 living room, 1 separate bedroom and 1 bathroom with a shower and a hairdryer. Boasting a terrace with garden views, this apartment also provides soundproof walls and a flat-screen TV. The unit offers 3 beds.',
-    },
+    description: { el: '', en: 'Featuring a private entrance, this air-conditioned apartment comprises 1 living room, 1 separate bedroom and 1 bathroom with a shower and a hairdryer. Boasting a terrace with garden views, this apartment also provides soundproof walls and a flat-screen TV. The unit offers 3 beds.' },
     bathroomAmenities: [
       'Free toiletries',
       'Toilet',
@@ -1090,7 +1071,10 @@ export const roomTypesConfig: RoomTypeConfig[] = [
       'Towels/sheets at extra charge',
       'Toilet paper',
     ],
-    viewAmenities: ['Garden view', 'View of the inner courtyard'],
+    viewAmenities: [
+      'Garden view',
+      'View of the inner courtyard',
+    ],
     roomAmenities: [
       'Veranda',
       'Air conditioning',
@@ -1133,6 +1117,6 @@ export const roomTypesConfig: RoomTypeConfig[] = [
 ];
 
 export const digitalProductsConfig: DigitalProductsConfig = {
-  enabled: false,
-  products: [],
+  enabled: false,
+  products: [],
 };
