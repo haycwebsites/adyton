@@ -20,12 +20,10 @@ export function HaycProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>('el');
   const [config, setConfig] = useState<RemoteConfig>(defaultConfig);
   const [ready, setReady] = useState(false);
-  const [isEditMode, setIsEditMode] = useState(false);
-
-  useEffect(() => {
+  const [isEditMode, setIsEditMode] = useState(() => {
     const params = new URLSearchParams(window.location.search);
-    setIsEditMode(params.get('hayc-edit') === 'true');
-  }, []);
+    return params.get('hayc-edit') === 'true';
+  });
 
   useEffect(() => {
     fetchRemoteConfig().then(c => {
