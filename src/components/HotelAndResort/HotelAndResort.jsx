@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useHayc } from "../../hayc/config-context";
 
 const HotelAndResort = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const h = config.hotelAndResortConfig;
   const [, setCurrentSlide] = useState(0);
   const [sliderRef] = useKeenSlider({
@@ -57,13 +57,22 @@ const HotelAndResort = () => {
 
           {/* text */}
           <div className="flex-1 font-Garamond  mt-5 md:mt-0 md:pl-8 p-5  lg:pl-10 2xl:pl-14">
-            <h5 className="text-base text-khaki leading-[26px] font-medium">
+            <h5
+              className="text-base text-khaki leading-[26px] font-medium"
+              {...cp("hotelAndResortConfig.subtitle")}
+            >
               {t(h.subtitle)}
             </h5>
-            <h1 className="text-[22px] sm:text-2xl md:text-[21px]  xl:text-3xl 2xl:text-[38px] leading-6 md:leading-7 lg:leading-[30px] 2xl:leading-[44px] text-lightBlack dark:text-white font-semibold my-4">
+            <h1
+              className="text-[22px] sm:text-2xl md:text-[21px]  xl:text-3xl 2xl:text-[38px] leading-6 md:leading-7 lg:leading-[30px] 2xl:leading-[44px] text-lightBlack dark:text-white font-semibold my-4"
+              {...cp("hotelAndResortConfig.title")}
+            >
               {t(h.title)}
             </h1>
-            <p className="text-sm xl:text-base md:text-sm lg:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">
+            <p
+              className="text-sm xl:text-base md:text-sm lg:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]"
+              {...cp("hotelAndResortConfig.description")}
+            >
               {t(h.description)}
             </p>
             <div className="flex items-center mt-4 md:mt-3 lg:mt-4">
@@ -71,7 +80,10 @@ const HotelAndResort = () => {
                 <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  3xl:text-[70px] leading-[42px] text-khaki font-medium ">
                   220 +
                 </h1>
-                <p className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[94px] lg:w-full">
+                <p
+                  className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[94px] lg:w-full"
+                  {...cp("hotelAndResortConfig.roomsCountLabel")}
+                >
                   {t(h.roomsCountLabel)}
                 </p>
               </div>
@@ -79,7 +91,10 @@ const HotelAndResort = () => {
                 <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl  3xl:text-[70px] leading-[42px] text-khaki font-medium ">
                   9.9
                 </h1>
-                <p className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[134px] lg:w-full">
+                <p
+                  className="text-sm sm:text-base md:text-sm lg:text-base leading-[26px] text-gray dark:text-lightGray font-normal font-Lora pt-5 xl:pt-7 md:w-[134px] lg:w-full"
+                  {...cp("hotelAndResortConfig.ratingsLabel")}
+                >
                   {t(h.ratingsLabel)}
                 </p>
               </div>
@@ -91,7 +106,9 @@ const HotelAndResort = () => {
               </div>
             </div>
             <Link to={"/adyton-suite"}>
-              <button className="btn-primary ">{t(h.ctaBtn)}</button>
+              <button className="btn-primary " {...cp("hotelAndResortConfig.ctaBtn")}>
+                {t(h.ctaBtn)}
+              </button>
             </Link>
           </div>
         </div>

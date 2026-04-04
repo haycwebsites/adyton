@@ -4,7 +4,7 @@ import FsLightbox from "fslightbox-react";
 import { useHayc } from "../../hayc/config-context";
 
 const Action = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const a = config.actionConfig;
   const [toggler, setToggler] = useState(false);
   return (
@@ -16,13 +16,22 @@ const Action = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h5 className="text-base text-khaki leading-[26px] font-semibold">
+            <h5
+              className="text-base text-khaki leading-[26px] font-semibold"
+              {...cp("actionConfig.label")}
+            >
               {t(a.label)}
             </h5>
-            <h1 className="text-[22px] sm:text-2xl md:text-[28px] xl:text-[32px] 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold">
+            <h1
+              className="text-[22px] sm:text-2xl md:text-[28px] xl:text-[32px] 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold"
+              {...cp("actionConfig.title")}
+            >
               {t(a.title)}
             </h1>
-            <p className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]">
+            <p
+              className="text-sm sm:text-base font-Lora text-gray dark:text-lightGray font-normal leading-[26px]"
+              {...cp("actionConfig.description")}
+            >
               {t(a.description)}
             </p>
             <p className="text-sm sm:text-base font-Lora italic leading-[26px] underline  text-gray dark:text-lightGray font-normal ">
@@ -37,10 +46,16 @@ const Action = () => {
               />
 
               <div className="">
-                <h4 className="text-lg sm:text-[22px] leading-[26px] text-lightBlack dark:text-white font-semibold font-Garamond">
+                <h4
+                  className="text-lg sm:text-[22px] leading-[26px] text-lightBlack dark:text-white font-semibold font-Garamond"
+                  {...cp("actionConfig.authorName")}
+                >
                   {t(a.authorName)}
                 </h4>
-                <p className="pt-1 text-base leading-[26px] font-normal text-gray dark:text-lightGray flex items-center font-Lora">
+                <p
+                  className="pt-1 text-base leading-[26px] font-normal text-gray dark:text-lightGray flex items-center font-Lora"
+                  {...cp("actionConfig.authorRole")}
+                >
                   <span className="w-5 h-[1px] inline-block text-khaki bg-khaki mr-2"></span>
                   {t(a.authorRole)}
                 </p>

@@ -32,6 +32,7 @@ const Footer = () => {
                     <a
                       href={`tel:${telPhone}`}
                       className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] mt-2 hover:text-khaki transition-all duration-300"
+                      {...cp("footerConfig.phone")}
                     >
                       <IoIosCall
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
@@ -42,6 +43,7 @@ const Footer = () => {
                     <a
                       href={`mailto:${f.email}`}
                       className="flex items-center text-lightGray font-Lora font-normal text-sm sm:text-base leading-[26px] hover:text-khaki transition-all duration-300"
+                      {...cp("footerConfig.email")}
                     >
                       <BiEnvelope
                         className="text-khaki w-5 h-5 mr-3 2xl:mr-4 "
@@ -90,19 +92,29 @@ const Footer = () => {
                  "
                 >
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="/">{t(nav.home)}</Link>
+                    <Link to="/" {...cp("navConfig.home")}>
+                      {t(nav.home)}
+                    </Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="/adyton-suite">{t(nav.adytonSuite)}</Link>
+                    <Link to="/adyton-suite" {...cp("navConfig.adytonSuite")}>
+                      {t(nav.adytonSuite)}
+                    </Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="/room">{t(nav.rooms)}</Link>
+                    <Link to="/room" {...cp("navConfig.rooms")}>
+                      {t(nav.rooms)}
+                    </Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="/blog">{t(nav.blog)}</Link>
+                    <Link to="/blog" {...cp("navConfig.blog")}>
+                      {t(nav.blog)}
+                    </Link>
                   </li>
                   <li className="hover:ml-[17px] md:hover:ml-[18px] transition-all duration-500 hover:text-khaki leading-[44px]">
-                    <Link to="/contact">{t(nav.contact)}</Link>
+                    <Link to="/contact" {...cp("navConfig.contact")}>
+                      {t(nav.contact)}
+                    </Link>
                   </li>
                 </ul>
               </div>

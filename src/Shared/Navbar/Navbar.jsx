@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useHayc } from "../../hayc/config-context";
 
 const Navbar = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const nav = config.navConfig;
   const [isOpen, setIsOpen] = useState(false);
   const scrollPosition = useScrollPosition();
@@ -70,6 +70,7 @@ const Navbar = () => {
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/"
+              {...cp("navConfig.home")}
             >
               {t(nav.home)}
             </NavLink>
@@ -81,6 +82,7 @@ const Navbar = () => {
                   ? "active"
                   : ""} text-lightBlack lg:whitespace-nowrap lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/adyton-suite"
+              {...cp("navConfig.adytonSuite")}
             >
               {t(nav.adytonSuite)}
             </NavLink>
@@ -92,6 +94,7 @@ const Navbar = () => {
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/room"
+              {...cp("navConfig.rooms")}
             >
               {t(nav.rooms)}
             </NavLink>
@@ -103,6 +106,7 @@ const Navbar = () => {
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/blog"
+              {...cp("navConfig.blog")}
             >
               {t(nav.blog)}
             </NavLink>
@@ -114,6 +118,7 @@ const Navbar = () => {
                   ? "active"
                   : ""} text-lightBlack lg:text-white dark:text-white lg:border-b-0 px-3 py-2 w-full block transition-all duration-300`}
               to="/contact"
+              {...cp("navConfig.contact")}
             >
               {t(nav.contact)}
             </NavLink>

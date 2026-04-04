@@ -116,6 +116,7 @@ const Contact = () => {
                   <a
                     href={`tel:${telPhone}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                    {...cp("contactConfig.phone")}
                   >
                     {c.phone}
                   </a>
@@ -137,6 +138,7 @@ const Contact = () => {
                   <a
                     href={`mailto:${c.email}`}
                     className="font-Garamond text-lg sm:text-xl md:text-[22px] leading-[26px] text-lightBlack dark:text-white font-medium hover:text-khaki transition-all duration-300"
+                    {...cp("contactConfig.email")}
                   >
                     {c.email}
                   </a>

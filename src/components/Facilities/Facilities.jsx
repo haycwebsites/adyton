@@ -36,7 +36,7 @@ const premiumServices = [
 ];
 
 const Facilities = () => {
-  const { t, img, config } = useHayc();
+  const { t, img, config, cp } = useHayc();
   const f = config.facilitiesConfig;
   return (
     <div className="dark:bg-mediumBlack ">
@@ -48,16 +48,24 @@ const Facilities = () => {
           data-aos-duration="1000"
         >
           <div className=" md:w-[450px] font-Garamond">
-            <h5 className="text-base text-khaki leading-[26px] font-medium mb-[14px]  ">
+            <h5
+              className="text-base text-khaki leading-[26px] font-medium mb-[14px]  "
+              {...cp("facilitiesConfig.sectionLabel")}
+            >
               {t(f.sectionLabel)}
             </h5>
-            <h1 className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold ">
+            <h1
+              className="text-[22px] sm:text-2xl md:text-3xl 2xl:text-[38px] leading-[38px] lg:leading-[44px] text-lightBlack dark:text-white font-semibold "
+              {...cp("facilitiesConfig.title")}
+            >
               {t(f.title)}
             </h1>
           </div>
           <div className="mt-5 md:mt-0">
             <Link to="/adyton-suite">
-              <button className="btn-items">{t(f.viewMoreBtn)}</button>
+              <button className="btn-items" {...cp("facilitiesConfig.viewMoreBtn")}>
+                {t(f.viewMoreBtn)}
+              </button>
             </Link>
           </div>
         </div>
