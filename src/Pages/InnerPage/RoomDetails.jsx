@@ -132,7 +132,7 @@ Plot size approximately 4,600 m², three-phase electricity, municipal water supp
                 data-aos="zoom-in-up"
                 data-aos-duration="1000"
               >
-                <a
+                {/* <a
                   href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -145,7 +145,7 @@ Plot size approximately 4,600 m², three-phase electricity, municipal water supp
                   rel="noopener noreferrer"
                 >
                   <button className="btn-items">12 months</button>
-                </a>
+                </a> */}
               </div>
               {/* Check-In and check-Out */}
               <div

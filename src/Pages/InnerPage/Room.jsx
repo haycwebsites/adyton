@@ -73,7 +73,7 @@ const Room = () => {
             </p>
             <p className="text-sm sm:text-base text-khaki font-semibold mb-2 text-center">Immediately available</p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-10 mb-12">
-              <a
+              {/* <a
                 href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const Room = () => {
                 rel="noopener noreferrer"
               >
                 <button className="btn-items">12 months</button>
-              </a>
+              </a> */}
             </div>
           </div>
           {/* Rooms Slider Container */}

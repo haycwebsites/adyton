@@ -125,7 +125,7 @@ const Navbar = () => {
           </ul>
           <div className="hidden lg:flex items-center">
             <div className="flex items-center gap-3">
-              <a
+              {/* <a
                 href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -138,7 +138,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 <button className="btn-secondary ">12 months</button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

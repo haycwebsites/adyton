@@ -88,7 +88,7 @@ const HotelAndFacilities = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <a
+            {/* <a
               href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
               target="_blank"
               rel="noopener noreferrer"
@@ -101,7 +101,7 @@ const HotelAndFacilities = () => {
               rel="noopener noreferrer"
             >
               <button className="btn-items">12 months</button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

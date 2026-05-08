@@ -95,7 +95,7 @@ const RoomTypeDetails = () => {
                   Book the whole house
                 </p>
                 <div className="flex flex-wrap items-center gap-3 mt-3 mb-6">
-                  <a
+                  {/* <a
                     href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -108,7 +108,7 @@ const RoomTypeDetails = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="btn-items">12 months</button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
 

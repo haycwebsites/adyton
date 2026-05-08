@@ -57,6 +57,7 @@ const HeroSection = () => {
                 >
                   {t(h.immediatelyAvailable)}
                 </p>
+                {/*
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a
                     href="https://buy.stripe.com/00w14n15Kdkx7WHgrjaZi01"
@@ -89,6 +90,7 @@ const HeroSection = () => {
                     </button>
                   </a>
                 </div>
+                */}
               </div>
               <a
                 href={`tel:${telPhone}`}
